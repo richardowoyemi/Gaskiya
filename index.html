@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gaskiya — an independent Nigerian price index</title>
+<meta name="description" content="Independent, verifiable daily prices for Nigerian staples. Every number carries its source.">
+<style>
+  :root{
+    color-scheme: dark;
+    --page:#0d0d0d; --surface:#171b18; --surface-2:#1d221e;
+    --ink:#ffffff; --ink-2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --axis:#383835; --hair:rgba(255,255,255,.10);
+    --brand:#d9a441;            /* text/brand only — too light for data marks */
+    --series-1:#c98500;         /* validated data-mark gold, dark surface */
+    --good:#0ca30c; --bad:#d03b3b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--page);color:var(--ink);
+    font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;
+    padding:28px 18px 72px;}
+  .wrap{max-width:1040px;margin:0 auto}
+  a{color:var(--brand)}
+  header{border-bottom:1px solid var(--hair);padding-bottom:20px;margin-bottom:22px}
+  h1{font-size:30px;margin:0 0 6px;letter-spacing:-.4px}
+  h1 span{color:var(--brand)}
+  .tag{color:var(--ink-2);font-size:14px;margin:0}
+  .stamp{color:var(--muted);font-size:12.5px;margin:10px 0 0}
+  .banner{background:var(--surface);border:1px solid var(--hair);border-left:3px solid var(--brand);
+    border-radius:8px;padding:12px 16px;margin:0 0 24px;color:var(--ink-2);font-size:13.5px}
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);
+    margin:34px 0 12px;font-weight:600}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+  .tile{background:var(--surface);border:1px solid var(--hair);border-radius:10px;padding:14px 16px}
+  .tile .k{font-size:11.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
+  .tile .v{font-size:30px;margin-top:6px;letter-spacing:-.5px}
+  .tile .s{font-size:12px;color:var(--muted);margin-top:2px}
+  figure{margin:0;background:var(--surface);border:1px solid var(--hair);border-radius:10px;padding:16px}
+  figcaption{font-size:13px;color:var(--ink-2);margin-bottom:4px}
+  figcaption b{color:var(--ink);font-weight:600}
+  .empty{color:var(--muted);font-size:13.5px;padding:26px 4px;text-align:center}
+  svg{display:block;width:100%;height:auto;overflow:visible}
+  .tt{position:fixed;pointer-events:none;background:var(--surface-2);border:1px solid var(--hair);
+    border-radius:7px;padding:7px 10px;font-size:12.5px;opacity:0;transition:opacity .1s;
+    box-shadow:0 6px 20px rgba(0,0,0,.5);z-index:9}
+  .tt .d{color:var(--muted);font-size:11.5px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;
+    font-variant-numeric:tabular-nums}
+  th,td{text-align:right;padding:9px 10px;border-bottom:1px solid var(--grid)}
+  th:first-child,td:first-child{text-align:left}
+  th{color:var(--muted);font-size:11.5px;text-transform:uppercase;letter-spacing:.5px;
+    font-weight:600;cursor:pointer;user-select:none;white-space:nowrap}
+  th:hover{color:var(--ink-2)}
+  td.item{color:var(--ink)}
+  td .unit{color:var(--muted);font-size:12px}
+  .delta{white-space:nowrap;font-variant-numeric:tabular-nums}
+  .up{color:var(--bad)} .down{color:var(--good)} .flat{color:var(--muted)}
+  footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--hair);
+    color:var(--muted);font-size:12.5px}
+  footer p{margin:0 0 8px}
+  code{background:var(--surface-2);padding:1px 6px;border-radius:5px;font-size:12px;color:var(--ink-2)}
+  @media(max-width:640px){ h1{font-size:24px} .tile .v{font-size:24px} th,td{padding:8px 6px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1><span>Gaskiya</span> — Nigerian price index</h1>
+  <p class="tag">"Gaskiya ta fi kwabo" — truth is worth more than money. Independent, verifiable, updated daily.</p>
+  <p class="stamp" id="stamp">Loading…</p>
+</header>
+
+<div class="banner" id="scope">
+  Every number here is a <b>retail asking price</b> collected from named public sources and timestamped.
+  Read the geography before the price.
+</div>
+
+<h2>Today</h2>
+<div class="kpis" id="kpis"></div>
+
+<h2>Basket index</h2>
+<figure>
+  <figcaption><b>Gaskiya basket</b> — unweighted mean of price relatives, first observed day = 100</figcaption>
+  <div id="chart"></div>
+</figure>
+
+<h2>Items</h2>
+<div id="tableWrap"></div>
+
+<footer>
+  <p><b>Method.</b> Each item's daily figure is the <b>median unit price</b> of every matched product that day —
+     not an average, so one mispriced listing can't move the line. <code>n</code> is how many products backed it.</p>
+  <p><b>Tiers.</b> Everything on this page is <b>Tier A</b>: scraped from a named public source, with the URL as the receipt.
+     Tier B (official releases) and Tier C (human market reports) are labelled separately when they arrive.</p>
+  <p><b>Raw data.</b> Every day's rows are committed unmodified to
+     <a href="https://github.com/richardowoyemi/Gaskiya/tree/main/data/raw">the public archive</a> —
+     append-only, timestamped, and never edited after the fact. Check our arithmetic.</p>
+  <p>Public data free forever with attribution. Commercial redistribution reserved.</p>
+</footer>
+</div>
+
+<div class="tt" id="tt"></div>
+
+<script>
+const NGN = n => '₦' + Number(n).toLocaleString('en-NG', {maximumFractionDigits: n < 100 ? 2 : 0});
+const el = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const LABEL = {
+  rice:'Rice', beans_brown:'Beans (brown)', garri:'Garri', semovita:'Semovita',
+  poundo_yam:'Poundo / yam flour', spaghetti:'Spaghetti & pasta', noodles:'Noodles',
+  bread:'Bread', cereal:'Cereal', oats:'Oats', eggs:'Eggs', chicken_frozen:'Chicken (frozen)',
+  fish_frozen:'Fish (frozen)', stockfish:'Stockfish / dried fish', crayfish:'Crayfish',
+  milk_powder:'Milk (powder)', milk_evap:'Milk (evaporated)', palm_oil:'Palm oil',
+  veg_oil:'Vegetable oil', tomato_paste:'Tomato paste', tomato_fresh:'Tomatoes (fresh)',
+  pepper:'Pepper', onions:'Onions', sugar:'Sugar', salt:'Salt', seasoning:'Seasoning cubes',
+  egusi:'Egusi', ogbono:'Ogbono', groundnut:'Groundnut', beverage_choc:'Milo / Bournvita',
+  tea:'Tea', water:'Water', soft_drink:'Soft drinks', detergent:'Detergent',
+  soap_bar:'Bar soap', toilet_roll:'Toilet roll', sanitary_pad:'Sanitary pads',
+  diapers:'Diapers', baby_formula:'Baby formula'
+};
+const UNIT = {kg:'per kg', l:'per litre', piece:'per piece'};
+const SCOPE = {
+  city_online:'Lagos · online retail', national:'National',
+  state_survey:'State survey', market:'Named market'
+};
+
+let DATA = null, sortKey = 'name', sortDir = 1;
+
+fetch('data.json?' + Date.now())
+  .then(r => { if (!r.ok) throw new Error('data.json ' + r.status); return r.json(); })
+  .then(d => { DATA = d; render(); })
+  .catch(e => {
+    el('stamp').textContent = 'Could not load data.json — ' + e.message;
+    el('chart').innerHTML = '<div class="empty">No data yet.</div>';
+  });
+
+function render() {
+  const {meta, days, items, index} = DATA;
+  const today = days[days.length - 1], prev = days.length > 1 ? days[days.length - 2] : null;
+
+  el('stamp').innerHTML = 'Last run <b>' + esc(today) + '</b> · generated ' +
+    esc(String(meta.generated).replace('T', ' ').slice(0, 16)) + ' Lagos time';
+
+  const scopes = [...new Set(items.map(i => SCOPE[i.geo_scope] || i.geo_scope))];
+  el('scope').innerHTML = 'Every number here is a <b>retail asking price</b> from a named public source, timestamped. ' +
+    'Current coverage: <b>' + esc(scopes.join(', ')) + '</b> — online listings, which typically sit above open-market ' +
+    'prices. This is not yet a national figure, and it is labelled that way on purpose.';
+
+  const obs = items.reduce((s, it) => {
+    const p = it.points.find(p => p.d === today); return s + (p ? p.n : 0);
+  }, 0);
+  const idxNow = index.length ? index[index.length - 1] : null;
+  const idxPrev = index.length > 1 ? index[index.length - 2] : null;
+
+  el('kpis').innerHTML = [
+    tile('Basket index', idxNow ? idxNow.v.toFixed(1) : '—',
+         idxPrev ? deltaHTML(idxNow.v, idxPrev.v) + ' vs previous run' : 'base = 100 on first day'),
+    tile('Items tracked', items.length, 'staples & household goods'),
+    tile('Observations today', obs.toLocaleString(), 'individual product prices'),
+    tile('Days of history', days.length, days.length === 1 ? 'day one' : 'and counting'),
+  ].join('');
+
+  drawChart(index);
+  drawTable(items, today, prev);
+}
+
+const tile = (k, v, s) =>
+  '<div class="tile"><div class="k">' + k + '</div><div class="v">' + v + '</div><div class="s">' + s + '</div></div>';
+
+// Arrow + signed number are MANDATORY, never colour alone:
+// the red/green pair fails colour-blind separation (ΔE 4.1 deutan).
+function deltaHTML(now, before) {
+  if (before == null || !isFinite(before) || before === 0) return '<span class="flat">—</span>';
+  const pct = (now - before) / before * 100;
+  if (Math.abs(pct) < 0.05) return '<span class="flat">▬ no change</span>';
+  const up = pct > 0;
+  return '<span class="delta ' + (up ? 'up' : 'down') + '">' +
+         (up ? '▲' : '▼') + ' ' + (up ? '+' : '') + pct.toFixed(1) + '%</span>';
+}
+
+function drawChart(index) {
+  const box = el('chart');
+  if (!index || index.length < 2) {
+    box.innerHTML = '<div class="empty">The line appears once there are two days of data.' +
+      (index.length ? ' Day one is on the board — index ' + index[0].v.toFixed(1) + '.' : '') + '</div>';
+    return;
+  }
+  const W = 900, H = 260, P = {t: 16, r: 18, b: 30, l: 52};
+  const xs = i => P.l + i * (W - P.l - P.r) / Math.max(1, index.length - 1);
+  const vals = index.map(p => p.v);
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  const pad = (hi - lo) * 0.25 || 1; lo -= pad; hi += pad;
+  const ys = v => P.t + (hi - v) / (hi - lo) * (H - P.t - P.b);
+
+  const ticks = 4, gl = [], lb = [];
+  const span = hi - lo;                       // ticks must not collapse on a narrow range
+  const dp = span >= 20 ? 0 : span >= 4 ? 1 : 2;
+  for (let i = 0; i <= ticks; i++) {
+    const v = lo + span * i / ticks, y = ys(v);
+    gl.push('<line x1="' + P.l + '" y1="' + y + '" x2="' + (W - P.r) + '" y2="' + y + '" stroke="var(--grid)" stroke-width="1"/>');
+    lb.push('<text x="' + (P.l - 10) + '" y="' + (y + 4) + '" fill="var(--muted)" font-size="11" text-anchor="end">' + v.toFixed(dp) + '</text>');
+  }
+  const path = index.map((p, i) => (i ? 'L' : 'M') + xs(i) + ' ' + ys(p.v)).join(' ');
+  const dots = index.map((p, i) =>
+    '<circle cx="' + xs(i) + '" cy="' + ys(p.v) + '" r="4.5" fill="var(--series-1)" stroke="var(--surface)" stroke-width="2"/>').join('');
+  const every = Math.ceil(index.length / 7);
+  const xlb = index.map((p, i) => (i % every === 0 || i === index.length - 1)
+    ? '<text x="' + xs(i) + '" y="' + (H - 8) + '" fill="var(--muted)" font-size="11" text-anchor="middle">' + p.d.slice(5) + '</text>' : '').join('');
+  const hit = index.map((p, i) =>
+    '<rect x="' + (xs(i) - 18) + '" y="0" width="36" height="' + H + '" fill="transparent" ' +
+    'data-i="' + i + '" data-d="' + p.d + '" data-v="' + p.v + '" data-n="' + p.items + '"/>').join('');
+
+  box.innerHTML = '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Gaskiya basket index over time">' +
+    gl.join('') + lb.join('') + xlb +
+    '<line x1="' + P.l + '" y1="' + (H - P.b) + '" x2="' + (W - P.r) + '" y2="' + (H - P.b) + '" stroke="var(--axis)"/>' +
+    '<line id="cross" x1="0" y1="' + P.t + '" x2="0" y2="' + (H - P.b) + '" stroke="var(--axis)" stroke-width="1" opacity="0"/>' +
+    '<path d="' + path + '" fill="none" stroke="var(--series-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+    dots + hit + '</svg>' +
+    '<noscript></noscript>';
+
+  const tt = el('tt'), cross = box.querySelector('#cross');
+  box.querySelectorAll('rect[data-i]').forEach(r => {
+    r.addEventListener('mousemove', ev => {
+      tt.innerHTML = '<div class="d">' + r.dataset.d + '</div><b>' +
+        Number(r.dataset.v).toFixed(1) + '</b> index · ' + r.dataset.n + ' items';
+      tt.style.opacity = 1;
+      tt.style.left = Math.min(ev.clientX + 14, innerWidth - 160) + 'px';
+      tt.style.top = (ev.clientY - 46) + 'px';
+      const x = xs(+r.dataset.i);
+      cross.setAttribute('x1', x); cross.setAttribute('x2', x); cross.setAttribute('opacity', 1);
+    });
+    r.addEventListener('mouseleave', () => { tt.style.opacity = 0; cross.setAttribute('opacity', 0); });
+  });
+}
+
+function drawTable(items, today, prev) {
+  const rows = items.map(it => {
+    const t = it.points.find(p => p.d === today);
+    const y = prev ? it.points.find(p => p.d === prev) : null;
+    return {
+      key: it.key, name: LABEL[it.key] || it.key, unit: UNIT[it.unit] || it.unit,
+      price: t ? t.p : null, n: t ? t.n : 0,
+      pct: (t && y && y.p) ? (t.p - y.p) / y.p * 100 : null,
+      prev: y ? y.p : null, scope: SCOPE[it.geo_scope] || it.geo_scope,
+    };
+  });
+  const cmp = {
+    name: (a, b) => a.name.localeCompare(b.name),
+    price: (a, b) => (a.price ?? -1) - (b.price ?? -1),
+    n: (a, b) => a.n - b.n,
+    pct: (a, b) => (a.pct ?? -1e9) - (b.pct ?? -1e9),
+  }[sortKey];
+  rows.sort((a, b) => cmp(a, b) * sortDir);
+
+  const arrow = k => sortKey === k ? (sortDir > 0 ? ' ↑' : ' ↓') : '';
+  el('tableWrap').innerHTML =
+    '<table><thead><tr>' +
+      '<th data-k="name">Item' + arrow('name') + '</th>' +
+      '<th data-k="price">Median price' + arrow('price') + '</th>' +
+      '<th data-k="n">n' + arrow('n') + '</th>' +
+      '<th data-k="pct">Change' + arrow('pct') + '</th>' +
+    '</tr></thead><tbody>' +
+    rows.map(r =>
+      '<tr><td class="item">' + esc(r.name) + '<div class="unit">' + esc(r.unit) + ' · ' + esc(r.scope) + '</div></td>' +
+      '<td>' + (r.price == null ? '—' : NGN(r.price)) + '</td>' +
+      '<td>' + (r.n || '—') + '</td>' +
+      '<td>' + (r.pct == null ? '<span class="flat">—</span>' : deltaHTML(r.price, r.prev)) + '</td></tr>'
+    ).join('') + '</tbody></table>' +
+    (prev ? '' : '<p style="color:var(--muted);font-size:12.5px;margin:12px 2px 0">' +
+      'Change compares each item against the previous run — it fills in from the second day onward.</p>');
+
+  el('tableWrap').querySelectorAll('th[data-k]').forEach(th => {
+    th.onclick = () => {
+      const k = th.dataset.k;
+      sortDir = (sortKey === k) ? -sortDir : (k === 'name' ? 1 : -1);
+      sortKey = k;
+      drawTable(items, today, prev);
+    };
+  });
+}
+</script>
+</body>
+</html>
