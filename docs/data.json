@@ -1,0 +1,447 @@
+{
+ "meta": {
+  "project": "Gaskiya",
+  "version": "v0.3.0",
+  "generated": "2026-08-13T15:22:10+01:00",
+  "country": "NG",
+  "sources": [
+   {
+    "key": "supermart",
+    "tier": "A",
+    "category": "food",
+    "state": "LA",
+    "geo_scope": "city_online",
+    "base": "https://www.supermart.ng"
+   }
+  ],
+  "note": "Tier A retail asking prices. Unit prices are medians of matched products per day. Index is an unweighted mean of price relatives, base = first observed day = 100."
+ },
+ "days": [
+  "2026-08-13"
+ ],
+ "items": [
+  {
+   "key": "baby_formula",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 3003.72,
+     "n": 24
+    }
+   ]
+  },
+  {
+   "key": "beans_brown",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 3645,
+     "n": 61
+    }
+   ]
+  },
+  {
+   "key": "beverage_choc",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 11026.31,
+     "n": 10
+    }
+   ]
+  },
+  {
+   "key": "bread",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 700,
+     "n": 19
+    }
+   ]
+  },
+  {
+   "key": "cereal",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 1171.43,
+     "n": 3
+    }
+   ]
+  },
+  {
+   "key": "chicken_frozen",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 6500,
+     "n": 201
+    }
+   ]
+  },
+  {
+   "key": "crayfish",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 182.5,
+     "n": 1
+    }
+   ]
+  },
+  {
+   "key": "detergent",
+   "unit": "l",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 2742.29,
+     "n": 75
+    }
+   ]
+  },
+  {
+   "key": "diapers",
+   "unit": "piece",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 1481.25,
+     "n": 2
+    }
+   ]
+  },
+  {
+   "key": "eggs",
+   "unit": "piece",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 114.17,
+     "n": 17
+    }
+   ]
+  },
+  {
+   "key": "fish_frozen",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 7040,
+     "n": 26
+    }
+   ]
+  },
+  {
+   "key": "garri",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 395,
+     "n": 5
+    }
+   ]
+  },
+  {
+   "key": "groundnut",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 1475,
+     "n": 1
+    }
+   ]
+  },
+  {
+   "key": "milk_powder",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 6923.61,
+     "n": 50
+    }
+   ]
+  },
+  {
+   "key": "oats",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 3875,
+     "n": 22
+    }
+   ]
+  },
+  {
+   "key": "ogbono",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 11300,
+     "n": 1
+    }
+   ]
+  },
+  {
+   "key": "onions",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 14206.67,
+     "n": 28
+    }
+   ]
+  },
+  {
+   "key": "palm_oil",
+   "unit": "l",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 730,
+     "n": 3
+    }
+   ]
+  },
+  {
+   "key": "pepper",
+   "unit": "l",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 2147.06,
+     "n": 1
+    }
+   ]
+  },
+  {
+   "key": "poundo_yam",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 4361.25,
+     "n": 14
+    }
+   ]
+  },
+  {
+   "key": "rice",
+   "unit": "l",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 3916.67,
+     "n": 145
+    }
+   ]
+  },
+  {
+   "key": "salt",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 9148.52,
+     "n": 52
+    }
+   ]
+  },
+  {
+   "key": "sanitary_pad",
+   "unit": "piece",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 197.14,
+     "n": 39
+    }
+   ]
+  },
+  {
+   "key": "semovita",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 484,
+     "n": 6
+    }
+   ]
+  },
+  {
+   "key": "soft_drink",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 1546.61,
+     "n": 72
+    }
+   ]
+  },
+  {
+   "key": "spaghetti",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 1618.7,
+     "n": 68
+    }
+   ]
+  },
+  {
+   "key": "sugar",
+   "unit": "l",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 5940,
+     "n": 64
+    }
+   ]
+  },
+  {
+   "key": "toilet_roll",
+   "unit": "piece",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 637.5,
+     "n": 54
+    }
+   ]
+  },
+  {
+   "key": "tomato_fresh",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 912.5,
+     "n": 7
+    }
+   ]
+  },
+  {
+   "key": "tomato_paste",
+   "unit": "kg",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 1714.29,
+     "n": 21
+    }
+   ]
+  },
+  {
+   "key": "veg_oil",
+   "unit": "l",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 2455,
+     "n": 18
+    }
+   ]
+  },
+  {
+   "key": "water",
+   "unit": "l",
+   "state": "LA",
+   "geo_scope": "city_online",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "p": 233.33,
+     "n": 9
+    }
+   ]
+  }
+ ],
+ "index": [
+  {
+   "d": "2026-08-13",
+   "v": 100,
+   "items": 32
+  }
+ ]
+}
