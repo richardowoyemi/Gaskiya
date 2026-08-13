@@ -1,8 +1,8 @@
 {
  "meta": {
   "project": "Gaskiya",
-  "version": "v0.4.1",
-  "generated": "2026-08-13T15:56:38+01:00",
+  "version": "v0.6.4",
+  "generated": "2026-08-13T16:18:13+01:00",
   "country": "NG",
   "sources": [
    {
@@ -20,6 +20,14 @@
     "state": "",
     "geo_scope": "national",
     "base": "https://api.luno.com"
+   },
+   {
+    "key": "nbs",
+    "tier": "B",
+    "category": "official",
+    "state": "",
+    "geo_scope": "national",
+    "base": "https://nigerianstat.gov.ng"
    }
   ],
   "note": "Tier A retail asking prices. Unit prices are medians of matched products per day. Index is an unweighted mean of price relatives, base = first observed day = 100."
@@ -458,6 +466,92 @@
    "official": 1360.25,
    "usdt": 1396.56,
    "spread_pct": 2.67
+  }
+ ],
+ "official": [
+  {
+   "key": "nbs_fuel_ago",
+   "label": "AGO (diesel) national average retail price",
+   "unit": "litre",
+   "tier": "B",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "v": 3277.47
+    }
+   ]
+  },
+  {
+   "key": "nbs_fuel_lpg5kg",
+   "label": "Cooking gas (LPG) 5kg refill national average",
+   "unit": "5kg",
+   "tier": "B",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "v": 8706.93
+    }
+   ]
+  },
+  {
+   "key": "nbs_fuel_nhk",
+   "label": "Household kerosene national average retail price",
+   "unit": "litre",
+   "tier": "B",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "v": 2971.94
+    }
+   ]
+  },
+  {
+   "key": "nbs_fuel_pms",
+   "label": "PMS (petrol) national average retail price",
+   "unit": "litre",
+   "tier": "B",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "v": 1596.25
+    }
+   ]
+  },
+  {
+   "key": "nbs_inflation_core",
+   "label": "Core inflation, year-on-year — reference period June-2026",
+   "unit": "%",
+   "tier": "B",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "v": 15.92
+    }
+   ]
+  },
+  {
+   "key": "nbs_inflation_food",
+   "label": "Food inflation, year-on-year — reference period June-2026",
+   "unit": "%",
+   "tier": "B",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "v": 17.52
+    }
+   ]
+  },
+  {
+   "key": "nbs_inflation_headline",
+   "label": "All-items inflation, year-on-year — reference period June-2026",
+   "unit": "%",
+   "tier": "B",
+   "points": [
+    {
+     "d": "2026-08-13",
+     "v": 15.91
+    }
+   ]
   }
  ]
 }
