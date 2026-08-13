@@ -3,134 +3,117 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gaskiya — an independent Nigerian price index</title>
-<meta name="description" content="Independent, verifiable daily prices for Nigerian staples. Every number carries its source.">
+<title>Gaskiya — what things cost in Nigeria</title>
+<meta name="description" content="The dollar, petrol and food prices in Nigeria — updated daily, every number showing where it came from.">
 <style>
   :root{
     color-scheme: dark;
     --page:#0d0d0d; --surface:#171b18; --surface-2:#1d221e;
     --ink:#ffffff; --ink-2:#c3c2b7; --muted:#898781;
-    --grid:#2c2c2a; --axis:#383835; --hair:rgba(255,255,255,.10);
-    --brand:#d9a441;            /* text/brand only — too light for data marks */
-    --series-1:#c98500;         /* validated data-mark gold, dark surface */
+    --grid:#2c2c2a; --hair:rgba(255,255,255,.10);
+    --brand:#d9a441; --series-1:#c98500;
     --good:#0ca30c; --bad:#d03b3b;
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--page);color:var(--ink);
-    font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;
-    padding:28px 18px 72px;}
-  .wrap{max-width:1040px;margin:0 auto}
+    font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;padding:26px 18px 70px;}
+  .wrap{max-width:940px;margin:0 auto}
   a{color:var(--brand)}
-  header{border-bottom:1px solid var(--hair);padding-bottom:20px;margin-bottom:22px}
-  h1{font-size:30px;margin:0 0 6px;letter-spacing:-.4px}
+  h1{font-size:27px;margin:0 0 4px;letter-spacing:-.4px}
   h1 span{color:var(--brand)}
-  .tag{color:var(--ink-2);font-size:14px;margin:0}
-  .stamp{color:var(--muted);font-size:12.5px;margin:10px 0 0}
-  .banner{background:var(--surface);border:1px solid var(--hair);border-left:3px solid var(--brand);
-    border-radius:8px;padding:12px 16px;margin:0 0 24px;color:var(--ink-2);font-size:13.5px}
+  .sub{color:var(--ink-2);font-size:14.5px;margin:0}
+  .stamp{color:var(--muted);font-size:12.5px;margin:8px 0 26px}
+
+  .three{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:14px}
+  .q{background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:16px 18px}
+  .q .lab{font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted)}
+  .q .big{font-size:34px;letter-spacing:-.8px;margin:8px 0 2px;line-height:1.05}
+  .q .sm{font-size:13px;color:var(--ink-2)}
+  .q .vs{margin-top:11px;padding-top:10px;border-top:1px solid var(--grid);
+    font-size:12.5px;color:var(--muted);line-height:1.5}
+  .q .vs b{color:var(--ink-2)}
+  .q .src{margin-top:9px;font-size:11.5px;color:var(--muted)}
+  .tierdot{display:inline-block;width:6px;height:6px;border-radius:50%;
+    background:var(--series-1);margin-right:5px;vertical-align:middle}
+
   h2{font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);
-    margin:34px 0 12px;font-weight:600}
-  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
-  .tile{background:var(--surface);border:1px solid var(--hair);border-radius:10px;padding:14px 16px}
-  .tile .k{font-size:11.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
-  .tile .v{font-size:30px;margin-top:6px;letter-spacing:-.5px}
-  .tile .s{font-size:12px;color:var(--muted);margin-top:2px}
-  figure{margin:0;background:var(--surface);border:1px solid var(--hair);border-radius:10px;padding:16px}
-  figcaption{font-size:13px;color:var(--ink-2);margin-bottom:4px}
-  figcaption b{color:var(--ink);font-weight:600}
-  .note{color:var(--muted);font-size:12.5px;margin:10px 2px 0}
-  .lag{background:var(--surface);border:1px solid var(--hair);border-left:3px solid var(--series-1);
-    border-radius:8px;padding:14px 16px;margin:12px 0 0;font-size:13.5px;color:var(--ink-2)}
-  .lag b{color:var(--ink)}
-  .offgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
-  .empty{color:var(--muted);font-size:13.5px;padding:26px 4px;text-align:center}
-  svg{display:block;width:100%;height:auto;overflow:visible}
-  .tt{position:fixed;pointer-events:none;background:var(--surface-2);border:1px solid var(--hair);
-    border-radius:7px;padding:7px 10px;font-size:12.5px;opacity:0;transition:opacity .1s;
-    box-shadow:0 6px 20px rgba(0,0,0,.5);z-index:9}
-  .tt .d{color:var(--muted);font-size:11.5px}
-  table{width:100%;border-collapse:collapse;font-size:13.5px;
-    font-variant-numeric:tabular-nums}
+    margin:34px 0 8px;font-weight:600}
+  .hint{color:var(--muted);font-size:12.5px;margin:0 0 10px}
+
+  table{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
   th,td{text-align:right;padding:9px 10px;border-bottom:1px solid var(--grid)}
   th:first-child,td:first-child{text-align:left}
   th{color:var(--muted);font-size:11.5px;text-transform:uppercase;letter-spacing:.5px;
     font-weight:600;cursor:pointer;user-select:none;white-space:nowrap}
   th:hover{color:var(--ink-2)}
+  tr.item-row{cursor:pointer}
+  tr.item-row:hover td{background:#1b201c}
   td.item{color:var(--ink)}
-  td .unit{color:var(--muted);font-size:12px}
-  .delta{white-space:nowrap;font-variant-numeric:tabular-nums}
+  td .meta{color:var(--muted);font-size:11.5px;margin-top:1px}
+  .delta{white-space:nowrap}
   .up{color:var(--bad)} .down{color:var(--good)} .flat{color:var(--muted)}
-  footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--hair);
-    color:var(--muted);font-size:12.5px}
-  footer p{margin:0 0 8px}
-  code{background:var(--surface-2);padding:1px 6px;border-radius:5px;font-size:12px;color:var(--ink-2)}
-  @media(max-width:640px){ h1{font-size:24px} .tile .v{font-size:24px} th,td{padding:8px 6px} }
+  .chev{color:var(--muted);font-size:11px;margin-left:6px}
+
+  tr.receipts td{background:#12150f;padding:0}
+  .rwrap{padding:12px 14px 14px}
+  .rhead{font-size:12px;color:var(--ink-2);margin-bottom:8px}
+  .rhead b{color:var(--ink)}
+  .rlist{display:grid;gap:5px}
+  .r{display:flex;justify-content:space-between;gap:12px;font-size:12.5px;color:var(--ink-2);
+    padding:5px 8px;background:var(--surface);border:1px solid var(--hair);border-radius:6px}
+  .r .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .r .pr{white-space:nowrap;color:var(--ink);font-variant-numeric:tabular-nums}
+  .rnote{font-size:11.5px;color:var(--muted);margin-top:8px}
+
+  details{margin-top:30px;border-top:1px solid var(--hair);padding-top:14px}
+  summary{cursor:pointer;color:var(--ink-2);font-size:13px;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary:before{content:"▸ ";color:var(--muted)}
+  details[open] summary:before{content:"▾ "}
+  details p{color:var(--muted);font-size:12.5px;line-height:1.6}
+  details b{color:var(--ink-2)}
+  code{background:var(--surface-2);padding:1px 5px;border-radius:4px;font-size:12px}
+  @media(max-width:640px){h1{font-size:22px}.q .big{font-size:28px}th,td{padding:8px 6px}}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<header>
-  <h1><span>Gaskiya</span> — Nigerian price index</h1>
-  <p class="tag">"Gaskiya ta fi kwabo" — truth is worth more than money. Independent, verifiable, updated daily.</p>
-  <p class="stamp" id="stamp">Loading…</p>
-</header>
+<h1><span>Gaskiya</span> — what things cost in Nigeria</h1>
+<p class="sub">Updated every morning. Every number shows where it came from.</p>
+<p class="stamp" id="stamp">Loading…</p>
 
-<div class="banner" id="scope">
-  Every number here is a <b>retail asking price</b> collected from named public sources and timestamped.
-  Read the geography before the price.
-</div>
+<div class="three" id="three"></div>
 
-<h2>The dollar</h2>
-<div class="kpis" id="fxkpis"></div>
-<figure style="margin-top:12px">
-  <figcaption><b>The gap</b> — how far the licensed-exchange dollar sits above the official rate</figcaption>
-  <div id="fxchart"></div>
-</figure>
-<p class="note" id="fxnote"></p>
-
-<h2>Fuel · national averages</h2>
-<div class="kpis" id="fuelkpis"></div>
-<p class="note" id="fuelnote"></p>
-
-<h2>Today</h2>
-<div class="kpis" id="kpis"></div>
-
-<h2>Basket index</h2>
-<figure>
-  <figcaption><b>Gaskiya basket</b> — unweighted mean of price relatives, first observed day = 100</figcaption>
-  <div id="chart"></div>
-</figure>
-
-<h2>Items</h2>
+<h2>Prices today</h2>
+<p class="hint">Tap any row to see the actual listings behind the price.</p>
 <div id="tableWrap"></div>
 
-<h2>Against the official numbers</h2>
-<div id="official"></div>
-
-<footer>
-  <p><b>Method.</b> Each item's daily figure is the <b>median unit price</b> of every matched product that day —
-     not an average, so one mispriced listing can't move the line. <code>n</code> is how many products backed it.</p>
-  <p><b>Official figures</b> on this page are reproduced from the National Bureau of Statistics
-     (<a href="https://nigerianstat.gov.ng/">nigerianstat.gov.ng</a>) and credited to them. Gaskiya
-     does not restate, adjust or reinterpret them.</p>
-  <p><b>Tiers.</b> <b>Tier A</b> is scraped live from a named public source, with the URL as the receipt —
-     every basket item, and the licensed-exchange dollar. <b>Tier B</b> is a published institutional figure,
-     cited with its source — the official exchange rate. <b>Tier C</b> (human market reports) is not on this
-     page yet, and will never be mixed silently into the others.</p>
-  <p><b>Raw data.</b> Every day's rows are committed unmodified to
-     <a href="https://github.com/richardowoyemi/Gaskiya/tree/main/data/raw">the public archive</a> —
-     append-only, timestamped, and never edited after the fact. Check our arithmetic.</p>
-  <p>Public data free forever with attribution. Commercial redistribution reserved.</p>
-</footer>
+<details>
+  <summary>How these numbers are made</summary>
+  <p><b>Each price is a median</b>, not an average — one mispriced listing can't move it.
+     <code>Listings</code> is how many it came from, and you can open any row to see them.</p>
+  <p><b>We price the staple pack, not the sachet.</b> Where pack sizes vary, the larger half is
+     used — a bag of rice, not a 500g pouch. Listings outside a published plausibility range are
+     rejected before the median is taken, and the number rejected is shown rather than hidden.</p>
+  <p><b>Tiers.</b> <b>Tier A</b> is scraped live from a named public source, with the URL as the
+     receipt. <b>Tier B</b> is an official published figure, credited to whoever published it.
+     <b>Tier C</b> — human reports from markets the internet cannot see — is not on this page yet,
+     and will never be blended silently into the others.</p>
+  <p><b>Coverage.</b> Grocery prices here are Lagos online retail, which sits above open-market
+     prices. That is a real limitation, stated on purpose rather than buried.</p>
+  <p><b>Raw data.</b> Every day's rows go unmodified into
+     <a href="https://github.com/richardowoyemi/Gaskiya/tree/main/data/raw">a public archive</a> —
+     append-only, timestamped, never edited after the fact. Official figures are reproduced from the
+     <a href="https://nigerianstat.gov.ng/">National Bureau of Statistics</a> and credited to them.
+     Public data free forever with attribution.</p>
+</details>
 </div>
 
-<div class="tt" id="tt"></div>
-
 <script>
-const NGN = n => '₦' + Number(n).toLocaleString('en-NG', {maximumFractionDigits: n < 100 ? 2 : 0});
 const el = id => document.getElementById(id);
-const esc = s => String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const money = (n, dp) => '₦' + Number(n).toLocaleString('en-NG', {maximumFractionDigits: dp == null ? 0 : dp});
 const LABEL = {
   rice:'Rice', beans_brown:'Beans (brown)', garri:'Garri', semovita:'Semovita',
   poundo_yam:'Poundo / yam flour', spaghetti:'Spaghetti & pasta', noodles:'Noodles',
@@ -144,259 +127,164 @@ const LABEL = {
   soap_bar:'Bar soap', toilet_roll:'Toilet roll', sanitary_pad:'Sanitary pads',
   diapers:'Diapers', baby_formula:'Baby formula'
 };
-const UNIT = {kg:'per kg', l:'per litre', piece:'per piece'};
-const SCOPE = {
-  city_online:'Lagos · online retail', national:'National',
-  state_survey:'State survey', market:'Named market'
-};
+const UNIT = {kg:'per kg', l:'per litre', piece:'each'};
+const SRC = {supermart:'Supermart.ng', healthplus:'HealthPlus', nbs:'NBS', luno:'Luno',
+             'exchangerate-api':'ExchangeRate-API'};
 
-let DATA = null, sortKey = 'name', sortDir = 1;
+let DATA = null, sortKey = 'name', sortDir = 1, openRow = null;
 
 fetch('data.json?' + Date.now())
   .then(r => { if (!r.ok) throw new Error('data.json ' + r.status); return r.json(); })
   .then(d => { DATA = d; render(); })
-  .catch(e => {
-    el('stamp').textContent = 'Could not load data.json — ' + e.message;
-    el('chart').innerHTML = '<div class="empty">No data yet.</div>';
-  });
+  .catch(e => { el('stamp').textContent = 'Could not load data — ' + e.message; });
 
-function render() {
-  const {meta, days, items, index} = DATA;
-  const today = days[days.length - 1], prev = days.length > 1 ? days[days.length - 2] : null;
+const OFF = k => (DATA.official || []).filter(o => o.key === k)[0];
+const lastOf = o => (o && o.points && o.points.length) ? o.points[o.points.length - 1].v : null;
 
-  el('stamp').innerHTML = 'Last run <b>' + esc(today) + '</b> · generated ' +
-    esc(String(meta.generated).replace('T', ' ').slice(0, 16)) + ' Lagos time';
-
-  const scopes = [...new Set(items.map(i => SCOPE[i.geo_scope] || i.geo_scope))];
-  el('scope').innerHTML = 'Every number here is a <b>retail asking price</b> from a named public source, timestamped. ' +
-    'Current coverage: <b>' + esc(scopes.join(', ')) + '</b> — online listings, which typically sit above open-market ' +
-    'prices. This is not yet a national figure, and it is labelled that way on purpose.';
-
-  const obs = items.reduce((s, it) => {
-    const p = it.points.find(p => p.d === today); return s + (p ? p.n : 0);
-  }, 0);
-  const idxNow = index.length ? index[index.length - 1] : null;
-  const idxPrev = index.length > 1 ? index[index.length - 2] : null;
-
-  el('kpis').innerHTML = [
-    tile('Basket index', idxNow ? idxNow.v.toFixed(1) : '—',
-         idxPrev ? deltaHTML(idxNow.v, idxPrev.v) + ' vs previous run' : 'base = 100 on first day'),
-    tile('Items tracked', items.length, 'staples & household goods'),
-    tile('Observations today', obs.toLocaleString(), 'individual product prices'),
-    tile('Days of history', days.length, days.length === 1 ? 'day one' : 'and counting'),
-  ].join('');
-
-  renderFx(DATA.fx || []);
-  renderOfficial(DATA.official || [], days);
-  drawChart(index);
-  drawTable(items, today, prev);
-}
-
-const tile = (k, v, s) =>
-  '<div class="tile"><div class="k">' + k + '</div><div class="v">' + v + '</div><div class="s">' + s + '</div></div>';
-
-// Arrow + signed number are MANDATORY, never colour alone:
-// the red/green pair fails colour-blind separation (ΔE 4.1 deutan).
-function deltaHTML(now, before) {
-  if (before == null || !isFinite(before) || before === 0) return '<span class="flat">—</span>';
+// Arrow + signed number always: red/green alone fails colour-blind separation.
+function delta(now, before) {
+  if (before == null || !before) return '<span class="flat">—</span>';
   const pct = (now - before) / before * 100;
   if (Math.abs(pct) < 0.05) return '<span class="flat">▬ no change</span>';
   const up = pct > 0;
   return '<span class="delta ' + (up ? 'up' : 'down') + '">' +
-         (up ? '▲' : '▼') + ' ' + (up ? '+' : '') + pct.toFixed(1) + '%</span>';
+         (up ? '▲ +' : '▼ ') + pct.toFixed(1) + '%</span>';
 }
 
-function drawChart(index) { plot(el('chart'), index, 'v', v => v.toFixed(1), 'index', 'The line appears once there are two days of data.'); }
-
-function plot(box, series, key, fmt, unitWord, emptyMsg) {
-  const index = (series || []).map(p => ({d: p.d, v: p[key], items: p.items}));
-  if (!index.length || index.length < 2) {
-    box.innerHTML = '<div class="empty">' + emptyMsg +
-      (index.length ? ' Day one is on the board — ' + fmt(index[0].v) + '.' : '') + '</div>';
-    return;
-  }
-  const W = 900, H = 260, P = {t: 16, r: 18, b: 30, l: 52};
-  const xs = i => P.l + i * (W - P.l - P.r) / Math.max(1, index.length - 1);
-  const vals = index.map(p => p.v);
-  let lo = Math.min(...vals), hi = Math.max(...vals);
-  const pad = (hi - lo) * 0.25 || 1; lo -= pad; hi += pad;
-  const ys = v => P.t + (hi - v) / (hi - lo) * (H - P.t - P.b);
-
-  const ticks = 4, gl = [], lb = [];
-  const span = hi - lo;                       // ticks must not collapse on a narrow range
-  const dp = span >= 20 ? 0 : span >= 4 ? 1 : 2;
-  for (let i = 0; i <= ticks; i++) {
-    const v = lo + span * i / ticks, y = ys(v);
-    gl.push('<line x1="' + P.l + '" y1="' + y + '" x2="' + (W - P.r) + '" y2="' + y + '" stroke="var(--grid)" stroke-width="1"/>');
-    lb.push('<text x="' + (P.l - 10) + '" y="' + (y + 4) + '" fill="var(--muted)" font-size="11" text-anchor="end">' + v.toFixed(dp) + '</text>');
-  }
-  const path = index.map((p, i) => (i ? 'L' : 'M') + xs(i) + ' ' + ys(p.v)).join(' ');
-  const dots = index.map((p, i) =>
-    '<circle cx="' + xs(i) + '" cy="' + ys(p.v) + '" r="4.5" fill="var(--series-1)" stroke="var(--surface)" stroke-width="2"/>').join('');
-  const every = Math.ceil(index.length / 7);
-  const xlb = index.map((p, i) => (i % every === 0 || i === index.length - 1)
-    ? '<text x="' + xs(i) + '" y="' + (H - 8) + '" fill="var(--muted)" font-size="11" text-anchor="middle">' + p.d.slice(5) + '</text>' : '').join('');
-  const hit = index.map((p, i) =>
-    '<rect x="' + (xs(i) - 18) + '" y="0" width="36" height="' + H + '" fill="transparent" ' +
-    'data-i="' + i + '" data-d="' + p.d + '" data-v="' + p.v + '" data-n="' + p.items + '"/>').join('');
-
-  box.innerHTML = '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Gaskiya basket index over time">' +
-    gl.join('') + lb.join('') + xlb +
-    '<line x1="' + P.l + '" y1="' + (H - P.b) + '" x2="' + (W - P.r) + '" y2="' + (H - P.b) + '" stroke="var(--axis)"/>' +
-    '<line id="cross" x1="0" y1="' + P.t + '" x2="0" y2="' + (H - P.b) + '" stroke="var(--axis)" stroke-width="1" opacity="0"/>' +
-    '<path d="' + path + '" fill="none" stroke="var(--series-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
-    dots + hit + '</svg>' +
-    '<noscript></noscript>';
-
-  const tt = el('tt'), cross = box.querySelector('#cross');
-  box.querySelectorAll('rect[data-i]').forEach(r => {
-    r.addEventListener('mousemove', ev => {
-      tt.innerHTML = '<div class="d">' + r.dataset.d + '</div><b>' +
-        fmt(Number(r.dataset.v)) + '</b> ' + unitWord +
-        (r.dataset.n && r.dataset.n !== 'undefined' ? ' · ' + r.dataset.n + ' items' : '');
-      tt.style.opacity = 1;
-      tt.style.left = Math.min(ev.clientX + 14, innerWidth - 160) + 'px';
-      tt.style.top = (ev.clientY - 46) + 'px';
-      const x = xs(+r.dataset.i);
-      cross.setAttribute('x1', x); cross.setAttribute('x2', x); cross.setAttribute('opacity', 1);
-    });
-    r.addEventListener('mouseleave', () => { tt.style.opacity = 0; cross.setAttribute('opacity', 0); });
-  });
+function render() {
+  const {days, items} = DATA;
+  const today = days[days.length - 1], prev = days.length > 1 ? days[days.length - 2] : null;
+  el('stamp').innerHTML = esc(today) + ' · ' + items.length + ' items priced this morning';
+  renderThree();
+  drawTable(items, today, prev);
 }
 
+const card = (lab, big, sm, vs, src) =>
+  '<div class="q"><div class="lab">' + esc(lab) + '</div><div class="big">' + big + '</div>' +
+  '<div class="sm">' + sm + '</div><div class="vs">' + vs + '</div>' +
+  '<div class="src"><span class="tierdot"></span>' + esc(src) + '</div></div>';
 
-function renderFx(fx) {
-  if (!fx.length) {
-    el('fxkpis').innerHTML = '<div class="tile"><div class="k">Dollar</div><div class="v">—</div>' +
-      '<div class="s">no FX reading yet</div></div>';
-    el('fxchart').innerHTML = '<div class="empty">No FX data yet.</div>';
-    return;
-  }
-  const now = fx[fx.length - 1], was = fx.length > 1 ? fx[fx.length - 2] : null;
-  el('fxkpis').innerHTML = [
-    tile('Official rate', '₦' + now.official.toLocaleString('en-NG', {maximumFractionDigits: 2}),
-         was ? deltaHTML(now.official, was.official) + ' vs previous' : 'per US$1 · published daily'),
-    tile('Licensed-exchange rate', '₦' + now.usdt.toLocaleString('en-NG', {maximumFractionDigits: 2}),
-         was ? deltaHTML(now.usdt, was.usdt) + ' vs previous' : 'USDT/NGN mid · live feed'),
-    tile('The gap', now.spread_pct.toFixed(2) + '%',
-         '₦' + (now.usdt - now.official).toLocaleString('en-NG', {maximumFractionDigits: 2}) + ' per dollar'),
-  ].join('');
-
-  plot(el('fxchart'), fx, 'spread_pct', v => v.toFixed(2) + '%', 'gap',
-       'The gap is charted once there are two days of readings.');
-
-  el('fxnote').innerHTML =
-    'Official rate from a published daily aggregate (<b>Tier B</b>). Licensed-exchange rate is the ' +
-    'USDT/NGN mid on Luno, a regulated exchange (<b>Tier A</b>) — widely used as a proxy for what a ' +
-    'dollar actually costs, and often called the parallel market rate. Both sources are named and ' +
-    'linkable. Gaskiya never crowdsources a currency quote.';
+function refPeriod() {
+  const lab = (OFF('nbs_inflation_food') || {}).label || '';
+  const m = lab.match(/reference period\s+(.+)$/i);
+  return m ? m[1].trim() : null;
 }
 
+/* The three questions Nigerians actually check, each with the official figure
+   sitting BESIDE it — a comparison in a separate section is not a comparison. */
+function renderThree() {
+  const cards = [];
 
-const OFF = k => (DATA.official || []).filter(o => o.key === k)[0];
-const latest = o => (o && o.points.length) ? o.points[o.points.length - 1].v : null;
+  const fx = DATA.fx || [];
+  if (fx.length) {
+    const n = fx[fx.length - 1], w = fx.length > 1 ? fx[fx.length - 2] : null;
+    cards.push(card('The dollar', money(n.usdt, 2),
+      w ? delta(n.usdt, w.usdt) + ' · licensed exchange' : 'licensed exchange · USDT/NGN mid',
+      'Official rate <b>' + money(n.official, 2) + '</b> — a gap of <b>' +
+        n.spread_pct.toFixed(2) + '%</b>, or ' + money(n.usdt - n.official, 2) + ' on every dollar.',
+      'Luno live feed + published official rate'));
+  }
 
-function renderOfficial(official, days) {
-  // ── fuel: four national averages, immediately useful, published by NBS ──
-  const fuels = [
-    ['nbs_fuel_pms', 'Petrol (PMS)', 'per litre'],
-    ['nbs_fuel_ago', 'Diesel (AGO)', 'per litre'],
-    ['nbs_fuel_nhk', 'Kerosene', 'per litre'],
-    ['nbs_fuel_lpg5kg', 'Cooking gas', '5kg refill'],
-  ];
-  const haveFuel = fuels.some(f => latest(OFF(f[0])) != null);
-  el('fuelkpis').innerHTML = haveFuel
-    ? fuels.map(([k, name, unit]) => {
-        const o = OFF(k), v = latest(o);
-        const prev = o && o.points.length > 1 ? o.points[o.points.length - 2].v : null;
-        return tile(name, v == null ? '—' : '₦' + v.toLocaleString('en-NG', {maximumFractionDigits: 2}),
-                    prev != null ? deltaHTML(v, prev) + ' · ' + unit : unit);
-      }).join('')
-    : '<div class="tile"><div class="k">Fuel</div><div class="v">—</div><div class="s">no reading yet</div></div>';
-  el('fuelnote').innerHTML = haveFuel
-    ? 'National average retail prices published by the <b>National Bureau of Statistics</b> (<b>Tier B</b>). ' +
-      'These are country-wide averages, not Lagos prices, and they move slower than the pump does.'
-    : '';
+  const pv = lastOf(OFF('nbs_fuel_pms'));
+  if (pv != null) {
+    const ago = lastOf(OFF('nbs_fuel_ago')), gas = lastOf(OFF('nbs_fuel_lpg5kg'));
+    cards.push(card('Petrol', money(pv, 2), 'per litre · national average',
+      'Diesel <b>' + (ago ? money(ago, 2) : '—') + '</b> a litre · cooking gas <b>' +
+        (gas ? money(gas, 2) : '—') + '</b> per 5kg refill.',
+      'National Bureau of Statistics'));
+  }
 
-  // ── the yardstick: official inflation, and how old it is ──
-  const inf = [
-    ['nbs_inflation_headline', 'All-items inflation'],
-    ['nbs_inflation_food', 'Food inflation'],
-    ['nbs_inflation_core', 'Core inflation'],
-  ];
-  const any = inf.some(i => latest(OFF(i[0])) != null);
-  if (!any) { el('official').innerHTML = '<div class="empty">No official figures yet.</div>'; return; }
+  const foodInf = lastOf(OFF('nbs_inflation_food')), ref = refPeriod(), idx = DATA.index || [];
+  let big = '—', sm = 'needs a second morning of readings';
+  if (idx.length > 1) {
+    const a = idx[idx.length - 2].v, b = idx[idx.length - 1].v, pct = (b - a) / a * 100;
+    big = (pct >= 0 ? '+' : '') + pct.toFixed(1) + '%';
+    sm = 'our food basket, since yesterday';
+  } else if (idx.length === 1) { big = 'Day 1'; sm = 'tracking started this morning'; }
+  cards.push(card('Food', big, sm,
+    foodInf != null
+      ? 'Official food inflation <b>' + foodInf.toFixed(2) + '%</b> year-on-year' +
+        (ref ? ', for <b>' + esc(ref) + '</b> — published weeks after the prices it describes.' : '.')
+      : 'Official comparison not available.',
+    'named retailers, checked every morning'));
 
-  const ref = (() => {
-    const lab = (OFF('nbs_inflation_headline') || {}).label || '';
-    const m = lab.match(/reference period\s+(.+)$/i);
-    return m ? m[1].trim() : null;
-  })();
-
-  el('official').innerHTML =
-    '<div class="offgrid">' +
-    inf.map(([k, name]) => {
-      const v = latest(OFF(k));
-      return tile(name, v == null ? '—' : v.toFixed(2) + '%',
-                  ref ? 'year-on-year · ' + ref : 'year-on-year');
-    }).join('') +
-    '</div>' +
-    '<div class="lag">' +
-      (ref
-        ? 'Nigeria\'s official inflation figure is for <b>' + esc(ref) + '</b>. Today is <b>' +
-          esc(days[days.length - 1]) + '</b>. Official statistics are careful, national and thorough — ' +
-          'and by the time they are published, the prices they describe are weeks old. ' +
-          'Gaskiya does not replace them. It fills the gap between them: ' +
-          '<b>' + days.length + (days.length === 1 ? ' day' : ' days') + '</b> of daily readings so far, ' +
-          'collected the morning they were published, each with a link back to where it came from.'
-        : 'Official figures are published with a lag. Gaskiya fills the gap between them with daily readings.') +
-    '</div>';
+  el('three').innerHTML = cards.join('');
 }
 
 function drawTable(items, today, prev) {
   const rows = items.map(it => {
-    const t = it.points.find(p => p.d === today);
-    const y = prev ? it.points.find(p => p.d === prev) : null;
+    const t = it.points.filter(p => p.d === today)[0];
+    const y = prev ? it.points.filter(p => p.d === prev)[0] : null;
     return {
       key: it.key, name: LABEL[it.key] || it.key, unit: UNIT[it.unit] || it.unit,
-      price: t ? t.p : null, n: t ? t.n : 0,
+      price: t ? t.p : null, n: t ? t.n : 0, rejected: t ? (t.rejected || 0) : 0,
+      method: t ? t.method : '', prev: y ? y.p : null,
       pct: (t && y && y.p) ? (t.p - y.p) / y.p * 100 : null,
-      prev: y ? y.p : null, scope: SCOPE[it.geo_scope] || it.geo_scope,
+      source: SRC[it.source] || it.source || '', receipts: it.receipts || [],
     };
   });
   const cmp = {
     name: (a, b) => a.name.localeCompare(b.name),
-    price: (a, b) => (a.price ?? -1) - (b.price ?? -1),
+    price: (a, b) => (a.price == null ? -1 : a.price) - (b.price == null ? -1 : b.price),
     n: (a, b) => a.n - b.n,
-    pct: (a, b) => (a.pct ?? -1e9) - (b.pct ?? -1e9),
+    pct: (a, b) => (a.pct == null ? -1e9 : a.pct) - (b.pct == null ? -1e9 : b.pct),
   }[sortKey];
   rows.sort((a, b) => cmp(a, b) * sortDir);
-
   const arrow = k => sortKey === k ? (sortDir > 0 ? ' ↑' : ' ↓') : '';
+
   el('tableWrap').innerHTML =
     '<table><thead><tr>' +
       '<th data-k="name">Item' + arrow('name') + '</th>' +
-      '<th data-k="price">Median price' + arrow('price') + '</th>' +
-      '<th data-k="n">n' + arrow('n') + '</th>' +
+      '<th data-k="price">Price' + arrow('price') + '</th>' +
+      '<th data-k="n">Listings' + arrow('n') + '</th>' +
       '<th data-k="pct">Change' + arrow('pct') + '</th>' +
     '</tr></thead><tbody>' +
-    rows.map(r =>
-      '<tr><td class="item">' + esc(r.name) + '<div class="unit">' + esc(r.unit) + ' · ' + esc(r.scope) + '</div></td>' +
-      '<td>' + (r.price == null ? '—' : NGN(r.price)) + '</td>' +
-      '<td>' + (r.n || '—') + '</td>' +
-      '<td>' + (r.pct == null ? '<span class="flat">—</span>' : deltaHTML(r.price, r.prev)) + '</td></tr>'
+    rows.map((r, i) =>
+      '<tr class="item-row" data-i="' + i + '">' +
+        '<td class="item">' + esc(r.name) + '<div class="meta">' + esc(r.unit) +
+          (r.source ? ' · ' + esc(r.source) : '') + '<span class="chev">▸ receipts</span></div></td>' +
+        '<td>' + (r.price == null ? '—' : money(r.price, r.price < 100 ? 2 : 0)) + '</td>' +
+        '<td>' + (r.n || '—') + '</td>' +
+        '<td>' + (r.pct == null ? '<span class="flat">—</span>' : delta(r.price, r.prev)) + '</td>' +
+      '</tr>' +
+      '<tr class="receipts" id="rc' + i + '" style="display:none"><td colspan="4">' +
+        receiptsHtml(r) + '</td></tr>'
     ).join('') + '</tbody></table>' +
-    (prev ? '' : '<p style="color:var(--muted);font-size:12.5px;margin:12px 2px 0">' +
-      'Change compares each item against the previous run — it fills in from the second day onward.</p>');
+    (prev ? '' : '<p class="hint" style="margin-top:12px">Change fills in from tomorrow morning.</p>');
 
   el('tableWrap').querySelectorAll('th[data-k]').forEach(th => {
     th.onclick = () => {
       const k = th.dataset.k;
       sortDir = (sortKey === k) ? -sortDir : (k === 'name' ? 1 : -1);
-      sortKey = k;
-      drawTable(items, today, prev);
+      sortKey = k; openRow = null; drawTable(items, today, prev);
     };
   });
+  el('tableWrap').querySelectorAll('tr.item-row').forEach(tr => {
+    tr.onclick = () => {
+      const i = tr.dataset.i, row = el('rc' + i);
+      const show = row.style.display === 'none';
+      if (openRow != null && openRow !== i && el('rc' + openRow)) el('rc' + openRow).style.display = 'none';
+      row.style.display = show ? '' : 'none';
+      openRow = show ? i : null;
+    };
+  });
+}
+
+function receiptsHtml(r) {
+  if (!r.receipts.length) return '<div class="rwrap"><div class="rnote">No listings recorded.</div></div>';
+  return '<div class="rwrap">' +
+    '<div class="rhead">Median of <b>' + r.n + '</b> listing' + (r.n === 1 ? '' : 's') +
+      ' from ' + esc(r.source) + ' this morning' +
+      (r.method === 'staple_pack' ? ', using the larger pack sizes' : '') + '.</div>' +
+    '<div class="rlist">' +
+      r.receipts.map(x =>
+        '<div class="r"><span class="nm">' + esc(x.name) + '</span>' +
+        '<span class="pr">' + money(x.price, 0) + ' → ' + money(x.unit, x.unit < 100 ? 2 : 0) +
+        ' ' + esc(r.unit) + '</span></div>').join('') +
+    '</div>' +
+    (r.rejected ? '<div class="rnote">' + r.rejected + ' listing' + (r.rejected === 1 ? '' : 's') +
+      ' rejected as implausible before the median was taken.</div>' : '') +
+    '</div>';
 }
 </script>
 </body>
