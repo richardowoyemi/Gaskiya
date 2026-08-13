@@ -1,0 +1,56 @@
+# Gaskiya dead-man's switch.
+#
+# This is the ONLY check that still works when the pipeline is dead. Everything
+# else — the Telegram ping, the coverage floor, the sanity check — depends on
+# Apps Script running. If Google revokes auth, hits a quota, or simply stops,
+# there is no red alert: there is silence, and silence is the failure humans
+# miss. This job runs on GitHub's clock instead, reads the committed data, and
+# fails loudly if the archive has gone stale. A failed workflow emails the repo
+# owner automatically — no secrets, no bot, no dependency on the thing it watches.
+
+name: heartbeat
+
+on:
+  schedule:
+    - cron: '0 10 * * *'      # 11:00 Lagos — five hours after the 06:00 run
+  workflow_dispatch:           # and runnable by hand any time
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Is the archive still breathing?
+        run: |
+          python3 - <<'EOF'
+          import json, sys
+          from datetime import datetime, timezone
+
+          MAX_AGE_HOURS = 26        # one day plus slack for a late or slow run
+          MIN_ITEMS     = 20        # a collapse in coverage is also a failure
+
+          with open('docs/data.json') as f:
+              d = json.load(f)
+
+          generated = d['meta']['generated']
+          age = (datetime.now(timezone.utc) - datetime.fromisoformat(generated)).total_seconds() / 3600
+          items = len(d.get('items', []))
+          fx    = len(d.get('fx', []))
+
+          print(f"generated : {generated}")
+          print(f"age       : {age:.1f}h  (limit {MAX_AGE_HOURS}h)")
+          print(f"items     : {items}     (floor {MIN_ITEMS})")
+          print(f"fx days   : {fx}")
+
+          fail = []
+          if age > MAX_AGE_HOURS:
+              fail.append(f"STALE: data.json is {age:.1f}h old. The daily run has not published.")
+          if items < MIN_ITEMS:
+              fail.append(f"THIN: only {items} items published, floor is {MIN_ITEMS}.")
+
+          if fail:
+              print("\n".join("::error::" + m for m in fail))
+              sys.exit(1)
+          print("\nGaskiya is alive.")
+          EOF
