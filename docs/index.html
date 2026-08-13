@@ -39,6 +39,10 @@
   figcaption{font-size:13px;color:var(--ink-2);margin-bottom:4px}
   figcaption b{color:var(--ink);font-weight:600}
   .note{color:var(--muted);font-size:12.5px;margin:10px 2px 0}
+  .lag{background:var(--surface);border:1px solid var(--hair);border-left:3px solid var(--series-1);
+    border-radius:8px;padding:14px 16px;margin:12px 0 0;font-size:13.5px;color:var(--ink-2)}
+  .lag b{color:var(--ink)}
+  .offgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
   .empty{color:var(--muted);font-size:13.5px;padding:26px 4px;text-align:center}
   svg{display:block;width:100%;height:auto;overflow:visible}
   .tt{position:fixed;pointer-events:none;background:var(--surface-2);border:1px solid var(--hair);
@@ -85,6 +89,10 @@
 </figure>
 <p class="note" id="fxnote"></p>
 
+<h2>Fuel · national averages</h2>
+<div class="kpis" id="fuelkpis"></div>
+<p class="note" id="fuelnote"></p>
+
 <h2>Today</h2>
 <div class="kpis" id="kpis"></div>
 
@@ -97,9 +105,15 @@
 <h2>Items</h2>
 <div id="tableWrap"></div>
 
+<h2>Against the official numbers</h2>
+<div id="official"></div>
+
 <footer>
   <p><b>Method.</b> Each item's daily figure is the <b>median unit price</b> of every matched product that day —
      not an average, so one mispriced listing can't move the line. <code>n</code> is how many products backed it.</p>
+  <p><b>Official figures</b> on this page are reproduced from the National Bureau of Statistics
+     (<a href="https://nigerianstat.gov.ng/">nigerianstat.gov.ng</a>) and credited to them. Gaskiya
+     does not restate, adjust or reinterpret them.</p>
   <p><b>Tiers.</b> <b>Tier A</b> is scraped live from a named public source, with the URL as the receipt —
      every basket item, and the licensed-exchange dollar. <b>Tier B</b> is a published institutional figure,
      cited with its source — the official exchange rate. <b>Tier C</b> (human market reports) is not on this
@@ -173,6 +187,7 @@ function render() {
   ].join('');
 
   renderFx(DATA.fx || []);
+  renderOfficial(DATA.official || [], days);
   drawChart(index);
   drawTable(items, today, prev);
 }
@@ -275,6 +290,67 @@ function renderFx(fx) {
     'USDT/NGN mid on Luno, a regulated exchange (<b>Tier A</b>) — widely used as a proxy for what a ' +
     'dollar actually costs, and often called the parallel market rate. Both sources are named and ' +
     'linkable. Gaskiya never crowdsources a currency quote.';
+}
+
+
+const OFF = k => (DATA.official || []).filter(o => o.key === k)[0];
+const latest = o => (o && o.points.length) ? o.points[o.points.length - 1].v : null;
+
+function renderOfficial(official, days) {
+  // ── fuel: four national averages, immediately useful, published by NBS ──
+  const fuels = [
+    ['nbs_fuel_pms', 'Petrol (PMS)', 'per litre'],
+    ['nbs_fuel_ago', 'Diesel (AGO)', 'per litre'],
+    ['nbs_fuel_nhk', 'Kerosene', 'per litre'],
+    ['nbs_fuel_lpg5kg', 'Cooking gas', '5kg refill'],
+  ];
+  const haveFuel = fuels.some(f => latest(OFF(f[0])) != null);
+  el('fuelkpis').innerHTML = haveFuel
+    ? fuels.map(([k, name, unit]) => {
+        const o = OFF(k), v = latest(o);
+        const prev = o && o.points.length > 1 ? o.points[o.points.length - 2].v : null;
+        return tile(name, v == null ? '—' : '₦' + v.toLocaleString('en-NG', {maximumFractionDigits: 2}),
+                    prev != null ? deltaHTML(v, prev) + ' · ' + unit : unit);
+      }).join('')
+    : '<div class="tile"><div class="k">Fuel</div><div class="v">—</div><div class="s">no reading yet</div></div>';
+  el('fuelnote').innerHTML = haveFuel
+    ? 'National average retail prices published by the <b>National Bureau of Statistics</b> (<b>Tier B</b>). ' +
+      'These are country-wide averages, not Lagos prices, and they move slower than the pump does.'
+    : '';
+
+  // ── the yardstick: official inflation, and how old it is ──
+  const inf = [
+    ['nbs_inflation_headline', 'All-items inflation'],
+    ['nbs_inflation_food', 'Food inflation'],
+    ['nbs_inflation_core', 'Core inflation'],
+  ];
+  const any = inf.some(i => latest(OFF(i[0])) != null);
+  if (!any) { el('official').innerHTML = '<div class="empty">No official figures yet.</div>'; return; }
+
+  const ref = (() => {
+    const lab = (OFF('nbs_inflation_headline') || {}).label || '';
+    const m = lab.match(/reference period\s+(.+)$/i);
+    return m ? m[1].trim() : null;
+  })();
+
+  el('official').innerHTML =
+    '<div class="offgrid">' +
+    inf.map(([k, name]) => {
+      const v = latest(OFF(k));
+      return tile(name, v == null ? '—' : v.toFixed(2) + '%',
+                  ref ? 'year-on-year · ' + ref : 'year-on-year');
+    }).join('') +
+    '</div>' +
+    '<div class="lag">' +
+      (ref
+        ? 'Nigeria\'s official inflation figure is for <b>' + esc(ref) + '</b>. Today is <b>' +
+          esc(days[days.length - 1]) + '</b>. Official statistics are careful, national and thorough — ' +
+          'and by the time they are published, the prices they describe are weeks old. ' +
+          'Gaskiya does not replace them. It fills the gap between them: ' +
+          '<b>' + days.length + (days.length === 1 ? ' day' : ' days') + '</b> of daily readings so far, ' +
+          'collected the morning they were published, each with a link back to where it came from.'
+        : 'Official figures are published with a lag. Gaskiya fills the gap between them with daily readings.') +
+    '</div>';
 }
 
 function drawTable(items, today, prev) {
