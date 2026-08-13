@@ -1,8 +1,8 @@
 {
  "meta": {
   "project": "Gaskiya",
-  "version": "v0.6.4",
-  "generated": "2026-08-13T16:18:54+01:00",
+  "version": "v0.8.0",
+  "generated": "2026-08-13T16:50:41+01:00",
   "country": "NG",
   "sources": [
    {
@@ -30,7 +30,7 @@
     "base": "https://nigerianstat.gov.ng"
    }
   ],
-  "note": "Tier A retail asking prices. Unit prices are medians of matched products per day. Index is an unweighted mean of price relatives, base = first observed day = 100."
+  "note": "Tier A retail asking prices. Unit prices are medians of matched products per day. Index is an unweighted mean of price relatives, base = first observed day = 100. Basket cost is the reference basket v1.0 (household of 5, one week) priced at those medians. See METHODOLOGY.md."
  },
  "days": [
   "2026-08-13"
@@ -41,11 +41,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    4000,
+    40000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 3003.72,
-     "n": 24
+     "p": 9660,
+     "n": 7,
+     "rejected": 14,
+     "method": "staple_pack"
     }
    ]
   },
@@ -54,11 +60,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    700,
+    9000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 3645,
-     "n": 61
+     "p": 2509.72,
+     "n": 26,
+     "rejected": 17,
+     "method": "staple_pack"
     }
    ]
   },
@@ -67,11 +79,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    2000,
+    20000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 11026.31,
-     "n": 10
+     "p": 11266.67,
+     "n": 5,
+     "rejected": 1,
+     "method": "staple_pack"
     }
    ]
   },
@@ -80,11 +98,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    300,
+    6000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 700,
-     "n": 19
+     "p": 767.5,
+     "n": 16,
+     "rejected": 3,
+     "method": "all"
     }
    ]
   },
@@ -93,11 +117,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    800,
+    15000
+   ],
    "points": [
     {
      "d": "2026-08-13",
      "p": 1171.43,
-     "n": 3
+     "n": 3,
+     "rejected": 0,
+     "method": "all"
     }
    ]
   },
@@ -106,24 +136,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    2000,
+    15000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 6500,
-     "n": 201
-    }
-   ]
-  },
-  {
-   "key": "crayfish",
-   "unit": "kg",
-   "state": "LA",
-   "geo_scope": "city_online",
-   "points": [
-    {
-     "d": "2026-08-13",
-     "p": 182.5,
-     "n": 1
+     "p": 3857.97,
+     "n": 46,
+     "rejected": 110,
+     "method": "staple_pack"
     }
    ]
   },
@@ -132,11 +155,17 @@
    "unit": "l",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    500,
+    8000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 2742.29,
-     "n": 75
+     "p": 2542.56,
+     "n": 32,
+     "rejected": 12,
+     "method": "staple_pack"
     }
    ]
   },
@@ -145,11 +174,17 @@
    "unit": "piece",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    100,
+    3000
+   ],
    "points": [
     {
      "d": "2026-08-13",
      "p": 1481.25,
-     "n": 2
+     "n": 2,
+     "rejected": 0,
+     "method": "all"
     }
    ]
   },
@@ -158,11 +193,17 @@
    "unit": "piece",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    80,
+    600
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 114.17,
-     "n": 17
+     "p": 275,
+     "n": 7,
+     "rejected": 10,
+     "method": "all"
     }
    ]
   },
@@ -171,11 +212,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    2000,
+    20000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 7040,
-     "n": 26
+     "p": 7677.42,
+     "n": 11,
+     "rejected": 11,
+     "method": "staple_pack"
     }
    ]
   },
@@ -184,11 +231,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    150,
+    2500
+   ],
    "points": [
     {
      "d": "2026-08-13",
      "p": 395,
-     "n": 5
+     "n": 5,
+     "rejected": 0,
+     "method": "staple_pack"
     }
    ]
   },
@@ -197,11 +250,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    700,
+    9000
+   ],
    "points": [
     {
      "d": "2026-08-13",
      "p": 1475,
-     "n": 1
+     "n": 1,
+     "rejected": 0,
+     "method": "all"
     }
    ]
   },
@@ -210,11 +269,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    3000,
+    25000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 6923.61,
-     "n": 50
+     "p": 11014.17,
+     "n": 18,
+     "rejected": 17,
+     "method": "staple_pack"
     }
    ]
   },
@@ -223,11 +288,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    800,
+    15000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 3875,
-     "n": 22
+     "p": 2025,
+     "n": 10,
+     "rejected": 5,
+     "method": "staple_pack"
     }
    ]
   },
@@ -236,11 +307,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    1500,
+    25000
+   ],
    "points": [
     {
      "d": "2026-08-13",
      "p": 11300,
-     "n": 1
+     "n": 1,
+     "rejected": 0,
+     "method": "all"
     }
    ]
   },
@@ -249,24 +326,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    300,
+    6000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 14206.67,
-     "n": 28
-    }
-   ]
-  },
-  {
-   "key": "palm_oil",
-   "unit": "l",
-   "state": "LA",
-   "geo_scope": "city_online",
-   "points": [
-    {
-     "d": "2026-08-13",
-     "p": 730,
-     "n": 3
+     "p": 3104.29,
+     "n": 4,
+     "rejected": 20,
+     "method": "staple_pack"
     }
    ]
   },
@@ -275,11 +345,17 @@
    "unit": "l",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    500,
+    9000
+   ],
    "points": [
     {
      "d": "2026-08-13",
      "p": 2147.06,
-     "n": 1
+     "n": 1,
+     "rejected": 0,
+     "method": "all"
     }
    ]
   },
@@ -288,11 +364,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    500,
+    9000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 4361.25,
-     "n": 14
+     "p": 4162.5,
+     "n": 7,
+     "rejected": 1,
+     "method": "staple_pack"
     }
    ]
   },
@@ -301,11 +383,17 @@
    "unit": "l",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    700,
+    7000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 3916.67,
-     "n": 145
+     "p": 2312.5,
+     "n": 37,
+     "rejected": 74,
+     "method": "staple_pack"
     }
    ]
   },
@@ -314,11 +402,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    150,
+    3000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 9148.52,
-     "n": 52
+     "p": 1626.67,
+     "n": 10,
+     "rejected": 35,
+     "method": "staple_pack"
     }
    ]
   },
@@ -327,11 +421,17 @@
    "unit": "piece",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    300,
+    6000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 197.14,
-     "n": 39
+     "p": 1110.91,
+     "n": 5,
+     "rejected": 34,
+     "method": "all"
     }
    ]
   },
@@ -340,11 +440,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    400,
+    6000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 484,
-     "n": 6
+     "p": 463,
+     "n": 3,
+     "rejected": 1,
+     "method": "staple_pack"
     }
    ]
   },
@@ -353,11 +459,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    200,
+    3000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 1546.61,
-     "n": 72
+     "p": 980,
+     "n": 21,
+     "rejected": 35,
+     "method": "staple_pack"
     }
    ]
   },
@@ -366,11 +478,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    400,
+    6000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 1618.7,
-     "n": 68
+     "p": 730,
+     "n": 25,
+     "rejected": 19,
+     "method": "staple_pack"
     }
    ]
   },
@@ -379,11 +497,17 @@
    "unit": "l",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    700,
+    6000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 5940,
-     "n": 64
+     "p": 1840,
+     "n": 10,
+     "rejected": 44,
+     "method": "staple_pack"
     }
    ]
   },
@@ -392,11 +516,17 @@
    "unit": "piece",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    100,
+    2000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 637.5,
-     "n": 54
+     "p": 455,
+     "n": 33,
+     "rejected": 21,
+     "method": "all"
     }
    ]
   },
@@ -405,11 +535,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    400,
+    8000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 912.5,
-     "n": 7
+     "p": 893.75,
+     "n": 4,
+     "rejected": 3,
+     "method": "staple_pack"
     }
    ]
   },
@@ -418,11 +554,17 @@
    "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    600,
+    12000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 1714.29,
-     "n": 21
+     "p": 2125,
+     "n": 9,
+     "rejected": 4,
+     "method": "staple_pack"
     }
    ]
   },
@@ -431,11 +573,17 @@
    "unit": "l",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    1200,
+    12000
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 2455,
-     "n": 18
+     "p": 4835.72,
+     "n": 8,
+     "rejected": 4,
+     "method": "staple_pack"
     }
    ]
   },
@@ -444,11 +592,17 @@
    "unit": "l",
    "state": "LA",
    "geo_scope": "city_online",
+   "bounds": [
+    50,
+    1200
+   ],
    "points": [
     {
      "d": "2026-08-13",
-     "p": 233.33,
-     "n": 9
+     "p": 253.33,
+     "n": 7,
+     "rejected": 0,
+     "method": "staple_pack"
     }
    ]
   }
@@ -457,7 +611,7 @@
   {
    "d": "2026-08-13",
    "v": 100,
-   "items": 32
+   "items": 30
   }
  ],
  "fx": [
@@ -553,5 +707,46 @@
     }
    ]
   }
- ]
+ ],
+ "basket": {
+  "version": "1.0",
+  "household": 5,
+  "period": "week",
+  "weights": {
+   "rice": 5,
+   "beans_brown": 2,
+   "garri": 4,
+   "spaghetti": 1,
+   "bread": 3,
+   "noodles": 10,
+   "eggs": 15,
+   "chicken_frozen": 2,
+   "fish_frozen": 1.5,
+   "milk_powder": 0.4,
+   "palm_oil": 1,
+   "veg_oil": 2,
+   "tomato_paste": 0.4,
+   "tomato_fresh": 2,
+   "pepper": 1,
+   "onions": 1.5,
+   "sugar": 1,
+   "salt": 0.5,
+   "seasoning": 2,
+   "beverage_choc": 0.5,
+   "water": 20
+  },
+  "series": [
+   {
+    "d": "2026-08-13",
+    "cost": null,
+    "priced": 18,
+    "of": 21,
+    "missing": [
+     "noodles",
+     "palm_oil",
+     "seasoning"
+    ]
+   }
+  ]
+ }
 }
