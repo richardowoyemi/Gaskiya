@@ -38,6 +38,7 @@
   figure{margin:0;background:var(--surface);border:1px solid var(--hair);border-radius:10px;padding:16px}
   figcaption{font-size:13px;color:var(--ink-2);margin-bottom:4px}
   figcaption b{color:var(--ink);font-weight:600}
+  .note{color:var(--muted);font-size:12.5px;margin:10px 2px 0}
   .empty{color:var(--muted);font-size:13.5px;padding:26px 4px;text-align:center}
   svg{display:block;width:100%;height:auto;overflow:visible}
   .tt{position:fixed;pointer-events:none;background:var(--surface-2);border:1px solid var(--hair);
@@ -76,6 +77,14 @@
   Read the geography before the price.
 </div>
 
+<h2>The dollar</h2>
+<div class="kpis" id="fxkpis"></div>
+<figure style="margin-top:12px">
+  <figcaption><b>The gap</b> — how far the licensed-exchange dollar sits above the official rate</figcaption>
+  <div id="fxchart"></div>
+</figure>
+<p class="note" id="fxnote"></p>
+
 <h2>Today</h2>
 <div class="kpis" id="kpis"></div>
 
@@ -91,8 +100,10 @@
 <footer>
   <p><b>Method.</b> Each item's daily figure is the <b>median unit price</b> of every matched product that day —
      not an average, so one mispriced listing can't move the line. <code>n</code> is how many products backed it.</p>
-  <p><b>Tiers.</b> Everything on this page is <b>Tier A</b>: scraped from a named public source, with the URL as the receipt.
-     Tier B (official releases) and Tier C (human market reports) are labelled separately when they arrive.</p>
+  <p><b>Tiers.</b> <b>Tier A</b> is scraped live from a named public source, with the URL as the receipt —
+     every basket item, and the licensed-exchange dollar. <b>Tier B</b> is a published institutional figure,
+     cited with its source — the official exchange rate. <b>Tier C</b> (human market reports) is not on this
+     page yet, and will never be mixed silently into the others.</p>
   <p><b>Raw data.</b> Every day's rows are committed unmodified to
      <a href="https://github.com/richardowoyemi/Gaskiya/tree/main/data/raw">the public archive</a> —
      append-only, timestamped, and never edited after the fact. Check our arithmetic.</p>
@@ -161,6 +172,7 @@ function render() {
     tile('Days of history', days.length, days.length === 1 ? 'day one' : 'and counting'),
   ].join('');
 
+  renderFx(DATA.fx || []);
   drawChart(index);
   drawTable(items, today, prev);
 }
@@ -179,11 +191,13 @@ function deltaHTML(now, before) {
          (up ? '▲' : '▼') + ' ' + (up ? '+' : '') + pct.toFixed(1) + '%</span>';
 }
 
-function drawChart(index) {
-  const box = el('chart');
-  if (!index || index.length < 2) {
-    box.innerHTML = '<div class="empty">The line appears once there are two days of data.' +
-      (index.length ? ' Day one is on the board — index ' + index[0].v.toFixed(1) + '.' : '') + '</div>';
+function drawChart(index) { plot(el('chart'), index, 'v', v => v.toFixed(1), 'index', 'The line appears once there are two days of data.'); }
+
+function plot(box, series, key, fmt, unitWord, emptyMsg) {
+  const index = (series || []).map(p => ({d: p.d, v: p[key], items: p.items}));
+  if (!index.length || index.length < 2) {
+    box.innerHTML = '<div class="empty">' + emptyMsg +
+      (index.length ? ' Day one is on the board — ' + fmt(index[0].v) + '.' : '') + '</div>';
     return;
   }
   const W = 900, H = 260, P = {t: 16, r: 18, b: 30, l: 52};
@@ -223,7 +237,8 @@ function drawChart(index) {
   box.querySelectorAll('rect[data-i]').forEach(r => {
     r.addEventListener('mousemove', ev => {
       tt.innerHTML = '<div class="d">' + r.dataset.d + '</div><b>' +
-        Number(r.dataset.v).toFixed(1) + '</b> index · ' + r.dataset.n + ' items';
+        fmt(Number(r.dataset.v)) + '</b> ' + unitWord +
+        (r.dataset.n && r.dataset.n !== 'undefined' ? ' · ' + r.dataset.n + ' items' : '');
       tt.style.opacity = 1;
       tt.style.left = Math.min(ev.clientX + 14, innerWidth - 160) + 'px';
       tt.style.top = (ev.clientY - 46) + 'px';
@@ -232,6 +247,34 @@ function drawChart(index) {
     });
     r.addEventListener('mouseleave', () => { tt.style.opacity = 0; cross.setAttribute('opacity', 0); });
   });
+}
+
+
+function renderFx(fx) {
+  if (!fx.length) {
+    el('fxkpis').innerHTML = '<div class="tile"><div class="k">Dollar</div><div class="v">—</div>' +
+      '<div class="s">no FX reading yet</div></div>';
+    el('fxchart').innerHTML = '<div class="empty">No FX data yet.</div>';
+    return;
+  }
+  const now = fx[fx.length - 1], was = fx.length > 1 ? fx[fx.length - 2] : null;
+  el('fxkpis').innerHTML = [
+    tile('Official rate', '₦' + now.official.toLocaleString('en-NG', {maximumFractionDigits: 2}),
+         was ? deltaHTML(now.official, was.official) + ' vs previous' : 'per US$1 · published daily'),
+    tile('Licensed-exchange rate', '₦' + now.usdt.toLocaleString('en-NG', {maximumFractionDigits: 2}),
+         was ? deltaHTML(now.usdt, was.usdt) + ' vs previous' : 'USDT/NGN mid · live feed'),
+    tile('The gap', now.spread_pct.toFixed(2) + '%',
+         '₦' + (now.usdt - now.official).toLocaleString('en-NG', {maximumFractionDigits: 2}) + ' per dollar'),
+  ].join('');
+
+  plot(el('fxchart'), fx, 'spread_pct', v => v.toFixed(2) + '%', 'gap',
+       'The gap is charted once there are two days of readings.');
+
+  el('fxnote').innerHTML =
+    'Official rate from a published daily aggregate (<b>Tier B</b>). Licensed-exchange rate is the ' +
+    'USDT/NGN mid on Luno, a regulated exchange (<b>Tier A</b>) — widely used as a proxy for what a ' +
+    'dollar actually costs, and often called the parallel market rate. Both sources are named and ' +
+    'linkable. Gaskiya never crowdsources a currency quote.';
 }
 
 function drawTable(items, today, prev) {
