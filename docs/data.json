@@ -1,8 +1,8 @@
 {
  "meta": {
   "project": "Gaskiya",
-  "version": "v0.3.0",
-  "generated": "2026-08-13T15:26:05+01:00",
+  "version": "v0.4.1",
+  "generated": "2026-08-13T15:56:38+01:00",
   "country": "NG",
   "sources": [
    {
@@ -12,6 +12,14 @@
     "state": "LA",
     "geo_scope": "city_online",
     "base": "https://www.supermart.ng"
+   },
+   {
+    "key": "fx",
+    "tier": "A",
+    "category": "fx",
+    "state": "",
+    "geo_scope": "national",
+    "base": "https://api.luno.com"
    }
   ],
   "note": "Tier A retail asking prices. Unit prices are medians of matched products per day. Index is an unweighted mean of price relatives, base = first observed day = 100."
@@ -442,6 +450,14 @@
    "d": "2026-08-13",
    "v": 100,
    "items": 32
+  }
+ ],
+ "fx": [
+  {
+   "d": "2026-08-13",
+   "official": 1360.25,
+   "usdt": 1396.56,
+   "spread_pct": 2.67
   }
  ]
 }
