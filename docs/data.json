@@ -2,7 +2,7 @@
  "meta": {
   "project": "Gaskiya",
   "version": "v0.9.0",
-  "generated": "2026-08-13T16:58:37+01:00",
+  "generated": "2026-08-16T10:54:18+01:00",
   "country": "NG",
   "sources": [
    {
@@ -33,7 +33,8 @@
   "note": "Tier A retail asking prices. Unit prices are medians of matched products per day. Index is an unweighted mean of price relatives, base = first observed day = 100. Basket cost is the reference basket v1.0 (household of 5, one week) priced at those medians. See METHODOLOGY.md."
  },
  "days": [
-  "2026-08-13"
+  "2026-08-13",
+  "2026-08-16"
  ],
  "items": [
   {
@@ -89,6 +90,13 @@
     {
      "d": "2026-08-13",
      "p": 9660,
+     "n": 7,
+     "rejected": 14,
+     "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 17712.5,
      "n": 7,
      "rejected": 14,
      "method": "staple_pack"
@@ -151,6 +159,13 @@
      "n": 26,
      "rejected": 17,
      "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 3735,
+     "n": 22,
+     "rejected": 17,
+     "method": "staple_pack"
     }
    ]
   },
@@ -208,6 +223,13 @@
      "d": "2026-08-13",
      "p": 11266.67,
      "n": 5,
+     "rejected": 1,
+     "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 11258.34,
+     "n": 6,
      "rejected": 1,
      "method": "staple_pack"
     }
@@ -269,6 +291,13 @@
      "n": 16,
      "rejected": 3,
      "method": "all"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 767.5,
+     "n": 16,
+     "rejected": 3,
+     "method": "all"
     }
    ]
   },
@@ -306,6 +335,13 @@
    "points": [
     {
      "d": "2026-08-13",
+     "p": 1171.43,
+     "n": 3,
+     "rejected": 0,
+     "method": "all"
+    },
+    {
+     "d": "2026-08-16",
      "p": 1171.43,
      "n": 3,
      "rejected": 0,
@@ -369,6 +405,13 @@
      "n": 46,
      "rejected": 110,
      "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 4518.68,
+     "n": 46,
+     "rejected": 110,
+     "method": "staple_pack"
     }
    ]
   },
@@ -428,6 +471,13 @@
      "n": 32,
      "rejected": 12,
      "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 2325,
+     "n": 36,
+     "rejected": 12,
+     "method": "staple_pack"
     }
    ]
   },
@@ -459,6 +509,13 @@
    "points": [
     {
      "d": "2026-08-13",
+     "p": 1481.25,
+     "n": 2,
+     "rejected": 0,
+     "method": "all"
+    },
+    {
+     "d": "2026-08-16",
      "p": 1481.25,
      "n": 2,
      "rejected": 0,
@@ -522,6 +579,13 @@
      "n": 7,
      "rejected": 10,
      "method": "all"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 195.34,
+     "n": 4,
+     "rejected": 10,
+     "method": "staple_pack"
     }
    ]
   },
@@ -581,6 +645,13 @@
      "n": 11,
      "rejected": 11,
      "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 7040,
+     "n": 10,
+     "rejected": 11,
+     "method": "staple_pack"
     }
    ]
   },
@@ -634,6 +705,13 @@
      "n": 5,
      "rejected": 0,
      "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 395,
+     "n": 5,
+     "rejected": 0,
+     "method": "staple_pack"
     }
    ]
   },
@@ -659,6 +737,13 @@
    "points": [
     {
      "d": "2026-08-13",
+     "p": 1475,
+     "n": 1,
+     "rejected": 0,
+     "method": "all"
+    },
+    {
+     "d": "2026-08-16",
      "p": 1475,
      "n": 1,
      "rejected": 0,
@@ -722,6 +807,13 @@
      "n": 18,
      "rejected": 17,
      "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 10228.75,
+     "n": 18,
+     "rejected": 17,
+     "method": "staple_pack"
     }
    ]
   },
@@ -781,6 +873,13 @@
      "n": 10,
      "rejected": 5,
      "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 3875,
+     "n": 9,
+     "rejected": 5,
+     "method": "staple_pack"
     }
    ]
   },
@@ -806,6 +905,13 @@
    "points": [
     {
      "d": "2026-08-13",
+     "p": 11300,
+     "n": 1,
+     "rejected": 0,
+     "method": "all"
+    },
+    {
+     "d": "2026-08-16",
      "p": 11300,
      "n": 1,
      "rejected": 0,
@@ -869,6 +975,13 @@
      "n": 4,
      "rejected": 20,
      "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 3104.29,
+     "n": 4,
+     "rejected": 20,
+     "method": "staple_pack"
     }
    ]
   },
@@ -894,6 +1007,13 @@
    "points": [
     {
      "d": "2026-08-13",
+     "p": 2147.06,
+     "n": 1,
+     "rejected": 0,
+     "method": "all"
+    },
+    {
+     "d": "2026-08-16",
      "p": 2147.06,
      "n": 1,
      "rejected": 0,
@@ -957,6 +1077,13 @@
      "n": 7,
      "rejected": 1,
      "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 4162.5,
+     "n": 9,
+     "rejected": 1,
+     "method": "staple_pack"
     }
    ]
   },
@@ -1014,6 +1141,13 @@
      "d": "2026-08-13",
      "p": 2312.5,
      "n": 37,
+     "rejected": 74,
+     "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 1736.67,
+     "n": 44,
      "rejected": 74,
      "method": "staple_pack"
     }
@@ -1075,6 +1209,13 @@
      "n": 10,
      "rejected": 35,
      "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 1080,
+     "n": 9,
+     "rejected": 35,
+     "method": "staple_pack"
     }
    ]
   },
@@ -1128,6 +1269,13 @@
      "n": 5,
      "rejected": 34,
      "method": "all"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 974.62,
+     "n": 3,
+     "rejected": 34,
+     "method": "staple_pack"
     }
    ]
   },
@@ -1177,6 +1325,13 @@
    "points": [
     {
      "d": "2026-08-13",
+     "p": 463,
+     "n": 3,
+     "rejected": 1,
+     "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
      "p": 463,
      "n": 3,
      "rejected": 1,
@@ -1240,6 +1395,13 @@
      "n": 21,
      "rejected": 35,
      "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 727.27,
+     "n": 19,
+     "rejected": 35,
+     "method": "staple_pack"
     }
    ]
   },
@@ -1297,6 +1459,13 @@
      "d": "2026-08-13",
      "p": 730,
      "n": 25,
+     "rejected": 19,
+     "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 730,
+     "n": 26,
      "rejected": 19,
      "method": "staple_pack"
     }
@@ -1358,6 +1527,13 @@
      "n": 10,
      "rejected": 44,
      "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 2245,
+     "n": 12,
+     "rejected": 44,
+     "method": "staple_pack"
     }
    ]
   },
@@ -1417,6 +1593,13 @@
      "n": 33,
      "rejected": 21,
      "method": "all"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 455,
+     "n": 33,
+     "rejected": 21,
+     "method": "staple_pack"
     }
    ]
   },
@@ -1460,6 +1643,13 @@
    "points": [
     {
      "d": "2026-08-13",
+     "p": 893.75,
+     "n": 4,
+     "rejected": 3,
+     "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
      "p": 893.75,
      "n": 4,
      "rejected": 3,
@@ -1523,6 +1713,13 @@
      "n": 9,
      "rejected": 4,
      "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 2125,
+     "n": 11,
+     "rejected": 4,
+     "method": "staple_pack"
     }
    ]
   },
@@ -1580,6 +1777,13 @@
      "d": "2026-08-13",
      "p": 4835.72,
      "n": 8,
+     "rejected": 4,
+     "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 4225,
+     "n": 9,
      "rejected": 4,
      "method": "staple_pack"
     }
@@ -1641,6 +1845,13 @@
      "n": 7,
      "rejected": 0,
      "method": "staple_pack"
+    },
+    {
+     "d": "2026-08-16",
+     "p": 261.11,
+     "n": 5,
+     "rejected": 0,
+     "method": "staple_pack"
     }
    ]
   }
@@ -1650,6 +1861,11 @@
    "d": "2026-08-13",
    "v": 100,
    "items": 30
+  },
+  {
+   "d": "2026-08-16",
+   "v": 103.45,
+   "items": 30
   }
  ],
  "fx": [
@@ -1658,6 +1874,12 @@
    "official": 1360.25,
    "usdt": 1396.56,
    "spread_pct": 2.67
+  },
+  {
+   "d": "2026-08-16",
+   "official": 1358.7,
+   "usdt": 1390.49,
+   "spread_pct": 2.34
   }
  ],
  "official": [
@@ -1776,6 +1998,17 @@
   "series": [
    {
     "d": "2026-08-13",
+    "cost": null,
+    "priced": 18,
+    "of": 21,
+    "missing": [
+     "noodles",
+     "palm_oil",
+     "seasoning"
+    ]
+   },
+   {
+    "d": "2026-08-16",
     "cost": null,
     "priced": 18,
     "of": 21,
