@@ -39,6 +39,16 @@
   h2{font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);
     margin:34px 0 8px;font-weight:600}
   .hint{color:var(--muted);font-size:12.5px;margin:0 0 10px}
+  .filters{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 12px}
+  .chip{background:var(--surface);border:1px solid var(--hair);color:var(--ink-2);
+    border-radius:999px;padding:5px 12px;font-size:12.5px;cursor:pointer;white-space:nowrap}
+  .chip:hover{border-color:var(--muted)}
+  .chip.on{background:var(--series-1);border-color:var(--series-1);color:#141414;font-weight:600}
+  .chip .c{opacity:.7;margin-left:5px;font-variant-numeric:tabular-nums}
+  .chip.ghost{border-style:dashed}
+  tr.planned td{color:var(--muted)}
+  tr.planned td.item{color:var(--ink-2)}
+  .need{color:var(--series-1);font-size:11.5px}
 
   table{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
   th,td{text-align:right;padding:9px 10px;border-bottom:1px solid var(--grid)}
@@ -85,9 +95,16 @@
 
 <div class="three" id="three"></div>
 
-<h2>Prices today</h2>
+<p style="margin:0 0 22px"><a href="power.html" style="display:inline-block;background:var(--surface);
+   border:1px solid var(--hair);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--ink)">
+   <b>Got a quote for an inverter, battery, solar panel or generator?</b>
+   <span style="color:var(--muted)"> — check it against what they actually cost →</span></a></p>
+
+<h2>Prices</h2>
+<div class="filters" id="filters"></div>
 <p class="hint">Tap any row to see the actual listings behind the price.</p>
 <div id="tableWrap"></div>
+<p class="hint" id="planNote"></p>
 
 <details>
   <summary>How these numbers are made</summary>
@@ -131,11 +148,13 @@ const UNIT = {kg:'per kg', l:'per litre', piece:'each'};
 const SRC = {supermart:'Supermart.ng', healthplus:'HealthPlus', nbs:'NBS', luno:'Luno',
              'exchangerate-api':'ExchangeRate-API'};
 
-let DATA = null, sortKey = 'name', sortDir = 1, openRow = null;
+let DATA = null, CATALOGUE = null, sortKey = 'name', sortDir = 1, openRow = null;
+let activeCat = 'all', showPlanned = false;
 
-fetch('data.json?' + Date.now())
-  .then(r => { if (!r.ok) throw new Error('data.json ' + r.status); return r.json(); })
-  .then(d => { DATA = d; render(); })
+Promise.all([
+  fetch('data.json?' + Date.now()).then(r => { if (!r.ok) throw new Error('data.json ' + r.status); return r.json(); }),
+  fetch('catalogue.json?' + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null),
+]).then(([d, c]) => { DATA = d; CATALOGUE = c; render(); })
   .catch(e => { el('stamp').textContent = 'Could not load data — ' + e.message; });
 
 const OFF = k => (DATA.official || []).filter(o => o.key === k)[0];
@@ -154,8 +173,10 @@ function delta(now, before) {
 function render() {
   const {days, items} = DATA;
   const today = days[days.length - 1], prev = days.length > 1 ? days[days.length - 2] : null;
-  el('stamp').innerHTML = esc(today) + ' · ' + items.length + ' items priced this morning';
+  el('stamp').innerHTML = esc(today) + ' · ' + items.length + ' items priced this morning' +
+    (CATALOGUE ? ' · ' + CATALOGUE.items.length + ' tracked in total' : '');
   renderThree();
+  renderFilters();
   drawTable(items, today, prev);
 }
 
@@ -211,8 +232,48 @@ function renderThree() {
   el('three').innerHTML = cards.join('');
 }
 
+
+/* Categories come from the published catalogue, so the site's structure and
+   the project's roadmap are the same document. Nothing is listed here that
+   isn't also a commitment to track it. */
+function renderFilters() {
+  if (!CATALOGUE) { el('filters').innerHTML = ''; return; }
+  const priced = new Set(DATA.items.map(i => i.key));
+  const cats = CATALOGUE.categories.map(c => {
+    const its = CATALOGUE.items.filter(i => i.category === c.key);
+    return {...c, livecount: its.filter(i => priced.has(i.key)).length, total: its.length};
+  });
+  const shown = showPlanned ? cats : cats.filter(c => c.livecount > 0);
+  const totalLive = DATA.items.length;
+
+  el('filters').innerHTML =
+    chip('all', 'All', totalLive, activeCat === 'all') +
+    shown.map(c => chip(c.key, c.label, showPlanned ? c.total : c.livecount, activeCat === c.key)).join('') +
+    '<span class="chip ghost" data-toggle="1">' +
+      (showPlanned ? '✓ showing what\'s coming' : '+ show what\'s coming') + '</span>';
+
+  el('filters').querySelectorAll('.chip[data-cat]').forEach(el2 => {
+    el2.onclick = () => { activeCat = el2.dataset.cat; openRow = null; render(); };
+  });
+  const t = el('filters').querySelector('.chip[data-toggle]');
+  if (t) t.onclick = () => { showPlanned = !showPlanned; openRow = null; render(); };
+}
+const chip = (k, label, n, on) =>
+  '<span class="chip' + (on ? ' on' : '') + '" data-cat="' + esc(k) + '">' +
+  esc(label) + '<span class="c">' + n + '</span></span>';
+
+function catOf(key) {
+  if (!CATALOGUE) return null;
+  return CATALOGUE.items.filter(i => i.key === key)[0] || null;
+}
+
 function drawTable(items, today, prev) {
-  const rows = items.map(it => {
+  let pool = items;
+  if (activeCat !== 'all' && CATALOGUE) {
+    const keys = new Set(CATALOGUE.items.filter(i => i.category === activeCat).map(i => i.key));
+    pool = items.filter(i => keys.has(i.key));
+  }
+  const rows = pool.map(it => {
     const t = it.points.filter(p => p.d === today)[0];
     const y = prev ? it.points.filter(p => p.d === prev)[0] : null;
     return {
@@ -221,8 +282,24 @@ function drawTable(items, today, prev) {
       method: t ? t.method : '', prev: y ? y.p : null,
       pct: (t && y && y.p) ? (t.p - y.p) / y.p * 100 : null,
       source: SRC[it.source] || it.source || '', receipts: it.receipts || [],
+      planned: false,
     };
   });
+
+  // Planned items: shown honestly as "not priced yet", with what's needed to
+  // price them. This is the roadmap and the recruitment brief, in public.
+  if (showPlanned && CATALOGUE) {
+    const priced = new Set(items.map(i => i.key));
+    CATALOGUE.items
+      .filter(i => !priced.has(i.key) && (activeCat === 'all' || i.category === activeCat))
+      .forEach(i => rows.push({
+        key: i.key, name: i.label, unit: i.pack, price: null, n: 0, rejected: 0,
+        method: '', prev: null, pct: null, planned: true, receipts: [],
+        source: i.tier === 'C' ? (i.note || 'needs a market reporter')
+              : i.tier === 'B' ? 'official source, not yet ingested'
+              : 'scraper not yet built',
+      }));
+  }
   const cmp = {
     name: (a, b) => a.name.localeCompare(b.name),
     price: (a, b) => (a.price == null ? -1 : a.price) - (b.price == null ? -1 : b.price),
@@ -240,9 +317,11 @@ function drawTable(items, today, prev) {
       '<th data-k="pct">Change' + arrow('pct') + '</th>' +
     '</tr></thead><tbody>' +
     rows.map((r, i) =>
-      '<tr class="item-row" data-i="' + i + '">' +
+      '<tr class="' + (r.planned ? 'planned' : 'item-row') + '" data-i="' + i + '">' +
         '<td class="item">' + esc(r.name) + '<div class="meta">' + esc(r.unit) +
-          (r.source ? ' · ' + esc(r.source) : '') + '<span class="chev">▸ receipts</span></div></td>' +
+          (r.planned ? ' · <span class="need">' + esc(r.source) + '</span>'
+                     : (r.source ? ' · ' + esc(r.source) : '') + '<span class="chev">▸ receipts</span>') +
+        '</div></td>' +
         '<td>' + (r.price == null ? '—' : money(r.price, r.price < 100 ? 2 : 0)) + '</td>' +
         '<td>' + (r.n || '—') + '</td>' +
         '<td>' + (r.pct == null ? '<span class="flat">—</span>' : delta(r.price, r.prev)) + '</td>' +
@@ -251,6 +330,16 @@ function drawTable(items, today, prev) {
         receiptsHtml(r) + '</td></tr>'
     ).join('') + '</tbody></table>' +
     (prev ? '' : '<p class="hint" style="margin-top:12px">Change fills in from tomorrow morning.</p>');
+
+  if (CATALOGUE) {
+    const priced = DATA.items.length, total = CATALOGUE.items.length;
+    const needC = CATALOGUE.items.filter(i => i.tier === 'C' &&
+      !new Set(DATA.items.map(x => x.key)).has(i.key)).length;
+    el('planNote').innerHTML = priced + ' of ' + total + ' tracked items are priced today. ' +
+      needC + ' of the rest need a person in a market, not a scraper — ' +
+      'open-market food, transport fares, cooked meals, building materials, wages. ' +
+      'Those are being recruited.';
+  }
 
   el('tableWrap').querySelectorAll('th[data-k]').forEach(th => {
     th.onclick = () => {
