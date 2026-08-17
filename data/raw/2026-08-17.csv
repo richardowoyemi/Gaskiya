@@ -1,4 +1,4 @@
-run_date,run_timestamp,country,state,geo_scope,category,site_or_source,source_tier,item_key,product_name_raw,pack_size,pack_unit,price_ngn,unit_price_ngn,n_reports,url_or_ref,scrape_status,,,,
+run_date,run_timestamp,country,state,geo_scope,category,site_or_source,source_tier,item_key,product_name_raw,pack_size,pack_unit,price_ngn,unit_price_ngn,n_reports,url_or_ref,scrape_status,spec_json,channel,transaction_basis,sku
 Mon Aug 17 2026 00:00:00 GMT+0100 (West Africa Time),2026-08-17T06:27:53+01:00,NG,LA,city_online,food,supermart,A,bread,1X4 Pav Bread,4,piece,900,225,,https://www.supermart.ng/products/1x4-pav-bread,ok,,,,
 Mon Aug 17 2026 00:00:00 GMT+0100 (West Africa Time),2026-08-17T06:27:53+01:00,NG,LA,city_online,food,supermart,A,soap_bar,2Sure Multi-Purpose Bar Soap 250 g,250g,kg,445,,,https://www.supermart.ng/products/2sure-multi-purpose-bar-soap-250-g,ok_no_unit,,,,
 Mon Aug 17 2026 00:00:00 GMT+0100 (West Africa Time),2026-08-17T06:27:53+01:00,NG,LA,city_online,food,supermart,A,bread,5 Loaves Premium Bread,1,piece,365,365,,https://www.supermart.ng/products/5-loaves-premium-bread,ok,,,,
