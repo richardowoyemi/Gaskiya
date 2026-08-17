@@ -1,8 +1,8 @@
 {
  "meta": {
   "project": "Gaskiya",
-  "version": "v1.3.0",
-  "generated": "2026-08-17T09:48:52+01:00",
+  "version": "v1.3.1",
+  "generated": "2026-08-17T09:51:20+01:00",
   "country": "NG",
   "sources": [
    {
@@ -2421,7 +2421,7 @@
   "channel": "online_retail",
   "geo": "NG · online listings — not an offline national market",
   "models": 188,
-  "cohorts": 5,
+  "cohorts": 42,
   "classes": [
    {
     "key": "generator",
