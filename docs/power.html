@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gaskiya — check a power price before you pay</title>
+<meta name="description" content="Inverters, batteries, solar panels and generators in Nigeria — what they actually cost, with every listing shown.">
+<style>
+  :root{
+    color-scheme: dark;
+    --page:#0d0d0d; --surface:#171b18; --surface-2:#1d221e;
+    --ink:#fff; --ink-2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --hair:rgba(255,255,255,.10);
+    --brand:#d9a441; --series-1:#c98500;
+    --good:#0ca30c; --bad:#d03b3b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--page);color:var(--ink);
+    font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;padding:26px 18px 80px}
+  .wrap{max-width:820px;margin:0 auto}
+  a{color:var(--brand)}
+  h1{font-size:26px;margin:0 0 4px;letter-spacing:-.4px}
+  h1 span{color:var(--brand)}
+  .sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+
+  .searchbox{position:relative;margin-bottom:10px}
+  input[type=search]{width:100%;background:var(--surface);border:1px solid var(--hair);
+    color:var(--ink);border-radius:12px;padding:15px 16px;font-size:16px;outline:none}
+  input[type=search]:focus{border-color:var(--series-1)}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 18px}
+  .chip{background:var(--surface);border:1px solid var(--hair);color:var(--ink-2);
+    border-radius:999px;padding:5px 12px;font-size:12.5px;cursor:pointer}
+  .chip.on{background:var(--series-1);border-color:var(--series-1);color:#141414;font-weight:600}
+  .stamp{color:var(--muted);font-size:12px;margin:0 0 18px}
+
+  .res{background:var(--surface);border:1px solid var(--hair);border-radius:12px;
+    padding:14px 16px;margin-bottom:10px;cursor:pointer}
+  .res:hover{border-color:var(--muted)}
+  .res .nm{font-size:14.5px}
+  .res .sp{color:var(--muted);font-size:12px;margin-top:2px}
+  .res .pr{float:right;text-align:right;margin-left:12px}
+  .res .pr b{font-size:17px;font-variant-numeric:tabular-nums}
+  .res .pr .u{display:block;color:var(--muted);font-size:11.5px}
+
+  .panel{background:var(--surface-2);border:1px solid var(--hair);border-radius:12px;
+    padding:18px;margin:14px 0 24px}
+  .lvl{padding:14px 0;border-bottom:1px solid var(--grid)}
+  .lvl:last-child{border-bottom:0;padding-bottom:0}
+  .lvl h3{margin:0 0 3px;font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted)}
+  .lvl .big{font-size:26px;letter-spacing:-.6px;font-variant-numeric:tabular-nums}
+  .lvl .meta{color:var(--muted);font-size:12.5px;margin-top:3px}
+  .lvl.ctx .big{font-size:19px;color:var(--ink-2)}
+  .thin{color:var(--series-1);font-size:12.5px}
+
+  .band{display:flex;gap:2px;margin:10px 0 4px;height:8px;border-radius:4px;overflow:hidden}
+  .band i{display:block;height:100%}
+  .band .lo{background:var(--good);flex:1}
+  .band .mid{background:var(--series-1);flex:2}
+  .band .hi{background:var(--bad);flex:1}
+  .bandlab{display:flex;justify-content:space-between;color:var(--muted);font-size:11.5px}
+
+  .rl{display:grid;gap:5px;margin-top:10px}
+  .r{display:flex;justify-content:space-between;gap:12px;font-size:12.5px;color:var(--ink-2);
+    padding:7px 10px;background:var(--surface);border:1px solid var(--hair);border-radius:7px}
+  .r .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .r .pr{white-space:nowrap;color:var(--ink);font-variant-numeric:tabular-nums}
+  .back{display:inline-block;margin-bottom:12px;color:var(--muted);cursor:pointer;font-size:13px}
+  .empty{color:var(--muted);font-size:13.5px;padding:26px 2px;text-align:center}
+  .note{color:var(--muted);font-size:12px;margin-top:22px;line-height:1.6}
+  .quote{background:var(--surface);border:1px dashed var(--hair);border-radius:10px;
+    padding:13px 15px;margin-top:16px;color:var(--ink-2);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1><span>Gaskiya</span> — power prices</h1>
+<p class="sub">Got a quote for an inverter, battery, panel or generator? Check it here first.</p>
+
+<div id="view"></div>
+
+<p class="note" id="foot"></p>
+</div>
+
+<script>
+const el = id => document.getElementById(id);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const money = n => '₦' + Number(n).toLocaleString('en-NG', {maximumFractionDigits: 0});
+const CLS = {inverter:'Inverter', battery:'Battery', solar_panel:'Solar panel',
+             generator:'Generator', charge_ctrl:'Charge controller'};
+const UNITLAB = {NGN_per_kVA:'per kVA', NGN_per_W:'per watt', NGN_per_kWh:'per kWh', NGN_per_A:'per amp'};
+
+let P = null, q = '', cls = 'all', open = null;
+
+fetch('power.json?' + Date.now())
+  .then(r => { if (!r.ok) throw new Error('power.json ' + r.status); return r.json(); })
+  .then(d => { P = d; render(); })
+  .catch(e => { el('view').innerHTML = '<div class="empty">Could not load prices — ' + esc(e.message) + '</div>'; });
+
+const title = m => {
+  const s = m.spec || {};
+  const bits = [];
+  if (s.brand && s.brand !== 'generic') bits.push(s.brand.replace(/\b\w/g, c => c.toUpperCase()));
+  if (s.model_line) bits.push(s.model_line);
+  if (s.rating) bits.push(s.rating + (s.unit || ''));
+  if (s.voltage) bits.push(s.voltage + 'V');
+  if (s.topology) bits.push(s.topology.replace(/_/g, ' '));
+  return bits.length ? bits.join(' · ') : (CLS[m.cls] || m.cls);
+};
+
+function render() {
+  if (open) return renderOne(open);
+  const models = (P.models || []).filter(m => m.price && m.price.n);
+  const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+  const hits = models.filter(m => {
+    if (cls !== 'all' && m.cls !== cls) return false;
+    if (!terms.length) return true;
+    const hay = (title(m) + ' ' + m.cls + ' ' + (m.receipts || []).map(r => r.name).join(' ')).toLowerCase();
+    return terms.every(t => hay.indexOf(t) !== -1);
+  }).sort((a, b) => b.price.n - a.price.n);
+
+  const classes = [...new Set(models.map(m => m.cls))];
+  el('view').innerHTML =
+    '<div class="searchbox"><input type="search" id="q" placeholder="Search — 5kva inverter, felicity, 200ah battery, generator…" value="' + esc(q) + '"></div>' +
+    '<div class="chips">' +
+      '<span class="chip' + (cls === 'all' ? ' on' : '') + '" data-c="all">All</span>' +
+      classes.map(c => '<span class="chip' + (cls === c ? ' on' : '') + '" data-c="' + c + '">' +
+        esc(CLS[c] || c) + '</span>').join('') +
+    '</div>' +
+    '<p class="stamp">' + models.length + ' products priced · ' + esc(P.as_of) + ' · ' + esc(P.geo) + '</p>' +
+    (hits.length
+      ? hits.slice(0, 60).map((m, i) =>
+          '<div class="res" data-k="' + esc(m.key) + '">' +
+            '<div class="pr"><b>' + money(m.price.median) + '</b>' +
+              (m.normalized ? '<span class="u">' + money(m.normalized.median) + ' ' +
+                 (UNITLAB[m.normalized.unit] || '') + '</span>' : '') + '</div>' +
+            '<div class="nm">' + esc(title(m)) + '</div>' +
+            '<div class="sp">' + esc(CLS[m.cls] || m.cls) + ' · ' + m.price.n +
+              ' listing' + (m.price.n === 1 ? '' : 's') + '</div>' +
+          '</div>').join('')
+      : '<div class="empty">Nothing matches “' + esc(q) + '”.<br>' +
+        'If Gaskiya should be tracking it, that gap is worth knowing about.</div>');
+
+  const inp = el('q');
+  inp.oninput = e => { q = e.target.value; const p = e.target.selectionStart; render();
+                       const n = el('q'); n.focus(); n.setSelectionRange(p, p); };
+  document.querySelectorAll('.chip[data-c]').forEach(c => c.onclick = () => { cls = c.dataset.c; render(); });
+  document.querySelectorAll('.res[data-k]').forEach(r => r.onclick = () => { open = r.dataset.k; render(); });
+  el('foot').innerHTML = footNote();
+}
+
+function cohortFor(m) {
+  const s = m.spec || {};
+  const key = [m.cls, s.rating + (s.unit || ''), s.voltage ? s.voltage + 'V' : 'nov',
+               s.topology || 'notopo'].join('|');
+  return (P.cohorts || []).filter(c => c.key === key)[0] || null;
+}
+
+/* Three levels, never blended: the exact model is unarguable but often sparse;
+   the cohort answers "am I being overcharged"; the class is context only. */
+function renderOne(key) {
+  const m = (P.models || []).filter(x => x.key === key)[0];
+  if (!m) { open = null; return render(); }
+  const co = cohortFor(m), kl = (P.classes || []).filter(c => c.key === m.cls)[0];
+
+  el('view').innerHTML =
+    '<div class="back" id="back">← all products</div>' +
+    '<h2 style="margin:0 0 2px;font-size:20px">' + esc(title(m)) + '</h2>' +
+    '<p class="stamp">' + esc(CLS[m.cls] || m.cls) + ' · online listings · ' + esc(P.as_of) + '</p>' +
+    '<div class="panel">' +
+      level('This exact product', m, false) +
+      (co ? level('Comparable equipment — same rating, voltage and type, any brand', co, true)
+          : '<div class="lvl ctx"><h3>Comparable equipment</h3>' +
+            '<div class="thin">Not enough like-for-like listings to form a comparison group yet.</div></div>') +
+      (kl ? level('All ' + (CLS[m.cls] || m.cls).toLowerCase() + 's — context only, products differ a lot', kl, true) : '') +
+    '</div>' +
+    receipts(m) +
+    '<div class="quote"><b>Been quoted something different?</b> Installer and dealer prices sit above ' +
+      'online listings for real reasons — delivery, installation, warranty, credit. Gaskiya only sees ' +
+      'the online channel so far. Sending us your quote is how the other channels get measured.</div>';
+
+  el('back').onclick = () => { open = null; render(); };
+  el('foot').innerHTML = footNote();
+}
+
+function level(label, m, contextOnly) {
+  const st = m.normalized || m.price;
+  if (!st) return '';
+  const isNorm = !!m.normalized;
+  const unit = isNorm ? (UNITLAB[m.normalized.unit] || '') : '';
+  let body;
+  if (st.confidence === 'listings') {
+    body = '<div class="big">' + money(st.median) + (unit ? ' <span style="font-size:13px;color:var(--muted)">' + unit + '</span>' : '') + '</div>' +
+           '<div class="thin">Only ' + st.n + ' listing' + (st.n === 1 ? '' : 's') +
+           ' — shown for reference, not as a typical price.</div>';
+  } else if (st.confidence === 'median') {
+    body = '<div class="big">' + money(st.median) + (unit ? ' <span style="font-size:13px;color:var(--muted)">' + unit + '</span>' : '') + '</div>' +
+           '<div class="meta">Median of ' + st.n + ' listings. Too few for a typical range.</div>';
+  } else {
+    body = '<div class="big">' + money(st.p25) + ' – ' + money(st.p75) +
+           (unit ? ' <span style="font-size:13px;color:var(--muted)">' + unit + '</span>' : '') + '</div>' +
+           '<div class="band"><i class="lo"></i><i class="mid"></i><i class="hi"></i></div>' +
+           '<div class="bandlab"><span>▼ good price</span><span>typical</span><span>expensive ▲</span></div>' +
+           '<div class="meta">Median ' + money(st.median) + ' · ' + st.n + ' listings' +
+           (m.brands && m.brands.length > 1 ? ' across ' + m.brands.length + ' brands' : '') + '</div>';
+  }
+  return '<div class="lvl' + (contextOnly ? ' ctx' : '') + '"><h3>' + esc(label) + '</h3>' + body + '</div>';
+}
+
+function receipts(m) {
+  if (!m.receipts || !m.receipts.length) return '';
+  return '<h3 style="font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin:0 0 6px">' +
+    'The actual listings</h3><div class="rl">' +
+    m.receipts.map(r =>
+      '<div class="r"><span class="nm">' + esc(r.name) + '</span>' +
+      '<span class="pr">' + money(r.price) + '</span></div>').join('') +
+    '</div>';
+}
+
+const footNote = () =>
+  'Every figure is the median of real listings collected this morning from named online retailers, ' +
+  'and every listing behind it is shown. Prices are <b>asking prices from online retail</b> — not ' +
+  'installer or dealer quotes, which run higher. Nothing here is a judgement about whether a seller ' +
+  'is fair; it is a record of what has been observed. ' +
+  '<a href="index.html">Food, fuel and the dollar →</a>';
+</script>
+</body>
+</html>
