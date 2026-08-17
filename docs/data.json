@@ -1,8 +1,8 @@
 {
  "meta": {
   "project": "Gaskiya",
-  "version": "v1.0.0-rc1",
-  "generated": "2026-08-17T06:31:24+01:00",
+  "version": "v1.1.0",
+  "generated": "2026-08-17T09:32:42+01:00",
   "country": "NG",
   "sources": [
    {
@@ -28,6 +28,14 @@
     "state": "",
     "geo_scope": "national",
     "base": "https://nigerianstat.gov.ng"
+   },
+   {
+    "key": "jumia_power",
+    "tier": "A",
+    "category": "power",
+    "state": "",
+    "geo_scope": "national_online",
+    "base": "https://www.jumia.com.ng"
    }
   ],
   "note": "Tier A retail asking prices. Unit prices are medians of matched products per day. Index is an unweighted mean of price relatives, base = first observed day = 100. Basket cost is the reference basket v1.0 (household of 5, one week) priced at those medians. See METHODOLOGY.md."
