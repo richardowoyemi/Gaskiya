@@ -1,380 +1,559 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gaskiya — what things cost in Nigeria</title>
-<meta name="description" content="The dollar, petrol and food prices in Nigeria — updated daily, every number showing where it came from.">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0d0d0d">
+<title>Gaskiya — know the going rate before you pay</title>
+<meta name="description" content="What things actually cost in Nigeria. The dollar, petrol, food staples — with the receipt behind every number.">
+<meta property="og:title" content="Gaskiya">
+<meta property="og:description" content="Know the going rate before you pay.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23c98500'/><path d='M9 21V11h14M9 16h9' stroke='%230d0d0d' stroke-width='3' fill='none'/></svg>">
 <style>
-  :root{
-    color-scheme: dark;
-    --page:#0d0d0d; --surface:#171b18; --surface-2:#1d221e;
-    --ink:#ffffff; --ink-2:#c3c2b7; --muted:#898781;
-    --grid:#2c2c2a; --hair:rgba(255,255,255,.10);
-    --brand:#d9a441; --series-1:#c98500;
-    --good:#0ca30c; --bad:#d03b3b;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--page);color:var(--ink);
-    font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;padding:26px 18px 70px;}
-  .wrap{max-width:940px;margin:0 auto}
-  a{color:var(--brand)}
-  h1{font-size:27px;margin:0 0 4px;letter-spacing:-.4px}
-  h1 span{color:var(--brand)}
-  .sub{color:var(--ink-2);font-size:14.5px;margin:0}
-  .stamp{color:var(--muted);font-size:12.5px;margin:8px 0 26px}
+:root{--page:#0d0d0d;--surf:#171b18;--img:#232a24;--ink:#fff;--ink2:#c3c2b7;
+ --mut:#8b8a83;--hair:rgba(255,255,255,.09);--gold:#d9a441;--s1:#c98500;--good:#0ca30c;--bad:#d9534f}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--page);color:var(--ink);
+ font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+ -webkit-font-smoothing:antialiased}
+body{padding-bottom:env(safe-area-inset-bottom)}
+a{color:inherit;text-decoration:none}
+.app{max-width:520px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column}
+.top{padding:16px 17px 0}
+.brandrow{display:flex;align-items:center;justify-content:space-between;margin-bottom:13px}
+.logo{display:flex;align-items:center;gap:9px;font-size:15px;font-weight:600;letter-spacing:.3px}
+.logo u{text-decoration:none;width:20px;height:20px;border-radius:6px;background:var(--s1);
+ display:inline-flex;align-items:center;justify-content:center}
+.logo u svg{width:13px;height:13px}
+.scope{background:var(--surf);border:1px solid var(--hair);border-radius:999px;padding:5px 12px;
+ font-size:12px;color:var(--ink2)}
+.srch{display:flex;align-items:center;gap:11px;background:var(--surf);border:1px solid var(--hair);
+ border-radius:15px;padding:13px 14px}
+.srch svg{width:18px;height:18px;flex:none}
+.srch input{flex:1;background:0;border:0;color:var(--ink);font:inherit;font-size:16px;outline:none;min-width:0}
+.srch input::placeholder{color:var(--mut)}
+.scanb{width:34px;height:34px;border-radius:9px;background:rgba(201,133,0,.16);flex:none;
+ display:flex;align-items:center;justify-content:center;cursor:pointer}
+.scanb svg{width:17px;height:17px}
+.hint{font-size:12px;color:var(--mut);text-align:right;margin:7px 2px 0;cursor:pointer}
+.chips{display:flex;gap:7px;overflow-x:auto;padding:12px 0 4px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{background:var(--surf);border:1px solid var(--hair);border-radius:999px;padding:7px 14px;
+ font-size:13.5px;color:var(--ink2);white-space:nowrap;flex:none;cursor:pointer}
+.chip.on{background:var(--s1);border-color:var(--s1);color:#141414;font-weight:600}
+main{flex:1;padding:10px 17px 92px}
+.lab{font-size:11px;letter-spacing:.9px;text-transform:uppercase;color:var(--mut);margin:20px 0 10px}
+.lab:first-child{margin-top:4px}
 
-  .three{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:14px}
-  .q{background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:16px 18px}
-  .q .lab{font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted)}
-  .q .big{font-size:34px;letter-spacing:-.8px;margin:8px 0 2px;line-height:1.05}
-  .q .sm{font-size:13px;color:var(--ink-2)}
-  .q .vs{margin-top:11px;padding-top:10px;border-top:1px solid var(--grid);
-    font-size:12.5px;color:var(--muted);line-height:1.5}
-  .q .vs b{color:var(--ink-2)}
-  .q .src{margin-top:9px;font-size:11.5px;color:var(--muted)}
-  .tierdot{display:inline-block;width:6px;height:6px;border-radius:50%;
-    background:var(--series-1);margin-right:5px;vertical-align:middle}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.t{background:var(--surf);border:1px solid var(--hair);border-radius:16px;padding:13px;cursor:pointer;
+ display:flex;flex-direction:column;gap:4px}
+.t .p{font-size:21px;font-weight:600;letter-spacing:-.5px;line-height:1.05;font-variant-numeric:tabular-nums}
+.t .n{font-size:13px;color:var(--ink2);line-height:1.3}
+.t .m{font-size:11px;color:var(--mut);margin-top:2px}
+.t .tag{align-self:flex-start;font-size:10px;border:1px solid var(--hair);border-radius:999px;
+ padding:2px 8px;color:var(--mut);margin-bottom:2px}
+.wide{grid-column:1/3}
+.fx{background:linear-gradient(160deg,#1c211d,#141715);border:1px solid rgba(201,133,0,.32);
+ border-radius:18px;padding:16px;cursor:pointer}
+.fx .k{font-size:11px;letter-spacing:.9px;text-transform:uppercase;color:var(--s1);margin-bottom:9px}
+.fxrow{display:flex;gap:14px}
+.fxrow>div{flex:1}
+.fxrow b{display:block;font-size:11px;color:var(--mut);font-weight:500;margin-bottom:3px}
+.fxrow i{font-style:normal;font-size:24px;font-weight:600;letter-spacing:-.6px;font-variant-numeric:tabular-nums}
+.fxgap{margin-top:11px;padding-top:11px;border-top:1px solid var(--hair);font-size:12px;color:var(--ink2)}
 
-  h2{font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);
-    margin:34px 0 8px;font-weight:600}
-  .hint{color:var(--muted);font-size:12.5px;margin:0 0 10px}
-  .filters{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 12px}
-  .chip{background:var(--surface);border:1px solid var(--hair);color:var(--ink-2);
-    border-radius:999px;padding:5px 12px;font-size:12.5px;cursor:pointer;white-space:nowrap}
-  .chip:hover{border-color:var(--muted)}
-  .chip.on{background:var(--series-1);border-color:var(--series-1);color:#141414;font-weight:600}
-  .chip .c{opacity:.7;margin-left:5px;font-variant-numeric:tabular-nums}
-  .chip.ghost{border-style:dashed}
-  tr.planned td{color:var(--muted)}
-  tr.planned td.item{color:var(--ink-2)}
-  .need{color:var(--series-1);font-size:11.5px}
+.row{display:flex;align-items:center;gap:12px;background:var(--surf);border:1px solid var(--hair);
+ border-radius:13px;padding:12px 13px;margin-bottom:7px;cursor:pointer}
+.row .n{font-size:14px;line-height:1.3}
+.row .d{font-size:11.5px;color:var(--mut);margin-top:3px}
+.row .v{margin-left:auto;text-align:right;flex:none;font-size:15px;font-weight:600;
+ font-variant-numeric:tabular-nums;letter-spacing:-.3px}
+.row .v em{display:block;font-style:normal;font-size:11px;color:var(--mut);font-weight:400;margin-top:3px}
 
-  table{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
-  th,td{text-align:right;padding:9px 10px;border-bottom:1px solid var(--grid)}
-  th:first-child,td:first-child{text-align:left}
-  th{color:var(--muted);font-size:11.5px;text-transform:uppercase;letter-spacing:.5px;
-    font-weight:600;cursor:pointer;user-select:none;white-space:nowrap}
-  th:hover{color:var(--ink-2)}
-  tr.item-row{cursor:pointer}
-  tr.item-row:hover td{background:#1b201c}
-  td.item{color:var(--ink)}
-  td .meta{color:var(--muted);font-size:11.5px;margin-top:1px}
-  .delta{white-space:nowrap}
-  .up{color:var(--bad)} .down{color:var(--good)} .flat{color:var(--muted)}
-  .chev{color:var(--muted);font-size:11px;margin-left:6px}
+.back{display:inline-block;font-size:13.5px;color:var(--mut);margin:0 0 14px;cursor:pointer}
+h1{margin:0 0 5px;font-size:23px;letter-spacing:-.6px;line-height:1.22;font-weight:600}
+.sub{margin:0 0 16px;font-size:13px;color:var(--mut)}
+.blk{border-radius:16px;padding:15px;margin-bottom:10px}
+.blk.paid{background:rgba(201,133,0,.09);border:1px solid rgba(201,133,0,.42)}
+.blk.ask{background:var(--surf);border:1px solid var(--hair)}
+.blk.empty{background:var(--surf);border:1px dashed var(--hair)}
+.blk .kh{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:10px}
+.blk .kh b{font-size:11px;letter-spacing:.9px;text-transform:uppercase;font-weight:600}
+.blk.paid .kh b{color:var(--s1)}.blk.ask .kh b,.blk.empty .kh b{color:var(--mut);font-weight:500}
+.blk .kh i{font-style:normal;font-size:11px;color:var(--mut);text-align:right;flex:none}
+.blk .p{font-size:29px;font-weight:600;letter-spacing:-.9px;line-height:1;font-variant-numeric:tabular-nums}
+.blk.ask .p{font-size:22px;color:var(--ink2)}
+.blk.empty .p{font-size:22px;color:var(--mut)}
+.blk .r{font-size:12px;color:var(--mut);margin-top:7px;line-height:1.5}
+.rule{font-size:12px;color:var(--mut);margin:2px 2px 14px;line-height:1.55}
 
-  tr.receipts td{background:#12150f;padding:0}
-  .rwrap{padding:12px 14px 14px}
-  .rhead{font-size:12px;color:var(--ink-2);margin-bottom:8px}
-  .rhead b{color:var(--ink)}
-  .rlist{display:grid;gap:5px}
-  .r{display:flex;justify-content:space-between;gap:12px;font-size:12.5px;color:var(--ink-2);
-    padding:5px 8px;background:var(--surface);border:1px solid var(--hair);border-radius:6px}
-  .r .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .r .pr{white-space:nowrap;color:var(--ink);font-variant-numeric:tabular-nums}
-  .rnote{font-size:11.5px;color:var(--muted);margin-top:8px}
+.chart{display:flex;align-items:flex-end;gap:7px;height:104px;margin:4px 0 8px}
+.chart div{flex:1;background:var(--s1);border-radius:3px 3px 0 0;opacity:.8;min-height:3px}
+.chart div.last{opacity:1}
+.xax{display:flex;gap:7px;margin-bottom:16px}
+.xax span{flex:1;text-align:center;font-size:10px;color:var(--mut);overflow:hidden}
+.frow{display:flex;justify-content:space-between;font-size:13.5px;padding:11px 0;
+ border-bottom:1px solid var(--hair)}
+.frow b{font-weight:500;color:var(--ink2)}
+.frow i{font-style:normal;font-variant-numeric:tabular-nums}
 
-  details{margin-top:30px;border-top:1px solid var(--hair);padding-top:14px}
-  summary{cursor:pointer;color:var(--ink-2);font-size:13px;list-style:none}
-  summary::-webkit-details-marker{display:none}
-  summary:before{content:"▸ ";color:var(--muted)}
-  details[open] summary:before{content:"▾ "}
-  details p{color:var(--muted);font-size:12.5px;line-height:1.6}
-  details b{color:var(--ink-2)}
-  code{background:var(--surface-2);padding:1px 5px;border-radius:4px;font-size:12px}
-  @media(max-width:640px){h1{font-size:22px}.q .big{font-size:28px}th,td{padding:8px 6px}}
-</style>
-</head>
-<body>
-<div class="wrap">
+.ev{display:flex;align-items:center;gap:11px;background:var(--surf);border:1px solid var(--hair);
+ border-radius:12px;padding:11px 12px;margin-bottom:7px}
+.ev .n{font-size:13px;line-height:1.35;min-width:0}
+.ev .n span{display:block;font-size:11px;color:var(--mut);margin-top:3px}
+.ev .v{margin-left:auto;text-align:right;flex:none;font-size:13.5px;font-variant-numeric:tabular-nums}
+.ev .v em{display:block;font-style:normal;font-size:10.5px;color:var(--mut);margin-top:3px}
+.ev a{color:var(--gold);font-size:11px}
 
-<h1><span>Gaskiya</span> — what things cost in Nigeria</h1>
-<p class="sub">Updated every morning. Every number shows where it came from.</p>
-<p class="stamp" id="stamp">Loading…</p>
+.cta{display:block;text-align:center;background:var(--s1);color:#141414;font-weight:600;
+ border-radius:14px;padding:15px 0;font-size:15px;border:0;width:100%;font-family:inherit;cursor:pointer}
+.cta.g{background:0;border:1px solid var(--hair);color:var(--ink2);font-weight:500}
+.cta+.cta{margin-top:9px}
+.tiny{font-size:11.5px;color:var(--mut);line-height:1.6;margin-top:11px}
+.tiny a{color:var(--gold)}
 
-<div class="three" id="three"></div>
+.tier{display:inline-flex;align-items:center;gap:6px;font-size:10.5px;border-radius:999px;
+ padding:3px 9px;border:1px solid var(--hair);color:var(--mut)}
+.tier.a{border-color:rgba(201,133,0,.45);color:var(--s1)}
 
-<p style="margin:0 0 22px"><a href="power.html" style="display:inline-block;background:var(--surface);
-   border:1px solid var(--hair);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--ink)">
-   <b>Got a quote for an inverter, battery, solar panel or generator?</b>
-   <span style="color:var(--muted)"> — check it against what they actually cost →</span></a></p>
+.amt{border:1px solid var(--s1);border-radius:15px;padding:15px;margin-bottom:12px}
+.amt .k{font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;color:var(--s1);margin-bottom:6px}
+.amt .v{font-size:34px;font-weight:600;letter-spacing:-1px;font-variant-numeric:tabular-nums}
+.kp{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.kp button{background:var(--surf);border:1px solid var(--hair);border-radius:13px;padding:15px 0;
+ font:inherit;font-size:21px;color:var(--ink);font-variant-numeric:tabular-nums;cursor:pointer}
+.kp button:active{background:var(--img)}
+.vd{border:1px solid rgba(201,133,0,.45);background:rgba(201,133,0,.09);border-radius:15px;
+ padding:15px;margin-bottom:18px}
+.vd .h{font-size:17px;font-weight:600;line-height:1.35;color:var(--gold)}
+.vd .s{font-size:13px;color:var(--ink2);margin-top:8px;line-height:1.55}
+.mt{margin-bottom:15px}
+.mt .k{display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:8px;gap:8px}
+.mt .k b{font-weight:500;color:var(--ink2)}
+.mt .k i{font-style:normal;color:var(--mut);text-align:right}
+.mt .tr{position:relative;height:11px;border-radius:6px;background:#242a25}
+.mt .tr u{position:absolute;top:0;bottom:0;background:var(--s1);border-radius:6px;opacity:.55}
+.mt .tr b{position:absolute;top:-4px;bottom:-4px;width:3px;background:#fff;border-radius:2px}
+.scaleend{display:flex;justify-content:space-between;font-size:11px;color:var(--mut);margin-top:-7px}
 
-<h2>Prices</h2>
-<div class="filters" id="filters"></div>
-<p class="hint">Tap any row to see the actual listings behind the price.</p>
-<div id="tableWrap"></div>
-<p class="hint" id="planNote"></p>
+.card{background:linear-gradient(160deg,#1b201c,#121513);border:1px solid rgba(201,133,0,.35);
+ border-radius:19px;padding:20px;margin-bottom:16px}
+.card .brand{display:flex;align-items:center;gap:8px;font-size:11.5px;letter-spacing:1.5px;
+ text-transform:uppercase;color:var(--s1);margin-bottom:16px}
+.card .brand u{text-decoration:none;width:18px;height:18px;border-radius:5px;background:var(--s1);display:inline-block}
+.card h4{margin:0 0 5px;font-size:17px;line-height:1.3}
+.card .spec{font-size:12px;color:var(--mut);margin-bottom:17px}
+.card .kv{margin-bottom:13px}
+.card .kv b{display:block;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;
+ color:var(--mut);font-weight:500;margin-bottom:5px}
+.card .kv i{font-style:normal;font-size:22px;font-weight:600;letter-spacing:-.5px;font-variant-numeric:tabular-nums}
+.card .ft{border-top:1px solid var(--hair);margin-top:16px;padding-top:13px;
+ display:flex;justify-content:space-between;font-size:11px;color:var(--mut)}
 
-<details>
-  <summary>How these numbers are made</summary>
-  <p><b>Each price is a median</b>, not an average — one mispriced listing can't move it.
-     <code>Listings</code> is how many it came from, and you can open any row to see them.</p>
-  <p><b>We price the staple pack, not the sachet.</b> Where pack sizes vary, the larger half is
-     used — a bag of rice, not a 500g pouch. Listings outside a published plausibility range are
-     rejected before the median is taken, and the number rejected is shown rather than hidden.</p>
-  <p><b>Tiers.</b> <b>Tier A</b> is scraped live from a named public source, with the URL as the
-     receipt. <b>Tier B</b> is an official published figure, credited to whoever published it.
-     <b>Tier C</b> — human reports from markets the internet cannot see — is not on this page yet,
-     and will never be blended silently into the others.</p>
-  <p><b>Coverage.</b> Grocery prices here are Lagos online retail, which sits above open-market
-     prices. That is a real limitation, stated on purpose rather than buried.</p>
-  <p><b>Raw data.</b> Every day's rows go unmodified into
-     <a href="https://github.com/richardowoyemi/Gaskiya/tree/main/data/raw">a public archive</a> —
-     append-only, timestamped, never edited after the fact. Official figures are reproduced from the
-     <a href="https://nigerianstat.gov.ng/">National Bureau of Statistics</a> and credited to them.
-     Public data free forever with attribution.</p>
-</details>
+.nav{position:fixed;left:0;right:0;bottom:0;display:flex;background:rgba(23,27,24,.97);
+ border-top:1px solid var(--hair);backdrop-filter:blur(8px);padding-bottom:env(safe-area-inset-bottom);z-index:20}
+.nav .in{max-width:520px;margin:0 auto;display:flex;width:100%}
+.nav a{flex:1;text-align:center;padding:11px 0 9px;font-size:10.5px;color:var(--mut);cursor:pointer}
+.nav a.on{color:var(--gold)}
+.nav svg{width:21px;height:21px;display:block;margin:0 auto 4px}
+
+#toast{position:fixed;left:50%;bottom:82px;transform:translateX(-50%) translateY(10px);
+ background:#e8e6df;color:#141414;font-size:13.5px;font-weight:500;padding:11px 19px;border-radius:999px;
+ opacity:0;pointer-events:none;transition:.22s;z-index:60;white-space:nowrap}
+#toast.on{opacity:1;transform:translateX(-50%)}
+.err{background:var(--surf);border:1px dashed var(--hair);border-radius:14px;padding:18px;
+ font-size:13.5px;color:var(--ink2);line-height:1.6}
+.skel{height:76px;background:var(--surf);border-radius:16px;margin-bottom:11px;
+ animation:pulse 1.3s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.5}50%{opacity:.85}}
+.foot{margin-top:26px;padding-top:18px;border-top:1px solid var(--hair);font-size:11.5px;
+ color:var(--mut);line-height:1.7}
+.foot a{color:var(--gold)}
+</style></head><body>
+<div id="toast"></div>
+<div class="app">
+ <div class="top">
+  <div class="brandrow">
+   <div class="logo" onclick="location.hash='#/'"><u><svg viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="3"><path d="M5 18V7h14M5 12h9"/></svg></u>Gaskiya</div>
+   <div class="scope" id="scope">Nigeria</div>
+  </div>
+  <div class="srch">
+   <svg viewBox="0 0 24 24" fill="none" stroke="#8b8a83" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+   <input id="q" placeholder="What are you buying?" autocomplete="off" enterkeyhint="search">
+   <div class="scanb" onclick="location.hash='#/check'" title="Check a price">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#c98500" stroke-width="2"><path d="M4 8V5h3M20 8V5h-3M4 16v3h3M20 16v3h-3"/><path d="M7 12h10"/></svg></div>
+  </div>
+  <div class="hint" onclick="location.hash='#/check'">Got a price already? Check it &rsaquo;</div>
+  <div class="chips" id="chips"></div>
+ </div>
+ <main id="view"><div class="skel"></div><div class="skel"></div><div class="skel"></div></main>
 </div>
-
+<nav class="nav"><div class="in">
+ <a id="nav-home" onclick="location.hash='#/'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>Prices</a>
+ <a id="nav-check" onclick="location.hash='#/check'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h10M4 17h13"/></svg>Check</a>
+ <a id="nav-about" onclick="location.hash='#/about'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 16v-5M12 8h.01"/></svg>Method</a>
+</div></nav>
 <script>
-const el = id => document.getElementById(id);
-const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const money = (n, dp) => '₦' + Number(n).toLocaleString('en-NG', {maximumFractionDigits: dp == null ? 0 : dp});
-const LABEL = {
-  rice:'Rice', beans_brown:'Beans (brown)', garri:'Garri', semovita:'Semovita',
-  poundo_yam:'Poundo / yam flour', spaghetti:'Spaghetti & pasta', noodles:'Noodles',
-  bread:'Bread', cereal:'Cereal', oats:'Oats', eggs:'Eggs', chicken_frozen:'Chicken (frozen)',
-  fish_frozen:'Fish (frozen)', stockfish:'Stockfish / dried fish', crayfish:'Crayfish',
-  milk_powder:'Milk (powder)', milk_evap:'Milk (evaporated)', palm_oil:'Palm oil',
-  veg_oil:'Vegetable oil', tomato_paste:'Tomato paste', tomato_fresh:'Tomatoes (fresh)',
-  pepper:'Pepper', onions:'Onions', sugar:'Sugar', salt:'Salt', seasoning:'Seasoning cubes',
-  egusi:'Egusi', ogbono:'Ogbono', groundnut:'Groundnut', beverage_choc:'Milo / Bournvita',
-  tea:'Tea', water:'Water', soft_drink:'Soft drinks', detergent:'Detergent',
-  soap_bar:'Bar soap', toilet_roll:'Toilet roll', sanitary_pad:'Sanitary pads',
-  diapers:'Diapers', baby_formula:'Baby formula'
-};
-const UNIT = {kg:'per kg', l:'per litre', piece:'each'};
-const SRC = {supermart:'Supermart.ng', healthplus:'HealthPlus', nbs:'NBS', luno:'Luno',
-             'exchangerate-api':'ExchangeRate-API'};
+/* Gaskiya — public site. Reads data.json produced by the Apps Script run. */
+var CONTRIBUTE_URL = "";   /* paste a Google Form link here to switch on "Add a price" */
 
-let DATA = null, CATALOGUE = null, sortKey = 'name', sortDir = 1, openRow = null;
-let activeCat = 'all', showPlanned = false;
+var D=null, ERR=null, CAT='all', Q='', QUOTE={amt:'',item:null};
+var $=function(s){return document.querySelector(s)};
+var el=function(s){return document.getElementById(s)};
+function NG(n,dp){ if(n==null||isNaN(n)) return '—';
+  return '₦'+Number(n).toLocaleString('en-NG',{minimumFractionDigits:dp||0,maximumFractionDigits:dp||0}) }
+function K(n){ if(n==null||isNaN(n)) return '—';
+  return n>=1e6?'₦'+(n/1e6).toFixed(2)+'m' : n>=1000?'₦'+Math.round(n/1000)+'k' : NG(n) }
+function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){
+  return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c] }) }
+function title(k){ return String(k).replace(/_/g,' ').replace(/\b\w/g,function(c){return c.toUpperCase()}) }
+function toast(m){ var t=el('toast'); t.textContent=m; t.classList.add('on');
+  clearTimeout(t._t); t._t=setTimeout(function(){t.classList.remove('on')},2000) }
+function ago(iso){ if(!iso) return '';
+  var d=new Date(iso), now=new Date(), h=Math.round((now-d)/36e5);
+  if(isNaN(h)) return ''; if(h<1) return 'just now'; if(h<24) return h+'h ago';
+  var days=Math.round(h/24); return days===1?'yesterday':days+' days ago' }
+function fmtDay(d){ var p=String(d).split('-'); if(p.length<3) return d;
+  return p[2]+' '+['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+p[1]-1] }
 
-Promise.all([
-  fetch('data.json?' + Date.now()).then(r => { if (!r.ok) throw new Error('data.json ' + r.status); return r.json(); }),
-  fetch('catalogue.json?' + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null),
-]).then(([d, c]) => { DATA = d; CATALOGUE = c; render(); })
-  .catch(e => { el('stamp').textContent = 'Could not load data — ' + e.message; });
+/* ---- derive an item's observed asking spread from its receipts ---- */
+function spread(it){
+  var u=(it.receipts||[]).map(function(r){return r.unit}).filter(function(v){return v>0}).sort(function(a,b){return a-b});
+  if(!u.length) return null;
+  var q=function(p){ var i=(u.length-1)*p, lo=Math.floor(i), hi=Math.ceil(i);
+    return u[lo]+(u[hi]-u[lo])*(i-lo) };
+  return {lo:u[0], hi:u[u.length-1], p25:q(.25), p75:q(.75), med:q(.5), n:u.length};
+}
+function lastPoint(it){ var p=it.points||[]; return p.length?p[p.length-1]:null }
 
-const OFF = k => (DATA.official || []).filter(o => o.key === k)[0];
-const lastOf = o => (o && o.points && o.points.length) ? o.points[o.points.length - 1].v : null;
-
-// Arrow + signed number always: red/green alone fails colour-blind separation.
-function delta(now, before) {
-  if (before == null || !before) return '<span class="flat">—</span>';
-  const pct = (now - before) / before * 100;
-  if (Math.abs(pct) < 0.05) return '<span class="flat">▬ no change</span>';
-  const up = pct > 0;
-  return '<span class="delta ' + (up ? 'up' : 'down') + '">' +
-         (up ? '▲ +' : '▼ ') + pct.toFixed(1) + '%</span>';
+/* ---- catalogue: everything searchable, in one shape ---- */
+function catalogue(){
+  if(!D) return [];
+  var out=[];
+  if(D.fx && D.fx.length) out.push({kind:'fx', key:'usd', cat:'money', name:'US dollar',
+    spec:'official window and licensed exchange'});
+  (D.official||[]).forEach(function(o){
+    out.push({kind:'official', key:o.key, cat:/cpi|inflation/i.test(o.key)?'official':'fuel',
+      name:o.label, spec:'NBS · per '+o.unit, src:o}) });
+  (D.items||[]).forEach(function(it){
+    out.push({kind:'item', key:it.key, cat:'food', name:title(it.key),
+      spec:'per '+it.unit+' · Lagos online', src:it}) });
+  if(D.power && D.power.models) out.push({kind:'power', key:'power', cat:'power',
+    name:'Inverters, batteries, panels', spec:D.power.models+' models · online listings'});
+  return out;
 }
 
-function render() {
-  const {days, items} = DATA;
-  const today = days[days.length - 1], prev = days.length > 1 ? days[days.length - 2] : null;
-  el('stamp').innerHTML = esc(today) + ' · ' + items.length + ' items priced this morning' +
-    (CATALOGUE ? ' · ' + CATALOGUE.items.length + ' tracked in total' : '');
-  renderThree();
-  renderFilters();
-  drawTable(items, today, prev);
+/* ================= views ================= */
+function vHome(){
+  var v=el('view');
+  if(ERR){ v.innerHTML='<div class="err"><b>Could not load today’s prices.</b><br><br>'+esc(ERR)+
+    '<br><br>The data file is published each morning by the collector. If this persists the run has failed.</div>'; return }
+  var cat=catalogue().filter(function(c){ return CAT==='all'||c.cat===CAT });
+  var h='';
+  var fx=D.fx&&D.fx.length?D.fx[D.fx.length-1]:null;
+  if(fx && (CAT==='all'||CAT==='money')){
+    h+='<div class="fx" onclick="location.hash=\'#/i/usd\'"><div class="k">US dollar · '+fmtDay(fx.d)+'</div>'+
+      '<div class="fxrow"><div><b>Official window</b><i>'+NG(fx.official)+'</i></div>'+
+      '<div><b>Licensed exchange</b><i>'+NG(fx.usdt)+'</i></div></div>'+
+      '<div class="fxgap">Gap '+Number(fx.spread_pct).toFixed(2)+'% · shown separately, never blended.</div></div>';
+  }
+  var off=cat.filter(function(c){return c.kind==='official'});
+  if(off.length){ h+='<p class="lab">Official, published by NBS</p>';
+    off.forEach(function(c){ var p=c.src.points, last=p&&p.length?p[p.length-1]:null;
+      h+='<div class="row" onclick="location.hash=\'#/i/'+c.key+'\'">'+
+        '<div><div class="n">'+esc(c.src.label)+'</div><div class="d">per '+esc(c.src.unit)+' · Tier B · '+esc(c.src.as_of||'')+'</div></div>'+
+        '<div class="v">'+(c.src.unit==='%'?Number(last&&last.v).toFixed(2)+'%':NG(last&&last.v))+
+        '<em>'+(last?fmtDay(last.d):'')+'</em></div></div>' }) }
+  var items=cat.filter(function(c){return c.kind==='item'});
+  if(items.length){
+    h+='<p class="lab">Food staples · Lagos online · asking prices</p><div class="grid">';
+    items.forEach(function(c){
+      var s=spread(c.src), lp=lastPoint(c.src);
+      var thin=!s||s.n<5;
+      h+='<div class="t" onclick="location.hash=\'#/i/'+c.key+'\'">'+
+        '<span class="tag">'+(s?s.n:0)+' listing'+(s&&s.n===1?'':'s')+'</span>'+
+        '<div class="p">'+(thin?'—':NG(s.med))+'</div>'+
+        '<div class="n">'+esc(title(c.src.key))+'</div>'+
+        '<div class="m">'+(thin?'too few to publish':'per '+c.src.unit+
+          (lp&&lp.chg!=null?' · '+(lp.chg>=0?'▲ ':'▼ ')+Math.abs(lp.chg).toFixed(1)+'%':''))+'</div></div>';
+    });
+    h+='</div>';
+  }
+  if(D.power && D.power.models && (CAT==='all'||CAT==='power')){
+    h+='<p class="lab">Power</p><div class="row" onclick="location.hash=\'#/i/power\'">'+
+      '<div><div class="n">Inverters, batteries, panels</div>'+
+      '<div class="d">'+D.power.models+' models · '+D.power.cohorts+' cohorts · online listings</div></div>'+
+      '<div class="v">'+D.power.models+'<em>models</em></div></div>';
+  }
+  if(!h) h='<div class="err">Nothing in this category yet.</div>';
+  h+=footer();
+  v.innerHTML=h;
 }
 
-const card = (lab, big, sm, vs, src) =>
-  '<div class="q"><div class="lab">' + esc(lab) + '</div><div class="big">' + big + '</div>' +
-  '<div class="sm">' + sm + '</div><div class="vs">' + vs + '</div>' +
-  '<div class="src"><span class="tierdot"></span>' + esc(src) + '</div></div>';
-
-function refPeriod() {
-  const lab = (OFF('nbs_inflation_food') || {}).label || '';
-  const m = lab.match(/reference period\s+(.+)$/i);
-  return m ? m[1].trim() : null;
+function footer(){
+  var g=D&&D.meta?D.meta.generated:null;
+  return '<div class="foot">Collected '+(g?esc(ago(g))+' · '+esc(String(g).slice(0,10)):'daily')+
+   ' · '+(D&&D.days?D.days.length:0)+' day'+((D&&D.days&&D.days.length===1)?'':'s')+' of history.<br>'+
+   'Every number here is an <b>asking price</b> observed at a named source. '+
+   'Nobody has told us what they actually paid yet — <a onclick="location.hash=\'#/about\'">how this works</a>.</div>';
 }
 
-/* The three questions Nigerians actually check, each with the official figure
-   sitting BESIDE it — a comparison in a separate section is not a comparison. */
-function renderThree() {
-  const cards = [];
+function vSearch(){
+  var v=el('view'), q=Q.trim().toLowerCase();
+  var list=catalogue().filter(function(c){ return (c.name+' '+c.spec+' '+c.key).toLowerCase().indexOf(q)>-1 });
+  if(!list.length){ v.innerHTML='<div class="err">Nothing matches “'+esc(Q)+'” yet.<br><br>'+
+    'Gaskiya only shows what it has actually observed. An empty result is the honest answer, not a bug.</div>'; return }
+  var h='';
+  list.forEach(function(c){
+    var val='', sub=c.spec;
+    if(c.kind==='fx'){ var f=D.fx[D.fx.length-1]; val=NG(f.usdt) }
+    else if(c.kind==='official'){ var p=c.src.points, l=p[p.length-1];
+      val=c.src.unit==='%'?Number(l.v).toFixed(2)+'%':NG(l.v) }
+    else if(c.kind==='item'){ var s=spread(c.src); val=s&&s.n>=5?NG(s.med):'—';
+      sub='per '+c.src.unit+' · '+(s?s.n:0)+' listings' }
+    else val=D.power.models;
+    h+='<div class="row" onclick="location.hash=\'#/i/'+c.key+'\'">'+
+      '<div><div class="n">'+esc(c.name)+'</div><div class="d">'+esc(sub)+'</div></div>'+
+      '<div class="v">'+val+'</div></div>';
+  });
+  v.innerHTML=h;
+}
 
-  const fx = DATA.fx || [];
-  if (fx.length) {
-    const n = fx[fx.length - 1], w = fx.length > 1 ? fx[fx.length - 2] : null;
-    cards.push(card('The dollar', money(n.usdt, 2),
-      w ? delta(n.usdt, w.usdt) + ' · licensed exchange' : 'licensed exchange · USDT/NGN mid',
-      'Official rate <b>' + money(n.official, 2) + '</b> — a gap of <b>' +
-        n.spread_pct.toFixed(2) + '%</b>, or ' + money(n.usdt - n.official, 2) + ' on every dollar.',
-      'Luno live feed + published official rate'));
+function findc(key){ var c=catalogue().filter(function(x){return x.key===key}); return c.length?c[0]:null }
+
+function vItem(key){
+  var v=el('view'), c=findc(key);
+  if(!c){ v.innerHTML='<div class="err">Not found.</div>'; return }
+  var h='<span class="back" onclick="history.back()">‹ Back</span>';
+
+  if(c.kind==='fx'){
+    var f=D.fx[D.fx.length-1];
+    h+='<h1>US dollar</h1><p class="sub">Two sources, shown separately</p>'+
+      '<div class="blk paid"><div class="kh"><b>Licensed exchange</b><i>'+fmtDay(f.d)+'</i></div>'+
+      '<div class="p">'+NG(f.usdt,2)+'</div><div class="r">Luno USDT/NGN · Tier A</div></div>'+
+      '<div class="blk ask"><div class="kh"><b>Official window</b><i>'+fmtDay(f.d)+'</i></div>'+
+      '<div class="p">'+NG(f.official,2)+'</div><div class="r">CBN NFEM · Tier A</div></div>'+
+      '<p class="rule">Gap '+Number(f.spread_pct).toFixed(2)+'%. The two are never averaged into one rate — '+
+      'the difference between them is the information.</p>';
+    if(D.fx.length>1) h+=chart(D.fx.map(function(x){return {d:x.d,v:x.usdt}}),'Licensed exchange');
+    h+=shareBtn('US dollar', NG(f.usdt,2), 'licensed exchange · '+fmtDay(f.d));
   }
 
-  const pv = lastOf(OFF('nbs_fuel_pms'));
-  if (pv != null) {
-    const ago = lastOf(OFF('nbs_fuel_ago')), gas = lastOf(OFF('nbs_fuel_lpg5kg'));
-    cards.push(card('Petrol', money(pv, 2), 'per litre · national average',
-      'Diesel <b>' + (ago ? money(ago, 2) : '—') + '</b> a litre · cooking gas <b>' +
-        (gas ? money(gas, 2) : '—') + '</b> per 5kg refill.',
-      'National Bureau of Statistics'));
+  else if(c.kind==='official'){
+    var o=c.src, pts=o.points||[], last=pts[pts.length-1];
+    h+='<h1>'+esc(o.label)+'</h1><p class="sub">National average · per '+esc(o.unit)+'</p>'+
+      '<div class="blk paid"><div class="kh"><b>Published figure</b><i><span class="tier">Tier B</span></i></div>'+
+      '<div class="p">'+(o.unit==='%'?Number(last.v).toFixed(2)+'%':NG(last.v,2))+'</div>'+
+      '<div class="r">National Bureau of Statistics · as of '+esc(o.as_of||fmtDay(last.d))+'</div></div>'+
+      '<p class="rule">NBS publishes late and nationally. What a litre costs on your street this week '+
+      'is a different number, and Gaskiya does not have it yet.</p>';
+    if(pts.length>1) h+=chart(pts,'Published');
+    h+=shareBtn(o.label, o.unit==='%'?Number(last.v).toFixed(2)+'%':NG(last.v,2), 'NBS · '+esc(o.as_of||''));
   }
 
-  const foodInf = lastOf(OFF('nbs_inflation_food')), ref = refPeriod(), idx = DATA.index || [];
-  let big = '—', sm = 'needs a second morning of readings';
-  if (idx.length > 1) {
-    const a = idx[idx.length - 2].v, b = idx[idx.length - 1].v, pct = (b - a) / a * 100;
-    big = (pct >= 0 ? '+' : '') + pct.toFixed(1) + '%';
-    sm = 'our food basket, since yesterday';
-  } else if (idx.length === 1) { big = 'Day 1'; sm = 'tracking started this morning'; }
-  cards.push(card('Food', big, sm,
-    foodInf != null
-      ? 'Official food inflation <b>' + foodInf.toFixed(2) + '%</b> year-on-year' +
-        (ref ? ', for <b>' + esc(ref) + '</b> — published weeks after the prices it describes.' : '.')
-      : 'Official comparison not available.',
-    'named retailers, checked every morning'));
-
-  el('three').innerHTML = cards.join('');
-}
-
-
-/* Categories come from the published catalogue, so the site's structure and
-   the project's roadmap are the same document. Nothing is listed here that
-   isn't also a commitment to track it. */
-function renderFilters() {
-  if (!CATALOGUE) { el('filters').innerHTML = ''; return; }
-  const priced = new Set(DATA.items.map(i => i.key));
-  const cats = CATALOGUE.categories.map(c => {
-    const its = CATALOGUE.items.filter(i => i.category === c.key);
-    return {...c, livecount: its.filter(i => priced.has(i.key)).length, total: its.length};
-  });
-  const shown = showPlanned ? cats : cats.filter(c => c.livecount > 0);
-  const totalLive = DATA.items.length;
-
-  el('filters').innerHTML =
-    chip('all', 'All', totalLive, activeCat === 'all') +
-    shown.map(c => chip(c.key, c.label, showPlanned ? c.total : c.livecount, activeCat === c.key)).join('') +
-    '<span class="chip ghost" data-toggle="1">' +
-      (showPlanned ? '✓ showing what\'s coming' : '+ show what\'s coming') + '</span>';
-
-  el('filters').querySelectorAll('.chip[data-cat]').forEach(el2 => {
-    el2.onclick = () => { activeCat = el2.dataset.cat; openRow = null; render(); };
-  });
-  const t = el('filters').querySelector('.chip[data-toggle]');
-  if (t) t.onclick = () => { showPlanned = !showPlanned; openRow = null; render(); };
-}
-const chip = (k, label, n, on) =>
-  '<span class="chip' + (on ? ' on' : '') + '" data-cat="' + esc(k) + '">' +
-  esc(label) + '<span class="c">' + n + '</span></span>';
-
-function catOf(key) {
-  if (!CATALOGUE) return null;
-  return CATALOGUE.items.filter(i => i.key === key)[0] || null;
-}
-
-function drawTable(items, today, prev) {
-  let pool = items;
-  if (activeCat !== 'all' && CATALOGUE) {
-    const keys = new Set(CATALOGUE.items.filter(i => i.category === activeCat).map(i => i.key));
-    pool = items.filter(i => keys.has(i.key));
-  }
-  const rows = pool.map(it => {
-    const t = it.points.filter(p => p.d === today)[0];
-    const y = prev ? it.points.filter(p => p.d === prev)[0] : null;
-    return {
-      key: it.key, name: LABEL[it.key] || it.key, unit: UNIT[it.unit] || it.unit,
-      price: t ? t.p : null, n: t ? t.n : 0, rejected: t ? (t.rejected || 0) : 0,
-      method: t ? t.method : '', prev: y ? y.p : null,
-      pct: (t && y && y.p) ? (t.p - y.p) / y.p * 100 : null,
-      source: SRC[it.source] || it.source || '', receipts: it.receipts || [],
-      planned: false,
-    };
-  });
-
-  // Planned items: shown honestly as "not priced yet", with what's needed to
-  // price them. This is the roadmap and the recruitment brief, in public.
-  if (showPlanned && CATALOGUE) {
-    const priced = new Set(items.map(i => i.key));
-    CATALOGUE.items
-      .filter(i => !priced.has(i.key) && (activeCat === 'all' || i.category === activeCat))
-      .forEach(i => rows.push({
-        key: i.key, name: i.label, unit: i.pack, price: null, n: 0, rejected: 0,
-        method: '', prev: null, pct: null, planned: true, receipts: [],
-        source: i.tier === 'C' ? (i.note || 'needs a market reporter')
-              : i.tier === 'B' ? 'official source, not yet ingested'
-              : 'scraper not yet built',
-      }));
-  }
-  const cmp = {
-    name: (a, b) => a.name.localeCompare(b.name),
-    price: (a, b) => (a.price == null ? -1 : a.price) - (b.price == null ? -1 : b.price),
-    n: (a, b) => a.n - b.n,
-    pct: (a, b) => (a.pct == null ? -1e9 : a.pct) - (b.pct == null ? -1e9 : b.pct),
-  }[sortKey];
-  rows.sort((a, b) => cmp(a, b) * sortDir);
-  const arrow = k => sortKey === k ? (sortDir > 0 ? ' ↑' : ' ↓') : '';
-
-  el('tableWrap').innerHTML =
-    '<table><thead><tr>' +
-      '<th data-k="name">Item' + arrow('name') + '</th>' +
-      '<th data-k="price">Price' + arrow('price') + '</th>' +
-      '<th data-k="n">Listings' + arrow('n') + '</th>' +
-      '<th data-k="pct">Change' + arrow('pct') + '</th>' +
-    '</tr></thead><tbody>' +
-    rows.map((r, i) =>
-      '<tr class="' + (r.planned ? 'planned' : 'item-row') + '" data-i="' + i + '">' +
-        '<td class="item">' + esc(r.name) + '<div class="meta">' + esc(r.unit) +
-          (r.planned ? ' · <span class="need">' + esc(r.source) + '</span>'
-                     : (r.source ? ' · ' + esc(r.source) : '') + '<span class="chev">▸ receipts</span>') +
-        '</div></td>' +
-        '<td>' + (r.price == null ? '—' : money(r.price, r.price < 100 ? 2 : 0)) + '</td>' +
-        '<td>' + (r.n || '—') + '</td>' +
-        '<td>' + (r.pct == null ? '<span class="flat">—</span>' : delta(r.price, r.prev)) + '</td>' +
-      '</tr>' +
-      '<tr class="receipts" id="rc' + i + '" style="display:none"><td colspan="4">' +
-        receiptsHtml(r) + '</td></tr>'
-    ).join('') + '</tbody></table>' +
-    (prev ? '' : '<p class="hint" style="margin-top:12px">Change fills in from tomorrow morning.</p>');
-
-  if (CATALOGUE) {
-    const priced = DATA.items.length, total = CATALOGUE.items.length;
-    const needC = CATALOGUE.items.filter(i => i.tier === 'C' &&
-      !new Set(DATA.items.map(x => x.key)).has(i.key)).length;
-    el('planNote').innerHTML = priced + ' of ' + total + ' tracked items are priced today. ' +
-      needC + ' of the rest need a person in a market, not a scraper — ' +
-      'open-market food, transport fares, cooked meals, building materials, wages. ' +
-      'Those are being recruited.';
+  else if(c.kind==='power'){
+    h+='<h1>Power</h1><p class="sub">'+D.power.models+' models · '+D.power.cohorts+' cohorts</p>'+
+      '<div class="blk empty"><div class="kh"><b>Online listings only</b></div>'+
+      '<div class="p">'+D.power.models+' models</div>'+
+      '<div class="r">'+esc(D.power.geo)+'</div></div>'+
+      '<p class="rule">Collected daily from online retail. Shop, distributor and installer prices for the same '+
+      'machine are different markets and are not yet measured.</p>';
   }
 
-  el('tableWrap').querySelectorAll('th[data-k]').forEach(th => {
-    th.onclick = () => {
-      const k = th.dataset.k;
-      sortDir = (sortKey === k) ? -sortDir : (k === 'name' ? 1 : -1);
-      sortKey = k; openRow = null; drawTable(items, today, prev);
-    };
-  });
-  el('tableWrap').querySelectorAll('tr.item-row').forEach(tr => {
-    tr.onclick = () => {
-      const i = tr.dataset.i, row = el('rc' + i);
-      const show = row.style.display === 'none';
-      if (openRow != null && openRow !== i && el('rc' + openRow)) el('rc' + openRow).style.display = 'none';
-      row.style.display = show ? '' : 'none';
-      openRow = show ? i : null;
-    };
-  });
+  else {
+    var it=c.src, s=spread(it), lp=lastPoint(it), thin=!s||s.n<5;
+    h+='<h1>'+esc(title(it.key))+'</h1><p class="sub">per '+esc(it.unit)+' · Lagos · online retail</p>';
+    h+='<div class="blk empty"><div class="kh"><b>What people paid</b><i>0 receipts</i></div>'+
+      '<div class="p">Not yet</div>'+
+      '<div class="r">Nobody has shown us a receipt for this. Until they do, everything below is what '+
+      'sellers <i>ask</i>, not what anyone <i>paid</i>.</div></div>';
+    if(thin){
+      h+='<div class="blk ask"><div class="kh"><b>Sellers ask</b><i>'+(s?s.n:0)+' listings</i></div>'+
+        '<div class="p">Too few to publish</div>'+
+        '<div class="r">Below five observations Gaskiya shows the listings and no median. '+
+        'A number built on '+(s?s.n:0)+' would be easy to move.</div></div>';
+    } else {
+      h+='<div class="blk ask"><div class="kh"><b>Sellers ask</b><i>'+s.n+' listings · <span class="tier a">Tier A</span></i></div>'+
+        '<div class="p">'+NG(s.p25)+' – '+NG(s.p75)+'</div>'+
+        '<div class="r">middle half of '+s.n+' listings · median '+NG(s.med)+' per '+esc(it.unit)+
+        (lp&&lp.chg!=null?'<br>matched-model change '+(lp.chg>=0?'▲ +':'▼ −')+
+          Math.abs(lp.chg).toFixed(1)+'% since the previous run':'')+'</div></div>';
+    }
+    h+='<p class="rule">Every price below is a real listing with a link. The per-'+esc(it.unit)+
+      ' figure is derived from pack size, which is where errors creep in — so the listings are the record, '+
+      'not the average.</p>';
+    h+='<p class="lab">The listings behind it</p>';
+    (it.receipts||[]).slice(0,14).forEach(function(r){
+      h+='<div class="ev"><div class="n">'+esc(r.name)+
+        '<span>'+NG(r.price)+' pack · '+NG(r.unit)+' per '+esc(it.unit)+'</span></div>'+
+        '<div class="v"><a href="'+esc(r.url)+'" target="_blank" rel="noopener">open ↗</a></div></div>';
+    });
+    if((it.receipts||[]).length>14) h+='<p class="tiny">'+((it.receipts.length)-14)+' more not shown.</p>';
+    if(it.points && it.points.length>1) h+=chart(it.points.map(function(p){return {d:p.d,v:p.p}}),'Per '+it.unit);
+    h+='<button class="cta g" onclick="QUOTE.item=\''+it.key+'\';location.hash=\'#/check\'">Check a price against this</button>';
+    h+=shareBtn(title(it.key), thin?'—':NG(s.p25)+' – '+NG(s.p75), 'asking · per '+it.unit+' · Lagos');
+  }
+  h+=footer();
+  v.innerHTML=h;
 }
 
-function receiptsHtml(r) {
-  if (!r.receipts.length) return '<div class="rwrap"><div class="rnote">No listings recorded.</div></div>';
-  return '<div class="rwrap">' +
-    '<div class="rhead">Median of <b>' + r.n + '</b> listing' + (r.n === 1 ? '' : 's') +
-      ' from ' + esc(r.source) + ' this morning' +
-      (r.method === 'staple_pack' ? ', using the larger pack sizes' : '') + '.</div>' +
-    '<div class="rlist">' +
-      r.receipts.map(x =>
-        '<div class="r"><span class="nm">' + esc(x.name) + '</span>' +
-        '<span class="pr">' + money(x.price, 0) + ' → ' + money(x.unit, x.unit < 100 ? 2 : 0) +
-        ' ' + esc(r.unit) + '</span></div>').join('') +
-    '</div>' +
-    (r.rejected ? '<div class="rnote">' + r.rejected + ' listing' + (r.rejected === 1 ? '' : 's') +
-      ' rejected as implausible before the median was taken.</div>' : '') +
-    '</div>';
+function chart(pts,label){
+  var vals=pts.map(function(p){return p.v}).filter(function(x){return x!=null});
+  if(vals.length<2) return '';
+  var max=Math.max.apply(null,vals), min=Math.min.apply(null,vals);
+  var lo=min-(max-min)*0.35||min*0.9;
+  var h='<p class="lab">'+esc(label)+' · '+pts.length+' observations</p><div class="chart">';
+  pts.forEach(function(p,i){ var pc=max===lo?70:((p.v-lo)/(max-lo))*94+6;
+    h+='<div class="'+(i===pts.length-1?'last':'')+'" style="height:'+pc.toFixed(0)+'%"></div>' });
+  h+='</div><div class="xax">'+pts.map(function(p){return '<span>'+fmtDay(p.d)+'</span>'}).join('')+'</div>';
+  h+='<div class="frow"><b>Highest</b><i>'+NG(max,2)+'</i></div>'+
+     '<div class="frow"><b>Lowest</b><i>'+NG(min,2)+'</i></div>';
+  return h;
 }
+
+function shareBtn(name,val,sub){
+  return '<button class="cta g" style="margin-top:12px" onclick=\'doShare('+
+    JSON.stringify(JSON.stringify({n:name,v:val,s:sub}))+')\'>Share this number</button>';
+}
+function doShare(payload){
+  var o=JSON.parse(payload);
+  var txt=o.n+': '+o.v+' ('+o.s+') — Gaskiya, '+new Date().toISOString().slice(0,10)+'\n'+location.href;
+  if(navigator.share){ navigator.share({title:'Gaskiya · '+o.n, text:txt}).catch(function(){}) }
+  else if(navigator.clipboard){ navigator.clipboard.writeText(txt).then(function(){toast('Copied')}) }
+  else toast('Copy the link from your browser');
+}
+
+/* ---- check a price ---- */
+function vCheck(){
+  var v=el('view');
+  var items=(D&&D.items)||[];
+  var it=null; if(QUOTE.item) items.forEach(function(x){ if(x.key===QUOTE.item) it=x });
+  if(!it && items.length) it=items[0];
+  if(!it){ v.innerHTML='<div class="err">No priced items loaded yet.</div>'; return }
+  QUOTE.item=it.key;
+  var opts=items.map(function(x){ return '<option value="'+x.key+'"'+(x.key===it.key?' selected':'')+'>'+
+    esc(title(x.key))+' (per '+esc(x.unit)+')</option>' }).join('');
+  v.innerHTML='<h1>What were you told?</h1><p class="sub">Price per unit, so we compare like with like</p>'+
+   '<div class="row" style="cursor:default"><div style="flex:1"><div class="d" style="margin:0 0 6px">Item</div>'+
+   '<select id="qi" style="width:100%;background:#232a24;border:1px solid var(--hair);color:#fff;'+
+   'font:inherit;font-size:14px;border-radius:9px;padding:9px">'+opts+'</select></div></div>'+
+   '<div class="amt"><div class="k">They said (per '+esc(it.unit)+')</div>'+
+   '<div class="v" id="qv">'+(QUOTE.amt?NG(+QUOTE.amt):'₦0')+'</div></div>'+
+   '<div class="kp">'+['1','2','3','4','5','6','7','8','9','0','00'].map(function(k){
+     return '<button onclick="kp(\''+k+'\')">'+k+'</button>' }).join('')+
+   '<button onclick="kp(\'del\')">⌫</button></div>'+
+   '<button class="cta" style="margin-top:14px" onclick="runCheck()">Check it</button>'+
+   '<p class="tiny">Compared against observed asking prices only. Nobody has reported what they '+
+   '<i>paid</i> yet, so this tells you where a quote sits among sellers — not whether anyone accepted it.</p>';
+  el('qi').onchange=function(){ QUOTE.item=this.value; QUOTE.amt=''; vCheck() };
+}
+function kp(k){ if(k==='del') QUOTE.amt=QUOTE.amt.slice(0,-1);
+  else if(QUOTE.amt.length<9) QUOTE.amt=(QUOTE.amt==='0'?'':QUOTE.amt)+k;
+  var e=el('qv'); if(e) e.textContent=QUOTE.amt?NG(+QUOTE.amt):'₦0' }
+function runCheck(){ if(!QUOTE.amt){ toast('Type the number you were given'); return } location.hash='#/verdict' }
+
+function vVerdict(){
+  var v=el('view'), it=null;
+  (D.items||[]).forEach(function(x){ if(x.key===QUOTE.item) it=x });
+  if(!it||!QUOTE.amt){ location.hash='#/check'; return }
+  var s=spread(it), q=+QUOTE.amt;
+  var h='<span class="back" onclick="location.hash=\'#/check\'">‹ Change</span>';
+  h+='<h1 style="font-size:38px;letter-spacing:-1.2px">'+NG(q)+'</h1>'+
+     '<p class="sub">quoted to you · per '+esc(it.unit)+' · '+esc(title(it.key))+'</p>';
+  if(!s||s.n<5){
+    h+='<div class="vd"><div class="h">We cannot judge this yet.</div>'+
+      '<div class="s">Only '+(s?s.n:0)+' listing'+(s&&s.n===1?'':'s')+' observed for this item. '+
+      'Gaskiya will not call a price normal or high on that little.</div></div>';
+  } else {
+    var vd;
+    if(q<s.lo) vd={h:'Below every listing we have seen.',s:'Cheaper than all '+s.n+' observations. Worth checking the pack size and quality match.'};
+    else if(q<=s.p75) vd={h:'Inside what sellers are asking.',s:'Sits in the middle half of '+s.n+' listings.'};
+    else if(q<=s.hi) vd={h:'High, but within range.',s:'Above three quarters of the '+s.n+' listings observed.'};
+    else vd={h:'Above every listing we have seen.',s:'Higher than all '+s.n+' observations for this item.'};
+    h+='<div class="vd"><div class="h">'+vd.h+'</div><div class="s">'+vd.s+'</div></div>';
+    var sLo=Math.min(s.lo,q)*0.97, sHi=Math.max(s.hi,q)*1.03, sp=sHi-sLo;
+    function bar(l,m,lo,hi){
+      var L=(lo-sLo)/sp*100, R=(sHi-hi)/sp*100, M=Math.min(100,Math.max(0,(q-sLo)/sp*100));
+      return '<div class="mt"><div class="k"><b>'+l+'</b><i>'+m+'</i></div><div class="tr">'+
+        '<u style="left:'+L.toFixed(1)+'%;right:'+R.toFixed(1)+'%"></u>'+
+        '<b style="left:calc('+M.toFixed(1)+'% - 1.5px)"></b></div></div>';
+    }
+    h+=bar('Middle half of listings', NG(s.p25)+' – '+NG(s.p75), s.p25, s.p75);
+    h+=bar('Full range', NG(s.lo)+' – '+NG(s.hi)+' · '+s.n, s.lo, s.hi);
+    h+='<div class="scaleend"><span>'+NG(sLo)+'</span><span>'+NG(sHi)+'</span></div>';
+    h+='<p class="tiny">The white line is your price.</p>';
+  }
+  h+='<button class="cta g" style="margin-top:16px" onclick="location.hash=\'#/i/'+it.key+'\'">See the listings</button>';
+  h+=shareBtn(title(it.key)+' — quoted '+NG(q), s&&s.n>=5?NG(s.p25)+' – '+NG(s.p75):'not enough data',
+    'asking prices · per '+it.unit);
+  h+=footer(); v.innerHTML=h;
+}
+
+function vAbout(){
+  el('view').innerHTML='<h1>How this works</h1>'+
+   '<p class="sub">Short version, because the long one is the point of the project</p>'+
+   '<div class="blk ask"><div class="kh"><b>Tier A</b></div><div class="p" style="font-size:16px">Observed by us</div>'+
+   '<div class="r">Read directly from a named seller’s own page each morning. The link is on every listing '+
+   'so you can check it yourself. These are <b>asking prices</b>.</div></div>'+
+   '<div class="blk ask"><div class="kh"><b>Tier B</b></div><div class="p" style="font-size:16px">Published officially</div>'+
+   '<div class="r">National Bureau of Statistics figures, cited and dated. Accurate, national, and usually '+
+   'weeks behind what you pay this morning.</div></div>'+
+   '<div class="blk empty"><div class="kh"><b>Tier C</b></div><div class="p" style="font-size:16px">Reported by people</div>'+
+   '<div class="r">What someone actually paid, with a receipt. Not collected yet. When it is, it will publish '+
+   'only as a median of at least five reports from at least three different people, with the count shown.</div></div>'+
+   '<p class="rule">Paid prices and asking prices are never mixed into one number. '+
+   'Below five observations no median is published at all — you get the listings and nothing more.</p>'+
+   '<p class="lab">What this is not, yet</p>'+
+   '<div class="err">No open-market prices. No transport fares. No prices outside Lagos for food. '+
+   'No confirmed purchases anywhere. Those are the next things, and the site will say so plainly until they exist.</div>'+
+   (CONTRIBUTE_URL?'<a class="cta" style="margin-top:16px;display:block" href="'+CONTRIBUTE_URL+
+     '" target="_blank" rel="noopener">Report a price you paid</a>':
+     '<p class="tiny" style="margin-top:18px">Reporting is not open yet.</p>')+
+   footer();
+}
+
+/* ================= router ================= */
+function route(){
+  var hash=location.hash||'#/';
+  var m=hash.match(/^#\/i\/(.+)$/);
+  ['home','check','about'].forEach(function(n){ el('nav-'+n).classList.remove('on') });
+  var searching=(hash==='#/'||hash==='')&&Q.trim();
+  var atHome=(hash==='#/'||hash==='');
+  document.querySelector('.chips').style.display=atHome?'':'none';
+  document.querySelector('.hint').style.display=atHome?'':'none';
+  document.querySelector('.srch').style.display=(atHome||hash==='#/about')?'':'none';
+  if(m){ vItem(decodeURIComponent(m[1])) }
+  else if(hash==='#/check'){ el('nav-check').classList.add('on'); vCheck() }
+  else if(hash==='#/verdict'){ el('nav-check').classList.add('on'); vVerdict() }
+  else if(hash==='#/about'){ el('nav-about').classList.add('on'); vAbout() }
+  else { el('nav-home').classList.add('on'); searching?vSearch():vHome() }
+  window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',route);
+
+function chips(){
+  var cats=[['all','All'],['money','Money'],['fuel','Fuel'],['food','Food'],['power','Power'],['official','Official']];
+  var have={}; catalogue().forEach(function(c){ have[c.cat]=1 });
+  el('chips').innerHTML=cats.filter(function(c){ return c[0]==='all'||have[c[0]] })
+    .map(function(c){ return '<span class="chip'+(CAT===c[0]?' on':'')+'" data-c="'+c[0]+'">'+c[1]+'</span>' }).join('');
+}
+document.addEventListener('click',function(e){
+  var c=e.target.closest&&e.target.closest('[data-c]');
+  if(c){ CAT=c.getAttribute('data-c'); chips(); if(location.hash==='#/'||!location.hash) vHome(); else location.hash='#/' }
+});
+el('q').addEventListener('input',function(){ Q=this.value;
+  if(location.hash!=='#/'&&location.hash!=='') { location.hash='#/'; return }
+  Q.trim()?vSearch():vHome() });
+
+/* ---- boot ---- */
+fetch('data.json',{cache:'no-store'})
+  .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json() })
+  .then(function(j){ D=j; chips(); route();
+    var g=j.meta&&j.meta.generated;
+    if(g){ var hrs=(Date.now()-new Date(g))/36e5;
+      if(hrs>30) toast('Prices are '+Math.round(hrs/24)+' days old') } })
+  .catch(function(e){ ERR=e.message; route() });
+
 </script>
-</body>
-</html>
+</body></html>
