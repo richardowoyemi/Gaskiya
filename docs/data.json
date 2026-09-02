@@ -2,7 +2,7 @@
  "meta": {
   "project": "Gaskiya",
   "version": "v1.3.1",
-  "generated": "2026-09-01T06:30:26+01:00",
+  "generated": "2026-09-02T06:33:00+01:00",
   "country": "NG",
   "sources": [
    {
@@ -58,7 +58,8 @@
   "2026-08-29",
   "2026-08-30",
   "2026-08-31",
-  "2026-09-01"
+  "2026-09-01",
+  "2026-09-02"
  ],
  "items": [
   {
@@ -266,6 +267,15 @@
     },
     {
      "d": "2026-09-01",
+     "p": 17787.5,
+     "n": 7,
+     "rejected": 14,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 24
+    },
+    {
+     "d": "2026-09-02",
      "p": 17787.5,
      "n": 7,
      "rejected": 14,
@@ -486,6 +496,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 61
+    },
+    {
+     "d": "2026-09-02",
+     "p": 3735,
+     "n": 22,
+     "rejected": 17,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 61
     }
    ]
   },
@@ -694,6 +713,15 @@
     },
     {
      "d": "2026-09-01",
+     "p": 11258.34,
+     "n": 6,
+     "rejected": 1,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 10
+    },
+    {
+     "d": "2026-09-02",
      "p": 11258.34,
      "n": 6,
      "rejected": 1,
@@ -914,6 +942,15 @@
      "method": "all",
      "chg": 0,
      "matched": 19
+    },
+    {
+     "d": "2026-09-02",
+     "p": 767.5,
+     "n": 16,
+     "rejected": 3,
+     "method": "all",
+     "chg": 0,
+     "matched": 19
     }
    ]
   },
@@ -1104,6 +1141,15 @@
     },
     {
      "d": "2026-09-01",
+     "p": 1171.43,
+     "n": 3,
+     "rejected": 0,
+     "method": "all",
+     "chg": 0,
+     "matched": 3
+    },
+    {
+     "d": "2026-09-02",
      "p": 1171.43,
      "n": 3,
      "rejected": 0,
@@ -1324,6 +1370,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 201
+    },
+    {
+     "d": "2026-09-02",
+     "p": 4518.68,
+     "n": 46,
+     "rejected": 110,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 201
     }
    ]
   },
@@ -1538,6 +1593,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 75
+    },
+    {
+     "d": "2026-09-02",
+     "p": 2325,
+     "n": 36,
+     "rejected": 12,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 75
     }
    ]
   },
@@ -1722,6 +1786,15 @@
     },
     {
      "d": "2026-09-01",
+     "p": 1481.25,
+     "n": 2,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
+    },
+    {
+     "d": "2026-09-02",
      "p": 1481.25,
      "n": 2,
      "rejected": 0,
@@ -1942,6 +2015,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 17
+    },
+    {
+     "d": "2026-09-02",
+     "p": 195.34,
+     "n": 4,
+     "rejected": 10,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 17
     }
    ]
   },
@@ -2156,6 +2238,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 26
+    },
+    {
+     "d": "2026-09-02",
+     "p": 7040,
+     "n": 10,
+     "rejected": 11,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 26
     }
    ]
   },
@@ -2364,6 +2455,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 5
+    },
+    {
+     "d": "2026-09-02",
+     "p": 395,
+     "n": 5,
+     "rejected": 0,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 5
     }
    ]
   },
@@ -2542,6 +2642,15 @@
     },
     {
      "d": "2026-09-01",
+     "p": 1475,
+     "n": 1,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
+    },
+    {
+     "d": "2026-09-02",
      "p": 1475,
      "n": 1,
      "rejected": 0,
@@ -2762,6 +2871,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 50
+    },
+    {
+     "d": "2026-09-02",
+     "p": 10228.75,
+     "n": 18,
+     "rejected": 17,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 50
     }
    ]
   },
@@ -2976,6 +3094,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 22
+    },
+    {
+     "d": "2026-09-02",
+     "p": 3875,
+     "n": 9,
+     "rejected": 5,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 22
     }
    ]
   },
@@ -3154,6 +3281,15 @@
     },
     {
      "d": "2026-09-01",
+     "p": 11300,
+     "n": 1,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
+    },
+    {
+     "d": "2026-09-02",
      "p": 11300,
      "n": 1,
      "rejected": 0,
@@ -3374,6 +3510,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 28
+    },
+    {
+     "d": "2026-09-02",
+     "p": 3104.29,
+     "n": 4,
+     "rejected": 20,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 28
     }
    ]
   },
@@ -3552,6 +3697,15 @@
     },
     {
      "d": "2026-09-01",
+     "p": 2147.06,
+     "n": 1,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
+    },
+    {
+     "d": "2026-09-02",
      "p": 2147.06,
      "n": 1,
      "rejected": 0,
@@ -3772,6 +3926,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 14
+    },
+    {
+     "d": "2026-09-02",
+     "p": 4162.5,
+     "n": 9,
+     "rejected": 1,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 14
     }
    ]
   },
@@ -3980,6 +4143,15 @@
     },
     {
      "d": "2026-09-01",
+     "p": 1736.67,
+     "n": 44,
+     "rejected": 74,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 145
+    },
+    {
+     "d": "2026-09-02",
      "p": 1736.67,
      "n": 44,
      "rejected": 74,
@@ -4200,6 +4372,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 52
+    },
+    {
+     "d": "2026-09-02",
+     "p": 1080,
+     "n": 9,
+     "rejected": 35,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 52
     }
    ]
   },
@@ -4408,6 +4589,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 39
+    },
+    {
+     "d": "2026-09-02",
+     "p": 974.62,
+     "n": 3,
+     "rejected": 34,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 39
     }
    ]
   },
@@ -4610,6 +4800,15 @@
     },
     {
      "d": "2026-09-01",
+     "p": 463,
+     "n": 3,
+     "rejected": 1,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 6
+    },
+    {
+     "d": "2026-09-02",
      "p": 463,
      "n": 3,
      "rejected": 1,
@@ -4830,6 +5029,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 72
+    },
+    {
+     "d": "2026-09-02",
+     "p": 727.27,
+     "n": 19,
+     "rejected": 35,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 72
     }
    ]
   },
@@ -5038,6 +5246,15 @@
     },
     {
      "d": "2026-09-01",
+     "p": 730,
+     "n": 26,
+     "rejected": 19,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 68
+    },
+    {
+     "d": "2026-09-02",
      "p": 730,
      "n": 26,
      "rejected": 19,
@@ -5258,6 +5475,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 64
+    },
+    {
+     "d": "2026-09-02",
+     "p": 2245,
+     "n": 12,
+     "rejected": 44,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 64
     }
    ]
   },
@@ -5472,6 +5698,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 54
+    },
+    {
+     "d": "2026-09-02",
+     "p": 455,
+     "n": 33,
+     "rejected": 21,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 54
     }
    ]
   },
@@ -5668,6 +5903,15 @@
     },
     {
      "d": "2026-09-01",
+     "p": 893.75,
+     "n": 4,
+     "rejected": 3,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 7
+    },
+    {
+     "d": "2026-09-02",
      "p": 893.75,
      "n": 4,
      "rejected": 3,
@@ -5888,6 +6132,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 21
+    },
+    {
+     "d": "2026-09-02",
+     "p": 2125,
+     "n": 11,
+     "rejected": 4,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 21
     }
    ]
   },
@@ -6096,6 +6349,15 @@
     },
     {
      "d": "2026-09-01",
+     "p": 4225,
+     "n": 9,
+     "rejected": 4,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 18
+    },
+    {
+     "d": "2026-09-02",
      "p": 4225,
      "n": 9,
      "rejected": 4,
@@ -6316,6 +6578,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 9
+    },
+    {
+     "d": "2026-09-02",
+     "p": 261.11,
+     "n": 5,
+     "rejected": 0,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 9
     }
    ]
   }
@@ -6425,6 +6696,12 @@
   },
   {
    "d": "2026-09-01",
+   "v": 100,
+   "items": 30,
+   "matched": 26
+  },
+  {
+   "d": "2026-09-02",
    "v": 100,
    "items": 30,
    "matched": 26
@@ -6538,6 +6815,12 @@
    "official": 1337.73,
    "usdt": 1377.16,
    "spread_pct": 2.95
+  },
+  {
+   "d": "2026-09-02",
+   "official": 1332.61,
+   "usdt": 1376.11,
+   "spread_pct": 3.26
   }
  ],
  "official": [
@@ -6546,7 +6829,7 @@
    "label": "AGO (diesel) national average retail price",
    "unit": "litre",
    "tier": "B",
-   "as_of": "2026-09-01",
+   "as_of": "2026-09-02",
    "points": [
     {
      "d": "2026-08-13",
@@ -6614,6 +6897,10 @@
     },
     {
      "d": "2026-09-01",
+     "v": 3277.47
+    },
+    {
+     "d": "2026-09-02",
      "v": 3277.47
     }
    ]
@@ -6623,7 +6910,7 @@
    "label": "Cooking gas (LPG) 5kg refill national average",
    "unit": "5kg",
    "tier": "B",
-   "as_of": "2026-09-01",
+   "as_of": "2026-09-02",
    "points": [
     {
      "d": "2026-08-13",
@@ -6691,6 +6978,10 @@
     },
     {
      "d": "2026-09-01",
+     "v": 8706.93
+    },
+    {
+     "d": "2026-09-02",
      "v": 8706.93
     }
    ]
@@ -6700,7 +6991,7 @@
    "label": "Household kerosene national average retail price",
    "unit": "litre",
    "tier": "B",
-   "as_of": "2026-09-01",
+   "as_of": "2026-09-02",
    "points": [
     {
      "d": "2026-08-13",
@@ -6768,6 +7059,10 @@
     },
     {
      "d": "2026-09-01",
+     "v": 2971.94
+    },
+    {
+     "d": "2026-09-02",
      "v": 2971.94
     }
    ]
@@ -6777,7 +7072,7 @@
    "label": "PMS (petrol) national average retail price",
    "unit": "litre",
    "tier": "B",
-   "as_of": "2026-09-01",
+   "as_of": "2026-09-02",
    "points": [
     {
      "d": "2026-08-13",
@@ -6845,6 +7140,10 @@
     },
     {
      "d": "2026-09-01",
+     "v": 1596.25
+    },
+    {
+     "d": "2026-09-02",
      "v": 1596.25
     }
    ]
@@ -6854,7 +7153,7 @@
    "label": "Core inflation, year-on-year — reference period July-2026",
    "unit": "%",
    "tier": "B",
-   "as_of": "2026-09-01",
+   "as_of": "2026-09-02",
    "points": [
     {
      "d": "2026-08-13",
@@ -6922,6 +7221,10 @@
     },
     {
      "d": "2026-09-01",
+     "v": 14.97
+    },
+    {
+     "d": "2026-09-02",
      "v": 14.97
     }
    ]
@@ -6931,7 +7234,7 @@
    "label": "Food inflation, year-on-year — reference period July-2026",
    "unit": "%",
    "tier": "B",
-   "as_of": "2026-09-01",
+   "as_of": "2026-09-02",
    "points": [
     {
      "d": "2026-08-13",
@@ -6999,6 +7302,10 @@
     },
     {
      "d": "2026-09-01",
+     "v": 20.31
+    },
+    {
+     "d": "2026-09-02",
      "v": 20.31
     }
    ]
@@ -7008,7 +7315,7 @@
    "label": "All-items inflation, year-on-year — reference period July-2026",
    "unit": "%",
    "tier": "B",
-   "as_of": "2026-09-01",
+   "as_of": "2026-09-02",
    "points": [
     {
      "d": "2026-08-13",
@@ -7077,16 +7384,20 @@
     {
      "d": "2026-09-01",
      "v": 15.43
+    },
+    {
+     "d": "2026-09-02",
+     "v": 15.43
     }
    ]
   }
  ],
  "power": {
-  "as_of": "2026-09-01",
+  "as_of": "2026-09-02",
   "channel": "online_retail",
   "geo": "NG · online listings — not an offline national market",
-  "models": 73,
-  "cohorts": 17,
+  "models": 74,
+  "cohorts": 19,
   "classes": [
    {
     "key": "generator",
@@ -7095,12 +7406,12 @@
    },
    {
     "key": "inverter",
-    "n": 127,
-    "median": 34750
+    "n": 133,
+    "median": 35000
    },
    {
     "key": "battery",
-    "n": 12,
+    "n": 11,
     "median": 177499.58
    },
    {
@@ -7328,6 +7639,17 @@
    },
    {
     "d": "2026-09-01",
+    "cost": null,
+    "priced": 18,
+    "of": 21,
+    "missing": [
+     "noodles",
+     "palm_oil",
+     "seasoning"
+    ]
+   },
+   {
+    "d": "2026-09-02",
     "cost": null,
     "priced": 18,
     "of": 21,
