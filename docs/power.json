@@ -1,11 +1,11 @@
 {
- "as_of": "2026-09-18",
+ "as_of": "2026-09-19",
  "diagnostics": {
-  "total": 154,
-  "withBrand": 71,
-  "withModel": 15,
-  "withVoltage": 91,
-  "withTopology": 59
+  "total": 159,
+  "withBrand": 73,
+  "withModel": 14,
+  "withVoltage": 97,
+  "withTopology": 60
  },
  "channel": "online_retail",
  "geo": "NG · online listings — not an offline national market",
@@ -25,14 +25,14 @@
     "n": 12,
     "median": 34500,
     "p25": 34000,
-    "p75": 39500,
+    "p75": 40000,
     "confidence": "band"
    },
    "normalized": {
     "n": 12,
     "median": 34500,
     "p25": 34000,
-    "p75": 39500,
+    "p75": 40000,
     "confidence": "band"
    },
    "brands": [
@@ -89,16 +89,7 @@
      "price": 34000,
      "unit": 34000,
      "url": "https://www.jumia.com.ng/1000w-power-inverter-with-inbuilt-charger-10a-generic-mpg12052224.html",
-     "sku": "GE779GP6NL9C6NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "1000W Inverter With Inbuilt 10A Battery Charger",
-     "price": 35000,
-     "unit": 35000,
-     "url": "https://www.jumia.com.ng/generic-1000w-inverter-with-inbuilt-10a-battery-charger-420047490.html",
-     "sku": "GE779GP6RSG5UNAFAMZ",
+     "sku": "GE779GP6U50ZQNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     },
@@ -108,6 +99,15 @@
      "unit": 35000,
      "url": "https://www.jumia.com.ng/generic-1000w-inverter-with-inbuilt-charger-415673911.html",
      "sku": "GE779GP6T994JNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": " 1000watts solar power inverter with inbuilt charger, 1KVA",
+     "price": 39500,
+     "unit": 39500,
+     "url": "https://www.jumia.com.ng/generic-1000watts-solar-power-inverter-with-inbuilt-charger-1kva-419793844.html",
+     "sku": "GE779GP7CUGKVNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -320,109 +320,6 @@
    ]
   },
   {
-   "key": "inverter|generic|nomodel|3kva|nov|notopo",
-   "cls": "inverter",
-   "spec": {
-    "brand": "generic",
-    "model_line": null,
-    "rating": 3,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 9,
-    "median": 55000,
-    "p25": 51300,
-    "p75": 57900,
-    "confidence": "band"
-   },
-   "normalized": {
-    "n": 9,
-    "median": 18333.33,
-    "p25": 17100,
-    "p75": 19300,
-    "confidence": "band"
-   },
-   "brands": [
-    "generic"
-   ],
-   "receipts": [
-    {
-     "name": "3000 Watts Solar Power Inverter",
-     "price": 50000,
-     "unit": 16666.67,
-     "url": "https://www.jumia.com.ng/generic-3000-watts-solar-power-inverter-420106893.html",
-     "sku": "GE779GP79VQ86NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "3000W solar power inverter with reverse battery polarity protection",
-     "price": 50900,
-     "unit": 16966.67,
-     "url": "https://www.jumia.com.ng/generic-3000w-solar-power-inverter-with-reverse-battery-polarity-protection-418493679.html",
-     "sku": "GE779GP88A52XNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "3000W SOLAR POWER INVERTER",
-     "price": 51300,
-     "unit": 17100,
-     "url": "https://www.jumia.com.ng/generic-3000w-solar-power-inverter-415673208.html",
-     "sku": "GE779GP7XX5QRNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "3000Watts Power Inverter",
-     "price": 55000,
-     "unit": 18333.33,
-     "url": "https://www.jumia.com.ng/3000watts-power-inverter-generic-mpg12023629.html",
-     "sku": "GE779GP89EDMFNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "3000W Solar Power Inverter",
-     "price": 55000,
-     "unit": 18333.33,
-     "url": "https://www.jumia.com.ng/generic-3000w-solar-power-inverter-415677777.html",
-     "sku": "GE779GP7WGFLFNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "3000W Solar Power Inverter 3KVA inverter",
-     "price": 55500,
-     "unit": 18500,
-     "url": "https://www.jumia.com.ng/generic-3000w-solar-power-inverter-3kva-inverter-419730246.html",
-     "sku": "GE779GP7ODHXRNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "Suoer 3000W Solar Power Inverter",
-     "price": 57900,
-     "unit": 19300,
-     "url": "https://www.jumia.com.ng/generic-suoer-3000w-solar-power-inverter-419028937.html",
-     "sku": "GE779GP7U72X7NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "3000watts Inverter & 20ah Solar Charge Controller Combo",
-     "price": 64500,
-     "unit": 21500,
-     "url": "https://www.jumia.com.ng/generic-3000watts-inverter-20ah-solar-charge-controller-combo-413924858.html",
-     "sku": "GE779GP819ASZNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
    "key": "inverter|generic|nomodel|2kva|nov|notopo",
    "cls": "inverter",
    "spec": {
@@ -434,18 +331,18 @@
     "topology": null
    },
    "price": {
-    "n": 8,
-    "median": 44000,
-    "p25": null,
-    "p75": null,
-    "confidence": "median"
+    "n": 9,
+    "median": 45000,
+    "p25": 43000,
+    "p75": 59000,
+    "confidence": "band"
    },
    "normalized": {
-    "n": 8,
-    "median": 22000,
-    "p25": null,
-    "p75": null,
-    "confidence": "median"
+    "n": 9,
+    "median": 22500,
+    "p25": 21500,
+    "p75": 29500,
+    "confidence": "band"
    },
    "brands": [
     "generic"
@@ -497,6 +394,15 @@
      "basis": "asking_price"
     },
     {
+     "name": "2000 Watts Power Inverter With Inbuilt 20 Amps Battery Charger",
+     "price": 50000,
+     "unit": 25000,
+     "url": "https://www.jumia.com.ng/generic-2000-watts-power-inverter-with-inbuilt-20-amps-battery-charger-420219960.html",
+     "sku": "GE779GP6QB8F6NAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
      "name": "2000watts Solar Power Inverter",
      "price": 59000,
      "unit": 29500,
@@ -513,13 +419,268 @@
      "sku": "GE779GP6YXD87NAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "inverter|generic|nomodel|3kva|nov|notopo",
+   "cls": "inverter",
+   "spec": {
+    "brand": "generic",
+    "model_line": null,
+    "rating": 3,
+    "unit": "kVA",
+    "voltage": null,
+    "topology": null
+   },
+   "price": {
+    "n": 9,
+    "median": 55000,
+    "p25": 55000,
+    "p75": 57900,
+    "confidence": "band"
+   },
+   "normalized": {
+    "n": 9,
+    "median": 18333.33,
+    "p25": 18333.33,
+    "p75": 19300,
+    "confidence": "band"
+   },
+   "brands": [
+    "generic"
+   ],
+   "receipts": [
+    {
+     "name": "3000W solar power inverter with reverse battery polarity protection",
+     "price": 50900,
+     "unit": 16966.67,
+     "url": "https://www.jumia.com.ng/generic-3000w-solar-power-inverter-with-reverse-battery-polarity-protection-418493679.html",
+     "sku": "GE779GP88A52XNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
     },
     {
-     "name": "2000 Watts Power Inverter With Inbuilt 20 Amps Battery Charger",
-     "price": 69500,
-     "unit": 34750,
-     "url": "https://www.jumia.com.ng/generic-2000-watts-power-inverter-with-inbuilt-20-amps-battery-charger-413926921.html",
-     "sku": "GE779GP6TV88JNAFAMZ",
+     "name": "3000W SOLAR POWER INVERTER",
+     "price": 51300,
+     "unit": 17100,
+     "url": "https://www.jumia.com.ng/generic-3000w-solar-power-inverter-415673208.html",
+     "sku": "GE779GP7XX5QRNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "3000 Watts Solar Power Inverter",
+     "price": 55000,
+     "unit": 18333.33,
+     "url": "https://www.jumia.com.ng/generic-3000-watts-solar-power-inverter-420106893.html",
+     "sku": "GE779GP79VQ86NAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "3000Watts Power Inverter",
+     "price": 55000,
+     "unit": 18333.33,
+     "url": "https://www.jumia.com.ng/3000watts-power-inverter-generic-mpg12023629.html",
+     "sku": "GE779GP89EDMFNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "3000W Solar Power Inverter",
+     "price": 55000,
+     "unit": 18333.33,
+     "url": "https://www.jumia.com.ng/generic-3000w-solar-power-inverter-415677777.html",
+     "sku": "GE779GP7WGFLFNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "3000W Solar Power Inverter 3KVA inverter",
+     "price": 55500,
+     "unit": 18500,
+     "url": "https://www.jumia.com.ng/generic-3000w-solar-power-inverter-3kva-inverter-419730246.html",
+     "sku": "GE779GP7ODHXRNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "Suoer 3000W Solar Power Inverter",
+     "price": 57900,
+     "unit": 19300,
+     "url": "https://www.jumia.com.ng/generic-suoer-3000w-solar-power-inverter-419028937.html",
+     "sku": "GE779GP7U72X7NAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "3000watts Inverter & 20ah Solar Charge Controller Combo",
+     "price": 64500,
+     "unit": 21500,
+     "url": "https://www.jumia.com.ng/generic-3000watts-inverter-20ah-solar-charge-controller-combo-413924858.html",
+     "sku": "GE779GP819ASZNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "inverter|generic|nomodel|1.5kva|12v|notopo",
+   "cls": "inverter",
+   "spec": {
+    "brand": "generic",
+    "model_line": null,
+    "rating": 1.5,
+    "unit": "kVA",
+    "voltage": 12,
+    "topology": null
+   },
+   "price": {
+    "n": 6,
+    "median": 26000,
+    "p25": null,
+    "p75": null,
+    "confidence": "median"
+   },
+   "normalized": {
+    "n": 6,
+    "median": 17333.33,
+    "p25": null,
+    "p75": null,
+    "confidence": "median"
+   },
+   "brands": [
+    "generic"
+   ],
+   "receipts": [
+    {
+     "name": "12v 1500watts Inverter",
+     "price": 25000,
+     "unit": 16666.67,
+     "url": "https://www.jumia.com.ng/generic-12v-1500watts-inverter-419579086.html",
+     "sku": "GE779GP7QOYEVNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "1500w solar power inverter 12v",
+     "price": 25500,
+     "unit": 17000,
+     "url": "https://www.jumia.com.ng/1500w-solar-power-inverter-12v-generic-mpg12017966.html",
+     "sku": "GE779GP885C67NAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "1500w Solar Power Inverter 12v",
+     "price": 26000,
+     "unit": 17333.33,
+     "url": "https://www.jumia.com.ng/generic-1500w-solar-power-inverter-12v-419161160.html",
+     "sku": "GE779GP6PSH9BNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "1500watts solar power inverter 12V",
+     "price": 26000,
+     "unit": 17333.33,
+     "url": "https://www.jumia.com.ng/generic-1500watts-solar-power-inverter-12v-420102434.html",
+     "sku": "GE779GP7C0152NAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "Solar Inverter With Anti Reverse Battery Protection - 1500W 12v 220v",
+     "price": 34999,
+     "unit": 23332.67,
+     "url": "https://www.jumia.com.ng/generic-solar-inverter-with-anti-reverse-battery-protection-1500w-12v-220v-420101341.html",
+     "sku": "GE779GP6UO3PYNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "1500w Solar Power Inverter 12v",
+     "price": 36000,
+     "unit": 24000,
+     "url": "https://www.jumia.com.ng/generic-1500w-solar-power-inverter-12v-419761456.html",
+     "sku": "GE779GP7P3HW7NAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "inverter|luminous|nomodel|1.6kva|24v|pure_sine",
+   "cls": "inverter",
+   "spec": {
+    "brand": "luminous",
+    "model_line": null,
+    "rating": 1.6,
+    "unit": "kVA",
+    "voltage": 24,
+    "topology": "pure_sine"
+   },
+   "price": {
+    "n": 5,
+    "median": 290000,
+    "p25": null,
+    "p75": null,
+    "confidence": "median"
+   },
+   "normalized": {
+    "n": 5,
+    "median": 181250,
+    "p25": null,
+    "p75": null,
+    "confidence": "median"
+   },
+   "brands": [
+    "luminous"
+   ],
+   "receipts": [
+    {
+     "name": "1.6kva/24v inverter Optimus (pure sine wave)",
+     "price": 290000,
+     "unit": 181250,
+     "url": "https://www.jumia.com.ng/luminous-1.6kva24v-inverter-optimus-pure-sine-wave-419478049.html",
+     "sku": "LU374GP8660CJNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "1.6kva/24v inverter optimus(pure sine wave)",
+     "price": 290000,
+     "unit": 181250,
+     "url": "https://www.jumia.com.ng/luminous-1.6kva24v-inverter-optimuspure-sine-wave-419892539.html",
+     "sku": "LU374GP85U23NNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "1.6kva/24v inverter Optimus (pure sine wave)",
+     "price": 290000,
+     "unit": 181250,
+     "url": "https://www.jumia.com.ng/1.6kva24v-inverter-optimus-pure-sine-wave-luminous-mpg11976371.html",
+     "sku": "LU374GP7ELQ4JNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "1.6kva/24v inverter optimus (pure sine wave)",
+     "price": 290000,
+     "unit": 181250,
+     "url": "https://www.jumia.com.ng/luminous-1.6kva24v-inverter-optimus-pure-sine-wave-419412734.html",
+     "sku": "LU374GP7C6HOZNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "1.6kva / 24v inverter Optimus (pure sine wave)",
+     "price": 290000,
+     "unit": 181250,
+     "url": "https://www.jumia.com.ng/1.6kva-24v-inverter-optimus-pure-sine-wave-luminous-mpg11976379.html",
+     "sku": "LU374GP6V0KBNNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -596,149 +757,6 @@
      "unit": 22500,
      "url": "https://www.jumia.com.ng/generic-4000w-solar-power-inverter-with-20a-inbuilt-charger-and-digital-display-420102305.html",
      "sku": "GE779GP7G3X7QNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "inverter|generic|nomodel|1.5kva|12v|notopo",
-   "cls": "inverter",
-   "spec": {
-    "brand": "generic",
-    "model_line": null,
-    "rating": 1.5,
-    "unit": "kVA",
-    "voltage": 12,
-    "topology": null
-   },
-   "price": {
-    "n": 5,
-    "median": 26000,
-    "p25": null,
-    "p75": null,
-    "confidence": "median"
-   },
-   "normalized": {
-    "n": 5,
-    "median": 17333.33,
-    "p25": null,
-    "p75": null,
-    "confidence": "median"
-   },
-   "brands": [
-    "generic"
-   ],
-   "receipts": [
-    {
-     "name": "12v 1500watts Inverter",
-     "price": 25000,
-     "unit": 16666.67,
-     "url": "https://www.jumia.com.ng/generic-12v-1500watts-inverter-419579086.html",
-     "sku": "GE779GP7QOYEVNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "1500w solar power inverter 12v",
-     "price": 25500,
-     "unit": 17000,
-     "url": "https://www.jumia.com.ng/1500w-solar-power-inverter-12v-generic-mpg12017966.html",
-     "sku": "GE779GP885C67NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "1500w Solar Power Inverter 12v",
-     "price": 26000,
-     "unit": 17333.33,
-     "url": "https://www.jumia.com.ng/generic-1500w-solar-power-inverter-12v-419161160.html",
-     "sku": "GE779GP6PSH9BNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "Solar Inverter With Anti Reverse Battery Protection - 1500W 12v 220v",
-     "price": 34999,
-     "unit": 23332.67,
-     "url": "https://www.jumia.com.ng/generic-solar-inverter-with-anti-reverse-battery-protection-1500w-12v-220v-420101341.html",
-     "sku": "GE779GP6UO3PYNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "1500w Solar Power Inverter 12v",
-     "price": 36000,
-     "unit": 24000,
-     "url": "https://www.jumia.com.ng/generic-1500w-solar-power-inverter-12v-419761456.html",
-     "sku": "GE779GP7P3HW7NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "inverter|luminous|nomodel|1.6kva|24v|pure_sine",
-   "cls": "inverter",
-   "spec": {
-    "brand": "luminous",
-    "model_line": null,
-    "rating": 1.6,
-    "unit": "kVA",
-    "voltage": 24,
-    "topology": "pure_sine"
-   },
-   "price": {
-    "n": 4,
-    "median": 290000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 4,
-    "median": 181250,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "luminous"
-   ],
-   "receipts": [
-    {
-     "name": "1.6kva/24v inverter Optimus (pure sine wave)",
-     "price": 290000,
-     "unit": 181250,
-     "url": "https://www.jumia.com.ng/luminous-1.6kva24v-inverter-optimus-pure-sine-wave-419478049.html",
-     "sku": "LU374GP8660CJNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "1.6kva/24v inverter optimus(pure sine wave)",
-     "price": 290000,
-     "unit": 181250,
-     "url": "https://www.jumia.com.ng/luminous-1.6kva24v-inverter-optimuspure-sine-wave-419892539.html",
-     "sku": "LU374GP85U23NNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "1.6kva/24v inverter Optimus (pure sine wave)",
-     "price": 290000,
-     "unit": 181250,
-     "url": "https://www.jumia.com.ng/1.6kva24v-inverter-optimus-pure-sine-wave-luminous-mpg11976371.html",
-     "sku": "LU374GP7ELQ4JNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "1.6kva/24v inverter optimus (pure sine wave)",
-     "price": 290000,
-     "unit": 181250,
-     "url": "https://www.jumia.com.ng/luminous-1.6kva24v-inverter-optimus-pure-sine-wave-419412734.html",
-     "sku": "LU374GP7C6HOZNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -998,64 +1016,6 @@
      "unit": 165277.78,
      "url": "https://www.jumia.com.ng/cworth-energy-12v-300ah-lifepo4-lithium-battery-420287499.html",
      "sku": "CW780GP89DJUINAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "inverter|generic|spf6000|6kva|nov|lithium",
-   "cls": "inverter",
-   "spec": {
-    "brand": "generic",
-    "model_line": "SPF6000",
-    "rating": 6,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": "lithium"
-   },
-   "price": {
-    "n": 3,
-    "median": 4250000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 3,
-    "median": 708333.33,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "generic"
-   ],
-   "receipts": [
-    {
-     "name": "Growatt SPF 6000 ES plus 11kwh lithium battery 6KVA inverter",
-     "price": 4250000,
-     "unit": 708333.33,
-     "url": "https://www.jumia.com.ng/growatt-spf-6000-es-plus-11kwh-lithium-battery-6kva-inverter-generic-mpg12022611.html",
-     "sku": "GE779GP75WMTVNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "Growatt SPF 6000 ES plus 11kwh lithium battery 6KVA inverter",
-     "price": 4250000,
-     "unit": 708333.33,
-     "url": "https://www.jumia.com.ng/growatt-spf-6000-es-plus-11kwh-lithium-battery-6kva-inverter-generic-mpg12022142.html",
-     "sku": "GE779GP6ZCV6BNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "Growatt SPF 6000 ES plus 11kwh lithium battery 6KVA inverter",
-     "price": 4250000,
-     "unit": 708333.33,
-     "url": "https://www.jumia.com.ng/growatt-spf-6000-es-plus-11kwh-lithium-battery-6kva-inverter-generic-mpg12020538.html",
-     "sku": "GE779GP7HTAXFNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -1368,56 +1328,6 @@
      "unit": 138095.24,
      "url": "https://www.jumia.com.ng/sako-4.2kva-hybrid-inverter-24v-420305626.html",
      "sku": "SA442GP7NG79ANAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "inverter|felicitysolar|nomodel|12kva|nov|hybrid",
-   "cls": "inverter",
-   "spec": {
-    "brand": "felicity solar",
-    "model_line": null,
-    "rating": 12,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": "hybrid"
-   },
-   "price": {
-    "n": 2,
-    "median": 1300000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 2,
-    "median": 108333.34,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "felicity solar",
-    "felicitysolar"
-   ],
-   "receipts": [
-    {
-     "name": "12kVA&8VA HIGH VOLTAGE AND HYBRID INVERTER",
-     "price": 1250000,
-     "unit": 104166.67,
-     "url": "https://www.jumia.com.ng/felicity-solar-12kva8va-high-voltage-and-hybrid-inverter-420146720.html",
-     "sku": "FE797GP6NSMRQNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "12kVA&8VA HIGH VOLTAGE AND HYBRID INVERTER",
-     "price": 1350000,
-     "unit": 112500,
-     "url": "https://www.jumia.com.ng/felicitysolar-12kva8va-high-voltage-and-hybrid-inverter-420305854.html",
-     "sku": "BR250GP7DG4AMNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -2042,46 +1952,6 @@
    ]
   },
   {
-   "key": "battery|sukam|nomodel|200ah|12v|notopo",
-   "cls": "battery",
-   "spec": {
-    "brand": "sukam",
-    "model_line": null,
-    "rating": 200,
-    "unit": "Ah",
-    "voltage": 12,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 426,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 177.5,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "sukam"
-   ],
-   "receipts": [
-    {
-     "name": "12V/200Ah  Battery For Inverter",
-     "price": 426,
-     "unit": 177.5,
-     "url": "https://www.jumia.com.ng/sukam-12v200ah-battery-for-inverter-32841945.html",
-     "sku": "SU237EL0WP0JRNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
    "key": "inverter|generic|suoer3000|3000kva|nov|notopo",
    "cls": "inverter",
    "spec": {
@@ -2122,40 +1992,80 @@
    ]
   },
   {
-   "key": "inverter|suoer|nomodel|3kva|nov|notopo",
-   "cls": "inverter",
+   "key": "battery|sukam|nomodel|200ah|12v|notopo",
+   "cls": "battery",
    "spec": {
-    "brand": "suoer",
+    "brand": "sukam",
     "model_line": null,
-    "rating": 3,
-    "unit": "kVA",
-    "voltage": null,
+    "rating": 200,
+    "unit": "Ah",
+    "voltage": 12,
     "topology": null
    },
    "price": {
     "n": 1,
-    "median": 52900,
+    "median": 426,
     "p25": null,
     "p75": null,
     "confidence": "listings"
    },
    "normalized": {
     "n": 1,
-    "median": 17633.33,
+    "median": 177.5,
     "p25": null,
     "p75": null,
     "confidence": "listings"
    },
    "brands": [
-    "suoer"
+    "sukam"
    ],
    "receipts": [
     {
-     "name": "3000W Solar Inverter With Anti Reverse Protection",
-     "price": 52900,
-     "unit": 17633.33,
-     "url": "https://www.jumia.com.ng/suoer-3000w-solar-inverter-with-anti-reverse-protection-420167304.html",
-     "sku": "SU366GP7A6SDINAFAMZ",
+     "name": "12V/200Ah  Battery For Inverter",
+     "price": 426,
+     "unit": 177.5,
+     "url": "https://www.jumia.com.ng/sukam-12v200ah-battery-for-inverter-32841945.html",
+     "sku": "SU237EL0WP0JRNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "inverter|generic|nomodel|3.2kva|nov|notopo",
+   "cls": "inverter",
+   "spec": {
+    "brand": "generic",
+    "model_line": null,
+    "rating": 3.2,
+    "unit": "kVA",
+    "voltage": null,
+    "topology": null
+   },
+   "price": {
+    "n": 1,
+    "median": 780000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 243750,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "generic"
+   ],
+   "receipts": [
+    {
+     "name": "3.2KVA All-in-One Solar Inverter + 400W Solar Panel",
+     "price": 780000,
+     "unit": 243750,
+     "url": "https://www.jumia.com.ng/generic-3.2kva-all-in-one-solar-inverter-400w-solar-panel-420325152.html",
+     "sku": "GE779GP714HM6NAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -2202,6 +2112,46 @@
    ]
   },
   {
+   "key": "inverter|suoer|nomodel|3kva|nov|notopo",
+   "cls": "inverter",
+   "spec": {
+    "brand": "suoer",
+    "model_line": null,
+    "rating": 3,
+    "unit": "kVA",
+    "voltage": null,
+    "topology": null
+   },
+   "price": {
+    "n": 1,
+    "median": 52900,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 17633.33,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "suoer"
+   ],
+   "receipts": [
+    {
+     "name": "3000W Solar Inverter With Anti Reverse Protection",
+     "price": 52900,
+     "unit": 17633.33,
+     "url": "https://www.jumia.com.ng/suoer-3000w-solar-inverter-with-anti-reverse-protection-420167304.html",
+     "sku": "SU366GP7A6SDINAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
    "key": "inverter|generic|nomodel|3kva|24v|notopo",
    "cls": "inverter",
    "spec": {
@@ -2236,86 +2186,6 @@
      "unit": 16333.33,
      "url": "https://www.jumia.com.ng/generic-24v-3000w-solar-power-inverter-418746487.html",
      "sku": "GE779GP7WV5SDNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "inverter|sako|nomodel|1kva|nov|notopo",
-   "cls": "inverter",
-   "spec": {
-    "brand": "sako",
-    "model_line": null,
-    "rating": 1,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 890000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 890000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "sako"
-   ],
-   "receipts": [
-    {
-     "name": " All in one 1000w inverter (power station)",
-     "price": 890000,
-     "unit": 890000,
-     "url": "https://www.jumia.com.ng/sako-all-in-one-1000w-inverter-power-station-419806482.html",
-     "sku": "SA442GP733EJFNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "inverter|hiconic|nomodel|3kva|nov|hybrid",
-   "cls": "inverter",
-   "spec": {
-    "brand": "hiconic",
-    "model_line": null,
-    "rating": 3,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": "hybrid"
-   },
-   "price": {
-    "n": 1,
-    "median": 350000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 116666.67,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "hiconic"
-   ],
-   "receipts": [
-    {
-     "name": "Hybrid 3KVA Inverter",
-     "price": 350000,
-     "unit": 116666.67,
-     "url": "https://www.jumia.com.ng/hiconic-hybrid-3kva-inverter-419208301.html",
-     "sku": "HI738GP6SBVGJNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -2362,40 +2232,80 @@
    ]
   },
   {
-   "key": "inverter|generic|nomodel|1.1kva|12v|pure_sine",
+   "key": "inverter|hiconic|nomodel|3kva|nov|hybrid",
    "cls": "inverter",
    "spec": {
-    "brand": "generic",
+    "brand": "hiconic",
     "model_line": null,
-    "rating": 1.1,
+    "rating": 3,
     "unit": "kVA",
-    "voltage": 12,
-    "topology": "pure_sine"
+    "voltage": null,
+    "topology": "hybrid"
    },
    "price": {
     "n": 1,
-    "median": 155000,
+    "median": 350000,
     "p25": null,
     "p75": null,
     "confidence": "listings"
    },
    "normalized": {
     "n": 1,
-    "median": 140909.09,
+    "median": 116666.67,
     "p25": null,
     "p75": null,
     "confidence": "listings"
    },
    "brands": [
-    "generic"
+    "hiconic"
    ],
    "receipts": [
     {
-     "name": "Euronet - 1.1KVA (12V) Pure Sine Wave Inverter",
-     "price": 155000,
-     "unit": 140909.09,
-     "url": "https://www.jumia.com.ng/generic-euronet-1.1kva-12v-pure-sine-wave-inverter-420319781.html",
-     "sku": "GE779GP6XC5FQNAFAMZ",
+     "name": "Hybrid 3KVA Inverter",
+     "price": 350000,
+     "unit": 116666.67,
+     "url": "https://www.jumia.com.ng/hiconic-hybrid-3kva-inverter-419208301.html",
+     "sku": "HI738GP6SBVGJNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "inverter|sako|nomodel|1kva|nov|notopo",
+   "cls": "inverter",
+   "spec": {
+    "brand": "sako",
+    "model_line": null,
+    "rating": 1,
+    "unit": "kVA",
+    "voltage": null,
+    "topology": null
+   },
+   "price": {
+    "n": 1,
+    "median": 890000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 890000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "sako"
+   ],
+   "receipts": [
+    {
+     "name": " All in one 1000w inverter (power station)",
+     "price": 890000,
+     "unit": 890000,
+     "url": "https://www.jumia.com.ng/sako-all-in-one-1000w-inverter-power-station-419806482.html",
+     "sku": "SA442GP733EJFNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -2442,19 +2352,59 @@
    ]
   },
   {
-   "key": "battery|solarpower|nomodel|120ah|12v|notopo",
-   "cls": "battery",
+   "key": "inverter|generic|nomodel|1.1kva|12v|pure_sine",
+   "cls": "inverter",
    "spec": {
-    "brand": "solar power",
+    "brand": "generic",
     "model_line": null,
-    "rating": 120,
-    "unit": "Ah",
+    "rating": 1.1,
+    "unit": "kVA",
     "voltage": 12,
-    "topology": null
+    "topology": "pure_sine"
    },
    "price": {
     "n": 1,
-    "median": 150000,
+    "median": 155000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 140909.09,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "generic"
+   ],
+   "receipts": [
+    {
+     "name": "Euronet - 1.1KVA (12V) Pure Sine Wave Inverter",
+     "price": 155000,
+     "unit": 140909.09,
+     "url": "https://www.jumia.com.ng/generic-euronet-1.1kva-12v-pure-sine-wave-inverter-420319781.html",
+     "sku": "GE779GP6XC5FQNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "inverter|felicitysolar|nomodel|12kva|nov|hybrid",
+   "cls": "inverter",
+   "spec": {
+    "brand": "felicity solar",
+    "model_line": null,
+    "rating": 12,
+    "unit": "kVA",
+    "voltage": null,
+    "topology": "hybrid"
+   },
+   "price": {
+    "n": 1,
+    "median": 1250000,
     "p25": null,
     "p75": null,
     "confidence": "listings"
@@ -2467,15 +2417,15 @@
     "confidence": "listings"
    },
    "brands": [
-    "solar power"
+    "felicity solar"
    ],
    "receipts": [
     {
-     "name": "GLT 12v 120ah Inverter Deep Cycle Battery",
-     "price": 150000,
+     "name": "12kVA&8VA HIGH VOLTAGE AND HYBRID INVERTER",
+     "price": 1250000,
      "unit": 104166.67,
-     "url": "https://www.jumia.com.ng/solar-power-glt-12v-120ah-inverter-deep-cycle-battery-420146630.html",
-     "sku": "SO686GP6OBX7QNAFAMZ",
+     "url": "https://www.jumia.com.ng/12kva8va-high-voltage-and-hybrid-inverter-felicity-solar-mpg12080274.html",
+     "sku": "FE797GP6NSMRQNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -2516,6 +2466,46 @@
      "unit": 177499.58,
      "url": "https://www.jumia.com.ng/200ah-12v-battery-genus-mpg1180521.html",
      "sku": "GE027EL0R36TXNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "battery|solarpower|nomodel|120ah|12v|notopo",
+   "cls": "battery",
+   "spec": {
+    "brand": "solar power",
+    "model_line": null,
+    "rating": 120,
+    "unit": "Ah",
+    "voltage": 12,
+    "topology": null
+   },
+   "price": {
+    "n": 1,
+    "median": 150000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 104166.67,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "solar power"
+   ],
+   "receipts": [
+    {
+     "name": "GLT 12v 120ah Inverter Deep Cycle Battery",
+     "price": 150000,
+     "unit": 104166.67,
+     "url": "https://www.jumia.com.ng/solar-power-glt-12v-120ah-inverter-deep-cycle-battery-420146630.html",
+     "sku": "SO686GP6OBX7QNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -2602,46 +2592,6 @@
    ]
   },
   {
-   "key": "battery|luxsun|nomodel|208.33333333333334ah|24v|lithium",
-   "cls": "battery",
-   "spec": {
-    "brand": "luxsun",
-    "model_line": null,
-    "rating": 208.33333333333334,
-    "unit": "Ah",
-    "voltage": 24,
-    "topology": "lithium"
-   },
-   "price": {
-    "n": 1,
-    "median": 1400000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 280000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "luxsun"
-   ],
-   "receipts": [
-    {
-     "name": " 5kWh 24V Lithium Battery",
-     "price": 1400000,
-     "unit": 280000,
-     "url": "https://www.jumia.com.ng/luxsun-5kwh-24v-lithium-battery-420310151.html",
-     "sku": "LU377GP6V527QNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
    "key": "inverter|luminous|nomodel|5kva|48v|pure_sine",
    "cls": "inverter",
    "spec": {
@@ -2676,6 +2626,46 @@
      "unit": 253980,
      "url": "https://www.jumia.com.ng/luminous-5kva-48v-dc-powerful-cruze-pure-sine-wave-inverter-98346793.html",
      "sku": "LU374GP0NOAEDNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "battery|luxsun|nomodel|208.33333333333334ah|24v|lithium",
+   "cls": "battery",
+   "spec": {
+    "brand": "luxsun",
+    "model_line": null,
+    "rating": 208.33333333333334,
+    "unit": "Ah",
+    "voltage": 24,
+    "topology": "lithium"
+   },
+   "price": {
+    "n": 1,
+    "median": 1400000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 280000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "luxsun"
+   ],
+   "receipts": [
+    {
+     "name": " 5kWh 24V Lithium Battery",
+     "price": 1400000,
+     "unit": 280000,
+     "url": "https://www.jumia.com.ng/luxsun-5kwh-24v-lithium-battery-420310151.html",
+     "sku": "LU377GP6V527QNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -2722,46 +2712,6 @@
    ]
   },
   {
-   "key": "inverter|bluegate|nomodel|3kva|24v|pure_sine",
-   "cls": "inverter",
-   "spec": {
-    "brand": "blue gate",
-    "model_line": null,
-    "rating": 3,
-    "unit": "kVA",
-    "voltage": 24,
-    "topology": "pure_sine"
-   },
-   "price": {
-    "n": 1,
-    "median": 600000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 200000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "blue gate"
-   ],
-   "receipts": [
-    {
-     "name": " 3kVA/24V Pure Sine Wave Solar Inverter BG3000SHF",
-     "price": 600000,
-     "unit": 200000,
-     "url": "https://www.jumia.com.ng/blue-gate-3kva24v-pure-sine-wave-solar-inverter-bg3000shf-418582436.html",
-     "sku": "BL670GP7NWVS5NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
    "key": "inverter|bluegate|bg2000|2kva|24v|pure_sine",
    "cls": "inverter",
    "spec": {
@@ -2796,6 +2746,46 @@
      "unit": 147499.5,
      "url": "https://www.jumia.com.ng/blue-gate-2kva-pure-sine-wave-inverter-24v-bg2000-418574499.html",
      "sku": "BL670GP89CW7XNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "inverter|bluegate|nomodel|3kva|24v|pure_sine",
+   "cls": "inverter",
+   "spec": {
+    "brand": "blue gate",
+    "model_line": null,
+    "rating": 3,
+    "unit": "kVA",
+    "voltage": 24,
+    "topology": "pure_sine"
+   },
+   "price": {
+    "n": 1,
+    "median": 600000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 200000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "blue gate"
+   ],
+   "receipts": [
+    {
+     "name": " 3kVA/24V Pure Sine Wave Solar Inverter BG3000SHF",
+     "price": 600000,
+     "unit": 200000,
+     "url": "https://www.jumia.com.ng/blue-gate-3kva24v-pure-sine-wave-solar-inverter-bg3000shf-418582436.html",
+     "sku": "BL670GP7NWVS5NAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -2882,6 +2872,46 @@
    ]
   },
   {
+   "key": "inverter|smarten|nomodel|2.5kva|24v|pure_sine",
+   "cls": "inverter",
+   "spec": {
+    "brand": "smarten",
+    "model_line": null,
+    "rating": 2.5,
+    "unit": "kVA",
+    "voltage": 24,
+    "topology": "pure_sine"
+   },
+   "price": {
+    "n": 1,
+    "median": 530000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 212000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "smarten"
+   ],
+   "receipts": [
+    {
+     "name": "2.5kva 24v Pure Sine Wave Inverter",
+     "price": 530000,
+     "unit": 212000,
+     "url": "https://www.jumia.com.ng/smarten-2.5kva-24v-pure-sine-wave-inverter-407711187.html",
+     "sku": "BR864GP7WNLEINAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
    "key": "battery|gbm|nomodel|150ah|12v|notopo",
    "cls": "battery",
    "spec": {
@@ -2922,40 +2952,40 @@
    ]
   },
   {
-   "key": "inverter|smarten|nomodel|2.5kva|24v|pure_sine",
+   "key": "inverter|generic|spf6000|6kva|nov|lithium",
    "cls": "inverter",
    "spec": {
-    "brand": "smarten",
-    "model_line": null,
-    "rating": 2.5,
+    "brand": "generic",
+    "model_line": "SPF6000",
+    "rating": 6,
     "unit": "kVA",
-    "voltage": 24,
-    "topology": "pure_sine"
+    "voltage": null,
+    "topology": "lithium"
    },
    "price": {
     "n": 1,
-    "median": 530000,
+    "median": 4250000,
     "p25": null,
     "p75": null,
     "confidence": "listings"
    },
    "normalized": {
     "n": 1,
-    "median": 212000,
+    "median": 708333.33,
     "p25": null,
     "p75": null,
     "confidence": "listings"
    },
    "brands": [
-    "smarten"
+    "generic"
    ],
    "receipts": [
     {
-     "name": "2.5kva 24v Pure Sine Wave Inverter",
-     "price": 530000,
-     "unit": 212000,
-     "url": "https://www.jumia.com.ng/smarten-2.5kva-24v-pure-sine-wave-inverter-407711187.html",
-     "sku": "BR864GP7WNLEINAFAMZ",
+     "name": "Growatt SPF 6000 ES plus 11kwh lithium battery 6KVA inverter",
+     "price": 4250000,
+     "unit": 708333.33,
+     "url": "https://www.jumia.com.ng/growatt-spf-6000-es-plus-11kwh-lithium-battery-6kva-inverter-generic-mpg12022611.html",
+     "sku": "GE779GP7E9D7VNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -3082,6 +3112,46 @@
    ]
   },
   {
+   "key": "battery|deye|nomodel|104.16666666666667ah|48v|lithium",
+   "cls": "battery",
+   "spec": {
+    "brand": "deye",
+    "model_line": null,
+    "rating": 104.16666666666667,
+    "unit": "Ah",
+    "voltage": 48,
+    "topology": "lithium"
+   },
+   "price": {
+    "n": 1,
+    "median": 1350000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 270000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "deye"
+   ],
+   "receipts": [
+    {
+     "name": "5kwh lithium battery 48v",
+     "price": 1350000,
+     "unit": 270000,
+     "url": "https://www.jumia.com.ng/deye-5kwh-lithium-battery-48v-420293815.html",
+     "sku": "DE735GP7H0HCYNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
    "key": "inverter|felicity|nomodel|3.5kva|12v|pure_sine",
    "cls": "inverter",
    "spec": {
@@ -3202,126 +3272,6 @@
    ]
   },
   {
-   "key": "battery|deye|nomodel|104.16666666666667ah|48v|lithium",
-   "cls": "battery",
-   "spec": {
-    "brand": "deye",
-    "model_line": null,
-    "rating": 104.16666666666667,
-    "unit": "Ah",
-    "voltage": 48,
-    "topology": "lithium"
-   },
-   "price": {
-    "n": 1,
-    "median": 1350000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 270000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "deye"
-   ],
-   "receipts": [
-    {
-     "name": "5kwh lithium battery 48v",
-     "price": 1350000,
-     "unit": 270000,
-     "url": "https://www.jumia.com.ng/deye-5kwh-lithium-battery-48v-420293815.html",
-     "sku": "DE735GP7H0HCYNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "charge_ctrl|felicitysolar|cmty120a|120a|48v|mppt",
-   "cls": "charge_ctrl",
-   "spec": {
-    "brand": "felicity solar",
-    "model_line": "CMTY120A",
-    "rating": 120,
-    "unit": "A",
-    "voltage": 48,
-    "topology": "mppt"
-   },
-   "price": {
-    "n": 1,
-    "median": 410000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 3416.67,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "felicity solar"
-   ],
-   "receipts": [
-    {
-     "name": "CMTY 120A MPPT Solar Charge Controller – 48V",
-     "price": 410000,
-     "unit": 3416.67,
-     "url": "https://www.jumia.com.ng/felicity-solar-cmty-120a-mppt-solar-charge-controller-48v-420287513.html",
-     "sku": "FE797GP74Y7VENAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "inverter|felicitysolar|nomodel|3.5kva|nov|notopo",
-   "cls": "inverter",
-   "spec": {
-    "brand": "felicity solar",
-    "model_line": null,
-    "rating": 3.5,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 468000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 133714.29,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "felicity solar"
-   ],
-   "receipts": [
-    {
-     "name": "inverter 3.5Kva",
-     "price": 468000,
-     "unit": 133714.29,
-     "url": "https://www.jumia.com.ng/felicity-solar-inverter-3.5kva-420320358.html",
-     "sku": "FE797GP80XPNINAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
    "key": "inverter|solarpower|nomodel|1.5kva|12v|notopo",
    "cls": "inverter",
    "spec": {
@@ -3402,26 +3352,26 @@
    ]
   },
   {
-   "key": "inverter|generic|nomodel|7.5kva|48v|hybrid",
+   "key": "inverter|generic|mppt6400w|6.3kva|48v|mppt",
    "cls": "inverter",
    "spec": {
     "brand": "generic",
-    "model_line": null,
-    "rating": 7.5,
+    "model_line": "MPPT6400W",
+    "rating": 6.3,
     "unit": "kVA",
     "voltage": 48,
-    "topology": "hybrid"
+    "topology": "mppt"
    },
    "price": {
     "n": 1,
-    "median": 931000,
+    "median": 750500,
     "p25": null,
     "p75": null,
     "confidence": "listings"
    },
    "normalized": {
     "n": 1,
-    "median": 124133.33,
+    "median": 119126.98,
     "p25": null,
     "p75": null,
     "confidence": "listings"
@@ -3431,91 +3381,51 @@
    ],
    "receipts": [
     {
-     "name": "BLUE POWER 7.5kva 48v Hybrid Inverter With Inbuilt 80A Mppt",
-     "price": 931000,
-     "unit": 124133.33,
-     "url": "https://www.jumia.com.ng/generic-blue-power-7.5kva-48v-hybrid-inverter-with-inbuilt-80a-mppt-420233389.html",
-     "sku": "GE779GP88P0CYNAFAMZ",
+     "name": "PRAG PRAG_ 6.3KVA/48V Heavy Duty Inverter 120A MPPT 6400W",
+     "price": 750500,
+     "unit": 119126.98,
+     "url": "https://www.jumia.com.ng/generic-prag-prag-6.3kva48v-heavy-duty-inverter-120a-mppt-6400w-420232414.html",
+     "sku": "GE779GP7AT8BMNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
    ]
   },
   {
-   "key": "battery|safepower|nomodel|200ah|12v|notopo",
-   "cls": "battery",
+   "key": "charge_ctrl|felicitysolar|cmty120a|120a|48v|mppt",
+   "cls": "charge_ctrl",
    "spec": {
-    "brand": "safepower",
-    "model_line": null,
-    "rating": 200,
-    "unit": "Ah",
-    "voltage": 12,
-    "topology": null
+    "brand": "felicity solar",
+    "model_line": "CMTY120A",
+    "rating": 120,
+    "unit": "A",
+    "voltage": 48,
+    "topology": "mppt"
    },
    "price": {
     "n": 1,
-    "median": 425999,
+    "median": 410000,
     "p25": null,
     "p75": null,
     "confidence": "listings"
    },
    "normalized": {
     "n": 1,
-    "median": 177499.58,
+    "median": 3416.67,
     "p25": null,
     "p75": null,
     "confidence": "listings"
    },
    "brands": [
-    "safepower"
+    "felicity solar"
    ],
    "receipts": [
     {
-     "name": "12v 200Ah Inverter Batteries",
-     "price": 425999,
-     "unit": 177499.58,
-     "url": "https://www.jumia.com.ng/safepower-12v-200ah-inverter-batteries-40003359.html",
-     "sku": "SA796GR1KR93ONAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "inverter|generic|nomodel|3.6kva|24v|hybrid",
-   "cls": "inverter",
-   "spec": {
-    "brand": "generic",
-    "model_line": null,
-    "rating": 3.6,
-    "unit": "kVA",
-    "voltage": 24,
-    "topology": "hybrid"
-   },
-   "price": {
-    "n": 1,
-    "median": 378000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 105000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "generic"
-   ],
-   "receipts": [
-    {
-     "name": "Grovolt Solar 3.6kva/24v Hybrid Inverter",
-     "price": 378000,
-     "unit": 105000,
-     "url": "https://www.jumia.com.ng/generic-grovolt-solar-3.6kva24v-hybrid-inverter-420257285.html",
-     "sku": "GE779GP7KUFEQNAFAMZ",
+     "name": "CMTY 120A MPPT Solar Charge Controller – 48V",
+     "price": 410000,
+     "unit": 3416.67,
+     "url": "https://www.jumia.com.ng/felicity-solar-cmty-120a-mppt-solar-charge-controller-48v-420287513.html",
+     "sku": "FE797GP74Y7VENAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -3562,6 +3472,46 @@
    ]
   },
   {
+   "key": "inverter|felicitysolar|nomodel|3.5kva|nov|notopo",
+   "cls": "inverter",
+   "spec": {
+    "brand": "felicity solar",
+    "model_line": null,
+    "rating": 3.5,
+    "unit": "kVA",
+    "voltage": null,
+    "topology": null
+   },
+   "price": {
+    "n": 1,
+    "median": 468000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 133714.29,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "felicity solar"
+   ],
+   "receipts": [
+    {
+     "name": "inverter 3.5Kva",
+     "price": 468000,
+     "unit": 133714.29,
+     "url": "https://www.jumia.com.ng/felicity-solar-inverter-3.5kva-420320358.html",
+     "sku": "FE797GP80XPNINAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
    "key": "solar_panel|secenergystorage|nomodel|300w|nov|notopo",
    "cls": "solar_panel",
    "spec": {
@@ -3596,6 +3546,246 @@
      "unit": 833.33,
      "url": "https://www.jumia.com.ng/300w-portable-power-station-60w-solar-panel-sec-energy-storage-mpg12077144.html",
      "sku": "SE730GP737GOUNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "battery|solarpower|nomodel|220ah|12v|notopo",
+   "cls": "battery",
+   "spec": {
+    "brand": "solar power",
+    "model_line": null,
+    "rating": 220,
+    "unit": "Ah",
+    "voltage": 12,
+    "topology": null
+   },
+   "price": {
+    "n": 1,
+    "median": 255000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 96590.91,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "solar power"
+   ],
+   "receipts": [
+    {
+     "name": "SMS Battery 220Ah (12V)",
+     "price": 255000,
+     "unit": 96590.91,
+     "url": "https://www.jumia.com.ng/solar-power-sms-battery-220ah-12v-420305858.html",
+     "sku": "SO686GP819GHQNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "battery|safepower|nomodel|200ah|12v|notopo",
+   "cls": "battery",
+   "spec": {
+    "brand": "safepower",
+    "model_line": null,
+    "rating": 200,
+    "unit": "Ah",
+    "voltage": 12,
+    "topology": null
+   },
+   "price": {
+    "n": 1,
+    "median": 425999,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 177499.58,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "safepower"
+   ],
+   "receipts": [
+    {
+     "name": "12v 200Ah Inverter Batteries",
+     "price": 425999,
+     "unit": 177499.58,
+     "url": "https://www.jumia.com.ng/safepower-12v-200ah-inverter-batteries-40003359.html",
+     "sku": "SA796GR1KR93ONAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "inverter|generic|nomodel|7.5kva|48v|hybrid",
+   "cls": "inverter",
+   "spec": {
+    "brand": "generic",
+    "model_line": null,
+    "rating": 7.5,
+    "unit": "kVA",
+    "voltage": 48,
+    "topology": "hybrid"
+   },
+   "price": {
+    "n": 1,
+    "median": 931000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 124133.33,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "generic"
+   ],
+   "receipts": [
+    {
+     "name": "BLUE POWER 7.5kva 48v Hybrid Inverter With Inbuilt 80A Mppt",
+     "price": 931000,
+     "unit": 124133.33,
+     "url": "https://www.jumia.com.ng/generic-blue-power-7.5kva-48v-hybrid-inverter-with-inbuilt-80a-mppt-420233389.html",
+     "sku": "GE779GP88P0CYNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "inverter|generic|nomodel|3.6kva|24v|hybrid",
+   "cls": "inverter",
+   "spec": {
+    "brand": "generic",
+    "model_line": null,
+    "rating": 3.6,
+    "unit": "kVA",
+    "voltage": 24,
+    "topology": "hybrid"
+   },
+   "price": {
+    "n": 1,
+    "median": 378000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 105000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "generic"
+   ],
+   "receipts": [
+    {
+     "name": "Grovolt Solar 3.6kva/24v Hybrid Inverter",
+     "price": 378000,
+     "unit": 105000,
+     "url": "https://www.jumia.com.ng/generic-grovolt-solar-3.6kva24v-hybrid-inverter-420257285.html",
+     "sku": "GE779GP7KUFEQNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "inverter|jordyele|nomodel|3.5kva|24v|hybrid",
+   "cls": "inverter",
+   "spec": {
+    "brand": "jordy ele",
+    "model_line": null,
+    "rating": 3.5,
+    "unit": "kVA",
+    "voltage": 24,
+    "topology": "hybrid"
+   },
+   "price": {
+    "n": 1,
+    "median": 350000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 100000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "jordy ele"
+   ],
+   "receipts": [
+    {
+     "name": "3.5KVA 24V Hybrid Solar Inverter – Pure Sine Wave",
+     "price": 350000,
+     "unit": 100000,
+     "url": "https://www.jumia.com.ng/jordy-ele-3.5kva-24v-hybrid-solar-inverter-pure-sine-wave-420325153.html",
+     "sku": "BR364GP772TNYNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "inverter|generic|nomodel|7.5kva|48v|pure_sine",
+   "cls": "inverter",
+   "spec": {
+    "brand": "generic",
+    "model_line": null,
+    "rating": 7.5,
+    "unit": "kVA",
+    "voltage": 48,
+    "topology": "pure_sine"
+   },
+   "price": {
+    "n": 1,
+    "median": 1187500,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 158333.33,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "generic"
+   ],
+   "receipts": [
+    {
+     "name": "Prags Prags_ 7.5KVA-48V PURE SINE WAVE INVERTER-WALL MOUNT",
+     "price": 1187500,
+     "unit": 158333.33,
+     "url": "https://www.jumia.com.ng/prags-prags-7.5kva-48v-pure-sine-wave-inverter-wall-mount-generic-mpg12063798.html",
+     "sku": "GE779GP6N1TKINAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -3680,18 +3870,18 @@
     "topology": null
    },
    "price": {
-    "n": 8,
-    "median": 44000,
-    "p25": null,
-    "p75": null,
-    "confidence": "median"
+    "n": 9,
+    "median": 45000,
+    "p25": 43000,
+    "p75": 59000,
+    "confidence": "band"
    },
    "normalized": {
-    "n": 8,
-    "median": 22000,
-    "p25": null,
-    "p75": null,
-    "confidence": "median"
+    "n": 9,
+    "median": 22500,
+    "p25": 21500,
+    "p75": 29500,
+    "confidence": "band"
    },
    "brands": [
     "generic"
@@ -3735,14 +3925,14 @@
    },
    "price": {
     "n": 14,
-    "median": 35000,
+    "median": 37250,
     "p25": 34000,
     "p75": 80000,
     "confidence": "band"
    },
    "normalized": {
     "n": 14,
-    "median": 35000,
+    "median": 37250,
     "p25": 34000,
     "p75": 80000,
     "confidence": "band"
@@ -3751,33 +3941,6 @@
     "generic",
     "sako",
     "solar power"
-   ]
-  },
-  {
-   "key": "inverter|1.6kVA|24V|pure_sine",
-   "cls": "inverter",
-   "spec": {
-    "rating": 1.6,
-    "unit": "kVA",
-    "voltage": 24,
-    "topology": "pure_sine"
-   },
-   "price": {
-    "n": 4,
-    "median": 290000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 4,
-    "median": 181250,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "luminous"
    ]
   },
   {
@@ -3792,20 +3955,74 @@
    "price": {
     "n": 10,
     "median": 55000,
-    "p25": 51300,
+    "p25": 52900,
     "p75": 57900,
     "confidence": "band"
    },
    "normalized": {
     "n": 10,
     "median": 18333.33,
-    "p25": 17100,
+    "p25": 17633.33,
     "p75": 19300,
     "confidence": "band"
    },
    "brands": [
     "generic",
     "suoer"
+   ]
+  },
+  {
+   "key": "inverter|1.6kVA|24V|pure_sine",
+   "cls": "inverter",
+   "spec": {
+    "rating": 1.6,
+    "unit": "kVA",
+    "voltage": 24,
+    "topology": "pure_sine"
+   },
+   "price": {
+    "n": 5,
+    "median": 290000,
+    "p25": null,
+    "p75": null,
+    "confidence": "median"
+   },
+   "normalized": {
+    "n": 5,
+    "median": 181250,
+    "p25": null,
+    "p75": null,
+    "confidence": "median"
+   },
+   "brands": [
+    "luminous"
+   ]
+  },
+  {
+   "key": "inverter|4kVA|nov|notopo",
+   "cls": "inverter",
+   "spec": {
+    "rating": 4,
+    "unit": "kVA",
+    "voltage": null,
+    "topology": null
+   },
+   "price": {
+    "n": 5,
+    "median": 74000,
+    "p25": null,
+    "p75": null,
+    "confidence": "median"
+   },
+   "normalized": {
+    "n": 5,
+    "median": 18500,
+    "p25": null,
+    "p75": null,
+    "confidence": "median"
+   },
+   "brands": [
+    "generic"
    ]
   },
   {
@@ -3836,33 +4053,6 @@
     "genus",
     "safepower",
     "sukam"
-   ]
-  },
-  {
-   "key": "inverter|4kVA|nov|notopo",
-   "cls": "inverter",
-   "spec": {
-    "rating": 4,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 5,
-    "median": 74000,
-    "p25": null,
-    "p75": null,
-    "confidence": "median"
-   },
-   "normalized": {
-    "n": 5,
-    "median": 18500,
-    "p25": null,
-    "p75": null,
-    "confidence": "median"
-   },
-   "brands": [
-    "generic"
    ]
   },
   {
@@ -3930,15 +4120,15 @@
     "topology": null
    },
    "price": {
-    "n": 6,
-    "median": 30499.5,
+    "n": 7,
+    "median": 26000,
     "p25": null,
     "p75": null,
     "confidence": "median"
    },
    "normalized": {
-    "n": 6,
-    "median": 20333,
+    "n": 7,
+    "median": 17333.33,
     "p25": null,
     "p75": null,
     "confidence": "median"
@@ -3946,34 +4136,6 @@
    "brands": [
     "generic",
     "solar power"
-   ]
-  },
-  {
-   "key": "inverter|10kVA|48V|hybrid",
-   "cls": "inverter",
-   "spec": {
-    "rating": 10,
-    "unit": "kVA",
-    "voltage": 48,
-    "topology": "hybrid"
-   },
-   "price": {
-    "n": 4,
-    "median": 1121250,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 4,
-    "median": 112125,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "blue power",
-    "generic"
    ]
   },
   {
@@ -4005,6 +4167,34 @@
    ]
   },
   {
+   "key": "inverter|10kVA|48V|hybrid",
+   "cls": "inverter",
+   "spec": {
+    "rating": 10,
+    "unit": "kVA",
+    "voltage": 48,
+    "topology": "hybrid"
+   },
+   "price": {
+    "n": 4,
+    "median": 1121250,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 4,
+    "median": 112125,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "blue power",
+    "generic"
+   ]
+  },
+  {
    "key": "inverter|3.5kVA|48V|pure_sine",
    "cls": "inverter",
    "spec": {
@@ -4031,33 +4221,6 @@
     "afriipower",
     "mopower",
     "smarten"
-   ]
-  },
-  {
-   "key": "inverter|6kVA|nov|lithium",
-   "cls": "inverter",
-   "spec": {
-    "rating": 6,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": "lithium"
-   },
-   "price": {
-    "n": 3,
-    "median": 4250000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 3,
-    "median": 708333.33,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "generic"
    ]
   },
   {
@@ -4167,15 +4330,15 @@
   {
    "key": "inverter",
    "price": {
-    "n": 128,
+    "n": 132,
     "median": 77000,
     "p25": 50900,
     "p75": 450000,
     "confidence": "band"
    },
    "normalized": {
-    "n": 128,
-    "median": 35000,
+    "n": 132,
+    "median": 37250,
     "p25": 21000,
     "p75": 120000,
     "confidence": "band"
@@ -4186,7 +4349,6 @@
     "blue power",
     "felicity",
     "felicity solar",
-    "felicitysolar",
     "generic",
     "hiconic",
     "itel",
@@ -4206,15 +4368,15 @@
   {
    "key": "battery",
    "price": {
-    "n": 13,
+    "n": 14,
     "median": 425999,
-    "p25": 419300,
+    "p25": 329799,
     "p75": 595000,
     "confidence": "band"
    },
    "normalized": {
-    "n": 13,
-    "median": 177499.58,
+    "n": 14,
+    "median": 176103.96,
     "p25": 161111.11,
     "p75": 183221.67,
     "confidence": "band"
