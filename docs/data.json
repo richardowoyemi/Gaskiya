@@ -2,7 +2,7 @@
  "meta": {
   "project": "Gaskiya",
   "version": "v1.3.1",
-  "generated": "2026-09-22T06:31:57+01:00",
+  "generated": "2026-09-25T06:31:31+01:00",
   "country": "NG",
   "sources": [
    {
@@ -71,7 +71,10 @@
   "2026-09-19",
   "2026-09-20",
   "2026-09-21",
-  "2026-09-22"
+  "2026-09-22",
+  "2026-09-23",
+  "2026-09-24",
+  "2026-09-25"
  ],
  "items": [
   {
@@ -85,44 +88,7 @@
    ],
    "source": "supermart",
    "tier": "A",
-   "receipts": [
-    {
-     "name": "Cerelac Wheat & Maize Infant Cereal 20 g",
-     "price": 190,
-     "unit": 9500,
-     "url": "https://www.supermart.ng/products/cerelac-wheat-maize-infant-cereal-20-g"
-    },
-    {
-     "name": "Cerelac Wheat & Milk 6 Months+ 50 g",
-     "price": 475,
-     "unit": 9500,
-     "url": "https://www.supermart.ng/products/cerelac-wheat-milk-6-months-50-g"
-    },
-    {
-     "name": "Cerelac Wheat & Milk 6 Months+ 50 g x10",
-     "price": 4780,
-     "unit": 9560,
-     "url": "https://www.supermart.ng/products/cerelac-wheat-milk-6-months-50-g-x10"
-    },
-    {
-     "name": "Cerelac Junior Maize & Wheat With Milk 50 g",
-     "price": 480,
-     "unit": 9600,
-     "url": "https://www.supermart.ng/products/cerelac-junior-maize-wheat-with-milk-50-g"
-    },
-    {
-     "name": "Cerelac Junior Maize & Wheat With Milk 50 g x10",
-     "price": 4830,
-     "unit": 9660,
-     "url": "https://www.supermart.ng/products/cerelac-junior-maize-wheat-with-milk-50-g-x10"
-    },
-    {
-     "name": "Cerelac Wheat & Milk 6 Months+ 1 kg",
-     "price": 14800,
-     "unit": 14800,
-     "url": "https://www.supermart.ng/products/cerelac-wheat-milk-6-months-1-kg"
-    }
-   ],
+   "receipts": [],
    "points": [
     {
      "d": "2026-08-13",
@@ -402,6 +368,24 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 24
+    },
+    {
+     "d": "2026-09-23",
+     "p": 17787.5,
+     "n": 7,
+     "rejected": 14,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 24
+    },
+    {
+     "d": "2026-09-24",
+     "p": 17787.5,
+     "n": 7,
+     "rejected": 14,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 24
     }
    ]
   },
@@ -430,18 +414,6 @@
      "url": "https://www.supermart.ng/products/afro-brown-sweet-beans-25-kg"
     },
     {
-     "name": "Best-In Red Kidney Beans 410 g",
-     "price": 390,
-     "unit": 951.22,
-     "url": "https://www.supermart.ng/products/best-in-red-kidney-beans-410-g"
-    },
-    {
-     "name": "Campbell's Pork & Beans 312 g",
-     "price": 320,
-     "unit": 1025.64,
-     "url": "https://www.supermart.ng/products/campbells-pork-beans-312-g"
-    },
-    {
      "name": "Batchelors Red Kidney Beans In Water 400 g",
      "price": 450,
      "unit": 1125,
@@ -452,6 +424,18 @@
      "price": 2045,
      "unit": 1136.11,
      "url": "https://www.supermart.ng/products/ayoola-foods-brown-beans-18-kg"
+    },
+    {
+     "name": "Ayoola Foods Brown Beans 900 g",
+     "price": 1050,
+     "unit": 1166.67,
+     "url": "https://www.supermart.ng/products/ayoola-foods-brown-beans-900-g"
+    },
+    {
+     "name": "Bayara Black Eye Beans 400 g",
+     "price": 870,
+     "unit": 2175,
+     "url": "https://www.supermart.ng/products/bayara-black-eye-beans-400-g"
     }
    ],
    "points": [
@@ -733,6 +717,33 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 61
+    },
+    {
+     "d": "2026-09-23",
+     "p": 3735,
+     "n": 22,
+     "rejected": 17,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 61
+    },
+    {
+     "d": "2026-09-24",
+     "p": 3735,
+     "n": 22,
+     "rejected": 17,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 61
+    },
+    {
+     "d": "2026-09-25",
+     "p": 3042.5,
+     "n": 10,
+     "rejected": 4,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 23
     }
    ]
   },
@@ -747,44 +758,7 @@
    ],
    "source": "supermart",
    "tier": "A",
-   "receipts": [
-    {
-     "name": "Bournvita Sachet 200 g",
-     "price": 475,
-     "unit": 2375,
-     "url": "https://www.supermart.ng/products/bournvita-sachet-200-g"
-    },
-    {
-     "name": "Bournvita Biscuit 24 g",
-     "price": 80,
-     "unit": 3333.33,
-     "url": "https://www.supermart.ng/products/bournvita-biscuit-24-g"
-    },
-    {
-     "name": "Bournvita Biscuit 40 g",
-     "price": 135,
-     "unit": 3375,
-     "url": "https://www.supermart.ng/products/bournvita-biscuit-40-g"
-    },
-    {
-     "name": "Cadbury Bournvita Sachet 380 g",
-     "price": 3490,
-     "unit": 9184.21,
-     "url": "https://www.supermart.ng/products/cadbury-bournvita-sachet-380-g"
-    },
-    {
-     "name": "Bournvita Sachet 20 g",
-     "price": 220,
-     "unit": 11000,
-     "url": "https://www.supermart.ng/products/bournvita-sachet-20-g"
-    },
-    {
-     "name": "Bournvita Sachet 20 g x10",
-     "price": 2250,
-     "unit": 11250,
-     "url": "https://www.supermart.ng/products/bournvita-sachet-20-g-x10"
-    }
-   ],
+   "receipts": [],
    "points": [
     {
      "d": "2026-08-13",
@@ -1064,6 +1038,24 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 10
+    },
+    {
+     "d": "2026-09-23",
+     "p": 11258.34,
+     "n": 6,
+     "rejected": 1,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 10
+    },
+    {
+     "d": "2026-09-24",
+     "p": 11258.34,
+     "n": 6,
+     "rejected": 1,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 10
     }
    ]
   },
@@ -1080,28 +1072,10 @@
    "tier": "A",
    "receipts": [
     {
-     "name": "Cumin Bread/Maize",
-     "price": 350,
-     "unit": 350,
-     "url": "https://www.supermart.ng/products/cumin-breadmaize"
-    },
-    {
      "name": "5 Loaves Premium Bread",
      "price": 365,
      "unit": 365,
      "url": "https://www.supermart.ng/products/5-loaves-premium-bread"
-    },
-    {
-     "name": "Candy Club Sandwich Bread",
-     "price": 365,
-     "unit": 365,
-     "url": "https://www.supermart.ng/products/candy-club-sandwich-bread"
-    },
-    {
-     "name": "Brown Bread",
-     "price": 440,
-     "unit": 440,
-     "url": "https://www.supermart.ng/products/brown-bread"
     },
     {
      "name": "Agege Bread - Small",
@@ -1110,10 +1084,22 @@
      "url": "https://www.supermart.ng/products/agege-bread-small"
     },
     {
-     "name": "Family Bread",
-     "price": 600,
-     "unit": 600,
-     "url": "https://www.supermart.ng/products/family-bread"
+     "name": "Agege Bread - Medium",
+     "price": 700,
+     "unit": 700,
+     "url": "https://www.supermart.ng/products/agege-bread-medium"
+    },
+    {
+     "name": "Aildas Bread Bin Keeper",
+     "price": 785,
+     "unit": 785,
+     "url": "https://www.supermart.ng/products/aildas-bread-bin-keeper"
+    },
+    {
+     "name": "Agege Bread - Large",
+     "price": 800,
+     "unit": 800,
+     "url": "https://www.supermart.ng/products/agege-bread-large"
     }
    ],
    "points": [
@@ -1395,6 +1381,33 @@
      "method": "all",
      "chg": 0,
      "matched": 19
+    },
+    {
+     "d": "2026-09-23",
+     "p": 767.5,
+     "n": 16,
+     "rejected": 3,
+     "method": "all",
+     "chg": 0,
+     "matched": 19
+    },
+    {
+     "d": "2026-09-24",
+     "p": 767.5,
+     "n": 16,
+     "rejected": 3,
+     "method": "all",
+     "chg": 0,
+     "matched": 19
+    },
+    {
+     "d": "2026-09-25",
+     "p": 700,
+     "n": 5,
+     "rejected": 1,
+     "method": "all",
+     "chg": 0,
+     "matched": 6
     }
    ]
   },
@@ -1409,26 +1422,7 @@
    ],
    "source": "supermart",
    "tier": "A",
-   "receipts": [
-    {
-     "name": "Chipees Corn Flakes 350 g",
-     "price": 365,
-     "unit": 1042.86,
-     "url": "https://www.supermart.ng/products/chipees-corn-flakes-350-g"
-    },
-    {
-     "name": "Blue Boat Corn Flakes 350 g",
-     "price": 410,
-     "unit": 1171.43,
-     "url": "https://www.supermart.ng/products/blue-boat-corn-flakes-350-g"
-    },
-    {
-     "name": "Crownfield Corn Flakes 500 g",
-     "price": 2940,
-     "unit": 5880,
-     "url": "https://www.supermart.ng/products/crownfield-corn-flakes-500-g"
-    }
-   ],
+   "receipts": [],
    "points": [
     {
      "d": "2026-08-13",
@@ -1702,6 +1696,24 @@
     },
     {
      "d": "2026-09-22",
+     "p": 1171.43,
+     "n": 3,
+     "rejected": 0,
+     "method": "all",
+     "chg": 0,
+     "matched": 3
+    },
+    {
+     "d": "2026-09-23",
+     "p": 1171.43,
+     "n": 3,
+     "rejected": 0,
+     "method": "all",
+     "chg": 0,
+     "matched": 3
+    },
+    {
+     "d": "2026-09-24",
      "p": 1171.43,
      "n": 3,
      "rejected": 0,
@@ -1730,34 +1742,34 @@
      "url": "https://www.supermart.ng/products/bakers-complete-chicken-country-vegetables-135-kg"
     },
     {
-     "name": "Chicken Wings ~480 g",
-     "price": 975,
-     "unit": 2031.25,
-     "url": "https://www.supermart.ng/products/chicken-wings-480-g"
+     "name": "Artisan Butchery Classic Chicken Sausage 350 g x5",
+     "price": 4265,
+     "unit": 2437.14,
+     "url": "https://www.supermart.ng/products/artisan-butchery-classic-chicken-sausage-350-g-x5"
     },
     {
-     "name": "Chi Chicken Cut Ups Wings ~1.1 kg (N/A on Sundays)",
-     "price": 2250,
-     "unit": 2045.45,
-     "url": "https://www.supermart.ng/products/chi-chicken-cut-ups-wings-11-kg-na-on-sundays"
+     "name": "Al Kabeer Chicken & Cheese Sticks 250 g x10",
+     "price": 7850,
+     "unit": 3140,
+     "url": "https://www.supermart.ng/products/al-kabeer-chicken-cheese-sticks-250-g-x10"
     },
     {
-     "name": "Fiesta Whole Chicken ~1.5 kg",
-     "price": 3090,
-     "unit": 2060,
-     "url": "https://www.supermart.ng/products/fiesta-whole-chicken-15-kg"
+     "name": "Al Taghziah Chicken Luncheon Meat 200 g",
+     "price": 650,
+     "unit": 3250,
+     "url": "https://www.supermart.ng/products/al-taghziah-chicken-luncheon-meat-200-g"
     },
     {
-     "name": "Diamond Naturals Chicken Dinner 374 g",
-     "price": 780,
-     "unit": 2085.56,
-     "url": "https://www.supermart.ng/products/diamond-naturals-chicken-dinner-374-g"
+     "name": "Al Kabeer Chicken Burger 400 g x8",
+     "price": 10550,
+     "unit": 3296.88,
+     "url": "https://www.supermart.ng/products/al-kabeer-chicken-burger-400-g-x8"
     },
     {
-     "name": "Chicken Gizzard ~1 kg",
-     "price": 2220,
-     "unit": 2220,
-     "url": "https://www.supermart.ng/products/chicken-gizzard-1-kg"
+     "name": "Artisan Butchery Chicken - Shredded 500 g",
+     "price": 1690,
+     "unit": 3380,
+     "url": "https://www.supermart.ng/products/artisan-butchery-chicken-shredded-500-g"
     }
    ],
    "points": [
@@ -2039,12 +2051,39 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 202
+    },
+    {
+     "d": "2026-09-23",
+     "p": 4696.72,
+     "n": 47,
+     "rejected": 110,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 202
+    },
+    {
+     "d": "2026-09-24",
+     "p": 4696.72,
+     "n": 47,
+     "rejected": 110,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 202
+    },
+    {
+     "d": "2026-09-25",
+     "p": 3650,
+     "n": 11,
+     "rejected": 39,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 61
     }
    ]
   },
   {
    "key": "detergent",
-   "unit": "l",
+   "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
    "bounds": [
@@ -2055,28 +2094,10 @@
    "tier": "A",
    "receipts": [
     {
-     "name": "Bonus White Detergent 200 g",
-     "price": 100,
-     "unit": 500,
-     "url": "https://www.supermart.ng/products/bonus-white-detergent-200-g"
-    },
-    {
      "name": "Banjo Total Care Detergent Powder 180 g",
      "price": 95,
      "unit": 527.78,
      "url": "https://www.supermart.ng/products/banjo-total-care-detergent-powder-180-g"
-    },
-    {
-     "name": "Bonus White Detergent 900 g",
-     "price": 535,
-     "unit": 594.44,
-     "url": "https://www.supermart.ng/products/bonus-white-detergent-900-g"
-    },
-    {
-     "name": "Canoe Extra Care Detergent Color Aloe Vera 1.8 kg",
-     "price": 1090,
-     "unit": 605.56,
-     "url": "https://www.supermart.ng/products/canoe-extra-care-detergent-color-aloe-vera-18-kg"
     },
     {
      "name": "Ariel Original Laundry Detergent Powder 90 g x6",
@@ -2085,10 +2106,28 @@
      "url": "https://www.supermart.ng/products/ariel-original-laundry-detergent-powder-90-g-x6"
     },
     {
-     "name": "Canoe Extra Care Detergent 180 g",
-     "price": 125,
-     "unit": 694.44,
-     "url": "https://www.supermart.ng/products/canoe-extra-care-detergent-180-g"
+     "name": "Ariel Ankara & Colour Detergent Powder 150 g x6",
+     "price": 690,
+     "unit": 766.67,
+     "url": "https://www.supermart.ng/products/ariel-ankara-colour-detergent-powder-150-g-x6"
+    },
+    {
+     "name": "Ariel Multi-Purpose Bar Soap 220 g",
+     "price": 200,
+     "unit": 909.09,
+     "url": "https://www.supermart.ng/products/ariel-multi-purpose-bar-soap-220-g"
+    },
+    {
+     "name": "Ariel Multi-Purpose Bar Soap 118 g",
+     "price": 110,
+     "unit": 932.2,
+     "url": "https://www.supermart.ng/products/ariel-multi-purpose-bar-soap-118-g"
+    },
+    {
+     "name": "Ariel Automatic Washing Powder 400 g",
+     "price": 565,
+     "unit": 1412.5,
+     "url": "https://www.supermart.ng/products/ariel-automatic-washing-powder-400-g"
     }
    ],
    "points": [
@@ -2370,12 +2409,39 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 75
+    },
+    {
+     "d": "2026-09-23",
+     "p": 2325,
+     "n": 36,
+     "rejected": 12,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 75
+    },
+    {
+     "d": "2026-09-24",
+     "p": 2325,
+     "n": 36,
+     "rejected": 12,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 75
+    },
+    {
+     "d": "2026-09-25",
+     "p": 3071.25,
+     "n": 10,
+     "rejected": 2,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 21
     }
    ]
   },
   {
    "key": "diapers",
-   "unit": "piece",
+   "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
    "bounds": [
@@ -2384,20 +2450,7 @@
    ],
    "source": "supermart",
    "tier": "A",
-   "receipts": [
-    {
-     "name": "Dr Brown's Unisex Adult Diaper Large 45-60 Inches x10",
-     "price": 14375,
-     "unit": 1437.5,
-     "url": "https://www.supermart.ng/products/dr-browns-adult-diaper-unisex-large-45-60-inches-x10"
-    },
-    {
-     "name": "Dr Brown's Unisex Adult Diaper Extra Large 48-68 Inches x10",
-     "price": 15250,
-     "unit": 1525,
-     "url": "https://www.supermart.ng/products/dr-browns-unisex-adult-diaper-extra-large-48-68-inches-x10"
-    }
-   ],
+   "receipts": [],
    "points": [
     {
      "d": "2026-08-13",
@@ -2677,12 +2730,30 @@
      "method": "all",
      "chg": null,
      "matched": 0
+    },
+    {
+     "d": "2026-09-23",
+     "p": 1481.25,
+     "n": 2,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
+    },
+    {
+     "d": "2026-09-24",
+     "p": 1481.25,
+     "n": 2,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
     }
    ]
   },
   {
    "key": "eggs",
-   "unit": "piece",
+   "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
    "bounds": [
@@ -2691,44 +2762,7 @@
    ],
    "source": "supermart",
    "tier": "A",
-   "receipts": [
-    {
-     "name": "Farmcraft Eggs x30",
-     "price": 3380,
-     "unit": 112.67,
-     "url": "https://www.supermart.ng/products/farmcraft-eggs-x30"
-    },
-    {
-     "name": "Farmcraft Eggs x6",
-     "price": 685,
-     "unit": 114.17,
-     "url": "https://www.supermart.ng/products/farmcraft-eggs-x6"
-    },
-    {
-     "name": "Farmcraft Eggs x15",
-     "price": 1735,
-     "unit": 115.67,
-     "url": "https://www.supermart.ng/products/farmcraft-eggs-x15"
-    },
-    {
-     "name": "Eggcellent Eggs x30",
-     "price": 8250,
-     "unit": 275,
-     "url": "https://www.supermart.ng/products/eggcellent-eggs-x30"
-    },
-    {
-     "name": "Eggcellent Eggs x15",
-     "price": 4350,
-     "unit": 290,
-     "url": "https://www.supermart.ng/products/eggcellent-eggs-x15"
-    },
-    {
-     "name": "Egg Puff",
-     "price": 320,
-     "unit": 320,
-     "url": "https://www.supermart.ng/products/egg-puff"
-    }
-   ],
+   "receipts": [],
    "points": [
     {
      "d": "2026-08-13",
@@ -3008,6 +3042,24 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 17
+    },
+    {
+     "d": "2026-09-23",
+     "p": 195.34,
+     "n": 4,
+     "rejected": 10,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 17
+    },
+    {
+     "d": "2026-09-24",
+     "p": 195.34,
+     "n": 4,
+     "rejected": 10,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 17
     }
    ]
   },
@@ -3024,40 +3076,22 @@
    "tier": "A",
    "receipts": [
     {
-     "name": "Blue Pearl Mackerel In Tomato Sauce 425 g",
-     "price": 935,
-     "unit": 2200,
-     "url": "https://www.supermart.ng/products/blue-pearl-mackerel-in-tomato-sauce-425-g"
-    },
-    {
-     "name": "Croaker Fillet (Krystle) ~1 kg",
-     "price": 2900,
-     "unit": 2900,
-     "url": "https://www.supermart.ng/products/croaker-fillet-krystle-1-kg"
-    },
-    {
-     "name": "Costa Sardines In Vegetable Oil 125 g x5",
-     "price": 1950,
-     "unit": 3120,
-     "url": "https://www.supermart.ng/products/costa-sardines-in-vegetable-oil-125-g-x5"
-    },
-    {
      "name": "Adriatic Queen Sardines In Olive Oil 105 g",
      "price": 695,
      "unit": 6619.05,
      "url": "https://www.supermart.ng/products/adriatic-queen-sardines-in-olive-oil-105-g"
     },
     {
-     "name": "Estus Mackerel In Tomato Sauce 425 g",
-     "price": 2960,
-     "unit": 6964.71,
-     "url": "https://www.supermart.ng/products/estus-mackerel-in-tomato-sauce-425-g"
+     "name": "All Day Sardines 125 g",
+     "price": 1370,
+     "unit": 10960,
+     "url": "https://www.supermart.ng/products/all-day-sardines-125-g"
     },
     {
-     "name": "Croaker Steaks ~1 kg",
-     "price": 7000,
-     "unit": 7000,
-     "url": "https://www.supermart.ng/products/croaker-steaks-500-g"
+     "name": "Adriatic Queen Mackerel Fillets In Olive Oil 105 g",
+     "price": 1450,
+     "unit": 13809.52,
+     "url": "https://www.supermart.ng/products/adriatic-queen-mackerel-fillets-in-olive-oil-105-g"
     }
    ],
    "points": [
@@ -3339,6 +3373,33 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 26
+    },
+    {
+     "d": "2026-09-23",
+     "p": 7040,
+     "n": 10,
+     "rejected": 11,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 26
+    },
+    {
+     "d": "2026-09-24",
+     "p": 7040,
+     "n": 10,
+     "rejected": 11,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 26
+    },
+    {
+     "d": "2026-09-25",
+     "p": 10960,
+     "n": 3,
+     "rejected": 5,
+     "method": "all",
+     "chg": 0,
+     "matched": 8
     }
    ]
   },
@@ -3353,38 +3414,7 @@
    ],
    "source": "supermart",
    "tier": "A",
-   "receipts": [
-    {
-     "name": "Dumchi Premium White Garri 1 kg",
-     "price": 365,
-     "unit": 365,
-     "url": "https://www.supermart.ng/products/dumchi-premium-white-garri-1-kg"
-    },
-    {
-     "name": "Cassa Garri White 2 kg",
-     "price": 780,
-     "unit": 390,
-     "url": "https://www.supermart.ng/products/cassa-garri-white-2-kg"
-    },
-    {
-     "name": "Cassa Garri White 1 kg",
-     "price": 395,
-     "unit": 395,
-     "url": "https://www.supermart.ng/products/cassa-garri-white-1-kg"
-    },
-    {
-     "name": "Emmppek Homemade Garri 2 kg",
-     "price": 3480,
-     "unit": 1740,
-     "url": "https://www.supermart.ng/products/emmppek-homemade-garri-2-kg"
-    },
-    {
-     "name": "Emmppek Homemade Garri 1 kg",
-     "price": 1800,
-     "unit": 1800,
-     "url": "https://www.supermart.ng/products/emmppek-homemade-garri-1-kg"
-    }
-   ],
+   "receipts": [],
    "points": [
     {
      "d": "2026-08-13",
@@ -3658,6 +3688,24 @@
     },
     {
      "d": "2026-09-22",
+     "p": 395,
+     "n": 5,
+     "rejected": 0,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 5
+    },
+    {
+     "d": "2026-09-23",
+     "p": 395,
+     "n": 5,
+     "rejected": 0,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 5
+    },
+    {
+     "d": "2026-09-24",
      "p": 395,
      "n": 5,
      "rejected": 0,
@@ -3678,14 +3726,7 @@
    ],
    "source": "supermart",
    "tier": "A",
-   "receipts": [
-    {
-     "name": "Bubez Pap Yellow Corn With Groundnut 600 g - Frozen",
-     "price": 885,
-     "unit": 1475,
-     "url": "https://www.supermart.ng/products/bubez-pap-yellow-corn-with-groundnut-600-g-frozen"
-    }
-   ],
+   "receipts": [],
    "points": [
     {
      "d": "2026-08-13",
@@ -3959,6 +4000,24 @@
     },
     {
      "d": "2026-09-22",
+     "p": 1475,
+     "n": 1,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
+    },
+    {
+     "d": "2026-09-23",
+     "p": 1475,
+     "n": 1,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
+    },
+    {
+     "d": "2026-09-24",
      "p": 1475,
      "n": 1,
      "rejected": 0,
@@ -3981,40 +4040,10 @@
    "tier": "A",
    "receipts": [
     {
-     "name": "Cowbell Instant Filled Milk Powder Tin 900 g",
-     "price": 2855,
-     "unit": 3172.22,
-     "url": "https://www.supermart.ng/products/cowbell-instant-filled-milk-powder-tin-900-g"
-    },
-    {
-     "name": "Dano Full Cream Milk Powder Sachet 16 g x10",
-     "price": 515,
-     "unit": 3218.75,
-     "url": "https://www.supermart.ng/products/dano-full-cream-milk-powder-sachet-16-g-x10"
-    },
-    {
-     "name": "Dano Sabi Dairy Creamer Sachet 12 g",
-     "price": 55,
-     "unit": 4583.33,
-     "url": "https://www.supermart.ng/products/dano-sabi-dairy-creamer-sachet-12-g"
-    },
-    {
-     "name": "Dano Full Cream Milk Powder Tin 2.5 kg",
-     "price": 12200,
-     "unit": 4880,
-     "url": "https://www.supermart.ng/products/dano-full-cream-milk-powder-tin-25-kg"
-    },
-    {
-     "name": "Dano Cool Cow Evaporated Milk 150 g",
-     "price": 765,
-     "unit": 5100,
-     "url": "https://www.supermart.ng/products/dano-cool-cow-evaporated-milk-150-g"
-    },
-    {
-     "name": "Dano Skimmed Milk Powder Tin 900 g",
-     "price": 4730,
-     "unit": 5255.56,
-     "url": "https://www.supermart.ng/products/dano-skimmed-milk-powder-tin-900-g"
+     "name": "AGV Soy Milk Powder Sweetened With Fruit 360 g",
+     "price": 2510,
+     "unit": 6972.22,
+     "url": "https://www.supermart.ng/products/agv-soy-milk-powder-sweetened-with-fruit-360-g"
     }
    ],
    "points": [
@@ -4296,12 +4325,39 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 50
+    },
+    {
+     "d": "2026-09-23",
+     "p": 10228.75,
+     "n": 18,
+     "rejected": 17,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 50
+    },
+    {
+     "d": "2026-09-24",
+     "p": 10228.75,
+     "n": 18,
+     "rejected": 17,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 50
+    },
+    {
+     "d": "2026-09-25",
+     "p": 6972.22,
+     "n": 1,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
     }
    ]
   },
   {
    "key": "oats",
-   "unit": "kg",
+   "unit": "l",
    "state": "LA",
    "geo_scope": "city_online",
    "bounds": [
@@ -4310,44 +4366,7 @@
    ],
    "source": "supermart",
    "tier": "A",
-   "receipts": [
-    {
-     "name": "Cheerios Honey Nut Whole Grain Oats 306 g",
-     "price": 365,
-     "unit": 1192.81,
-     "url": "https://www.supermart.ng/products/cheerios-honey-nut-whole-grain-oats-306-g"
-    },
-    {
-     "name": "Checkers Organic Cereal Oats Sachet 375 g",
-     "price": 545,
-     "unit": 1453.33,
-     "url": "https://www.supermart.ng/products/checkers-organic-cereal-oats-sachet-375-g"
-    },
-    {
-     "name": "Earth's Best Organic Whole Grain Oatmeal Cereal 227 g",
-     "price": 365,
-     "unit": 1607.93,
-     "url": "https://www.supermart.ng/products/earths-best-organic-whole-grain-oatmeal-cereal-227-g"
-    },
-    {
-     "name": "Earth's Best Organic Whole Grain Oatmeal Cereal With Bananas 227 g",
-     "price": 365,
-     "unit": 1607.93,
-     "url": "https://www.supermart.ng/products/earths-best-organic-whole-grain-oatmeal-cereal-with-bananas-227-g"
-    },
-    {
-     "name": "Cheer Up Oats 500 g",
-     "price": 965,
-     "unit": 1930,
-     "url": "https://www.supermart.ng/products/cheer-up-oats-500-g"
-    },
-    {
-     "name": "Checkers Organic Cereal Oats Jar 375 g",
-     "price": 795,
-     "unit": 2120,
-     "url": "https://www.supermart.ng/products/checkers-organic-cereal-oats-jar-375-g"
-    }
-   ],
+   "receipts": [],
    "points": [
     {
      "d": "2026-08-13",
@@ -4627,6 +4646,24 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 22
+    },
+    {
+     "d": "2026-09-23",
+     "p": 3875,
+     "n": 9,
+     "rejected": 5,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 22
+    },
+    {
+     "d": "2026-09-24",
+     "p": 3875,
+     "n": 9,
+     "rejected": 5,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 22
     }
    ]
   },
@@ -4641,14 +4678,7 @@
    ],
    "source": "supermart",
    "tier": "A",
-   "receipts": [
-    {
-     "name": "Emerald Kitchens Fresh Ogbono Paste 100 g",
-     "price": 1130,
-     "unit": 11300,
-     "url": "https://www.supermart.ng/products/emerald-kitchens-fresh-ogbono-paste-100-g"
-    }
-   ],
+   "receipts": [],
    "points": [
     {
      "d": "2026-08-13",
@@ -4922,6 +4952,24 @@
     },
     {
      "d": "2026-09-22",
+     "p": 11300,
+     "n": 1,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
+    },
+    {
+     "d": "2026-09-23",
+     "p": 11300,
+     "n": 1,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
+    },
+    {
+     "d": "2026-09-24",
      "p": 11300,
      "n": 1,
      "rejected": 0,
@@ -4944,40 +4992,10 @@
    "tier": "A",
    "receipts": [
     {
-     "name": "Del Monte Pasta Sauce Garlic & Onion 680 g",
-     "price": 1145,
-     "unit": 1683.82,
-     "url": "https://www.supermart.ng/products/del-monte-pasta-sauce-garlic-onion-680-g"
-    },
-    {
-     "name": "Best-In Onion & Garlic Pasta Sauce 420 g",
-     "price": 1020,
-     "unit": 2428.57,
-     "url": "https://www.supermart.ng/products/best-in-onion-garlic-pasta-sauce-420-g"
-    },
-    {
-     "name": "Campbell's Brown Gravy With Onions 298 g",
-     "price": 945,
-     "unit": 3171.14,
-     "url": "https://www.supermart.ng/products/campbells-brown-gravy-with-onions-298-g"
-    },
-    {
      "name": "Angry Birds Potato Crisps Sour Cream & Onion 160 g",
      "price": 540,
      "unit": 3375,
      "url": "https://www.supermart.ng/products/angry-birds-potato-crisps-sour-cream-onion-160-g"
-    },
-    {
-     "name": "Dolmio Intense Bolognese Onion & Garlic Sauce 500 g",
-     "price": 1890,
-     "unit": 3780,
-     "url": "https://www.supermart.ng/products/dolmio-intense-bolognese-onion-garlic-sauce-500-g"
-    },
-    {
-     "name": "CBL Munchee Onion Biscuits 170 g",
-     "price": 850,
-     "unit": 5000,
-     "url": "https://www.supermart.ng/products/munchee-onion-biscuits-170-g"
     }
    ],
    "points": [
@@ -5259,6 +5277,33 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 28
+    },
+    {
+     "d": "2026-09-23",
+     "p": 3104.29,
+     "n": 4,
+     "rejected": 20,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 28
+    },
+    {
+     "d": "2026-09-24",
+     "p": 3104.29,
+     "n": 4,
+     "rejected": 20,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 28
+    },
+    {
+     "d": "2026-09-25",
+     "p": 3375,
+     "n": 1,
+     "rejected": 6,
+     "method": "all",
+     "chg": 0,
+     "matched": 7
     }
    ]
   },
@@ -5273,14 +5318,7 @@
    ],
    "source": "supermart",
    "tier": "A",
-   "receipts": [
-    {
-     "name": "Blue Diamond Almond Habanero BBQ 170 g",
-     "price": 365,
-     "unit": 2147.06,
-     "url": "https://www.supermart.ng/products/blue-diamond-almond-habanero-bbq-170-g"
-    }
-   ],
+   "receipts": [],
    "points": [
     {
      "d": "2026-08-13",
@@ -5554,6 +5592,24 @@
     },
     {
      "d": "2026-09-22",
+     "p": 2147.06,
+     "n": 1,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
+    },
+    {
+     "d": "2026-09-23",
+     "p": 2147.06,
+     "n": 1,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
+    },
+    {
+     "d": "2026-09-24",
      "p": 2147.06,
      "n": 1,
      "rejected": 0,
@@ -5594,22 +5650,22 @@
      "url": "https://www.supermart.ng/products/ayoola-foods-yam-flour-18-kg-elubo"
     },
     {
-     "name": "Country Delight Amala Dun Yam Flour 1 kg",
-     "price": 2435,
-     "unit": 2435,
-     "url": "https://www.supermart.ng/products/country-delight-amala-dun-yam-flour-1-kg"
-    },
-    {
      "name": "Arosa Cocoyam Flour Soup Thickener 150 g",
      "price": 430,
      "unit": 2866.67,
      "url": "https://www.supermart.ng/products/arosa-cocoyam-flour-soup-thickener-150-g"
     },
     {
-     "name": "Endy's Poundo Yam 2 kg",
-     "price": 7650,
-     "unit": 3825,
-     "url": "https://www.supermart.ng/products/endys-poundo-yam-2-kg"
+     "name": "Abebi Yam Flour 1 kg (Elubo Isu)",
+     "price": 4560,
+     "unit": 4560,
+     "url": "https://www.supermart.ng/products/abebi-yam-flour-1-kg"
+    },
+    {
+     "name": "Ayoola Foods Poundo Yam Flour 1.8 kg",
+     "price": 8315,
+     "unit": 4619.44,
+     "url": "https://www.supermart.ng/products/ayoola-foods-poundo-yam-flour-18-kg"
     }
    ],
    "points": [
@@ -5891,12 +5947,39 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 14
+    },
+    {
+     "d": "2026-09-23",
+     "p": 4162.5,
+     "n": 9,
+     "rejected": 1,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 14
+    },
+    {
+     "d": "2026-09-24",
+     "p": 4162.5,
+     "n": 9,
+     "rejected": 1,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 14
+    },
+    {
+     "d": "2026-09-25",
+     "p": 4560,
+     "n": 5,
+     "rejected": 0,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 9
     }
    ]
   },
   {
    "key": "rice",
-   "unit": "l",
+   "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
    "bounds": [
@@ -5913,34 +5996,34 @@
      "url": "https://www.supermart.ng/products/abadini-natural-healthy-parboiled-rice-5-kg"
     },
     {
-     "name": "Ebony Ground Rice Flour 1 kg",
-     "price": 840,
-     "unit": 840,
-     "url": "https://www.supermart.ng/products/ebony-ground-rice-flour-1-kg"
+     "name": "Ambrosia Deluxe Rice Pudding Madagascan Vanilla 2 x 110 g",
+     "price": 12155,
+     "unit": 1004.55,
+     "url": "https://www.supermart.ng/products/ambrosia-deluxe-rice-pudding-madagascan-vanilla-2-x-110-g"
     },
     {
-     "name": "Chain Kwo Quick Cook Rice Stick 400 g",
-     "price": 365,
-     "unit": 912.5,
-     "url": "https://www.supermart.ng/products/chainkwo-quick-cook-rice-stick-400-g"
+     "name": "Aoun Parboiled Rice 1 kg",
+     "price": 1065,
+     "unit": 1065,
+     "url": "https://www.supermart.ng/products/aoun-parboiled-rice-1-kg"
     },
     {
-     "name": "Daily Fresh Powa Beaten Rice 500 g",
-     "price": 460,
-     "unit": 920,
-     "url": "https://www.supermart.ng/products/daily-fresh-powa-beaten-rice-500-g"
+     "name": "Aoun Parboiled Rice 2 kg",
+     "price": 2155,
+     "unit": 1077.5,
+     "url": "https://www.supermart.ng/products/aoun-parboiled-rice-2-kg"
     },
     {
-     "name": "Ebony Gold Brown Rice 2.5 kg",
-     "price": 2350,
-     "unit": 940,
-     "url": "https://www.supermart.ng/products/ebony-gold-brown-rice-25-kg"
+     "name": "Baker's Choice Ground Rice 1 kg",
+     "price": 1170,
+     "unit": 1170,
+     "url": "https://www.supermart.ng/products/bakers-choice-ground-rice-1-kg"
     },
     {
-     "name": "Daily Fresh Powa Beaten Rice 1 kg",
-     "price": 960,
-     "unit": 960,
-     "url": "https://www.supermart.ng/products/daily-fresh-powa-beaten-rice-1-kg"
+     "name": "Aoun Egyptian Rice 1 kg",
+     "price": 1200,
+     "unit": 1200,
+     "url": "https://www.supermart.ng/products/aoun-egyptian-rice-1-kg"
     }
    ],
    "points": [
@@ -6222,6 +6305,33 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 145
+    },
+    {
+     "d": "2026-09-23",
+     "p": 1714.45,
+     "n": 44,
+     "rejected": 74,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 145
+    },
+    {
+     "d": "2026-09-24",
+     "p": 1714.45,
+     "n": 44,
+     "rejected": 74,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 145
+    },
+    {
+     "d": "2026-09-25",
+     "p": 1745,
+     "n": 19,
+     "rejected": 19,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 41
     }
    ]
   },
@@ -6238,40 +6348,40 @@
    "tier": "A",
    "receipts": [
     {
-     "name": "Dangote Iodised Salt 250 g",
-     "price": 45,
-     "unit": 180,
-     "url": "https://www.supermart.ng/products/dangote-iodised-salt-250-g"
-    },
-    {
-     "name": "Dangote Iodised Salt 250 g x2",
-     "price": 90,
-     "unit": 180,
-     "url": "https://www.supermart.ng/products/dangote-iodised-salt-250-g-x2"
-    },
-    {
      "name": "Afro Iodized & Extra Fine Table Salt 750 g",
      "price": 215,
      "unit": 286.67,
      "url": "https://www.supermart.ng/products/afro-iodized-extra-fine-table-salt-750-g"
     },
     {
-     "name": "Best-One Cooking Salt 1.5 kg",
-     "price": 585,
-     "unit": 390,
-     "url": "https://www.supermart.ng/products/best-one-cooking-salt-15-kg"
+     "name": "Ammol Table Salt 750 g",
+     "price": 810,
+     "unit": 1080,
+     "url": "https://www.supermart.ng/products/ammol-table-salt-750-g"
     },
     {
-     "name": "Bisto 25% Less Salt Cheese Sauce Mix 185 g",
-     "price": 15040,
-     "unit": 439.44,
-     "url": "https://www.supermart.ng/products/bisto-25-less-salt-cheese-sauce-mix-185-g"
+     "name": "Argussy Green Tea Spa Salt 300 g",
+     "price": 550,
+     "unit": 1833.33,
+     "url": "https://www.supermart.ng/products/argussy-green-tea-spa-salt-300-g"
     },
     {
-     "name": "Dangote Iodised Salt 500 g",
-     "price": 265,
-     "unit": 530,
-     "url": "https://www.supermart.ng/products/dangote-iodised-salt-500-g"
+     "name": "Argussy Papaya Spa Salt 300 g",
+     "price": 550,
+     "unit": 1833.33,
+     "url": "https://www.supermart.ng/products/argussy-papaya-spa-salt-300-g"
+    },
+    {
+     "name": "Bake Rolz Wheat Snacks Salt 31 g",
+     "price": 65,
+     "unit": 2096.77,
+     "url": "https://www.supermart.ng/products/bake-rolz-wheat-snacks-salt-31-g"
+    },
+    {
+     "name": "Anmol Fine Flowing Table Salt 750 g",
+     "price": 2110,
+     "unit": 2813.33,
+     "url": "https://www.supermart.ng/products/anmol-fine-flowing-table-salt-750-g"
     }
    ],
    "points": [
@@ -6553,6 +6663,33 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 52
+    },
+    {
+     "d": "2026-09-23",
+     "p": 1080,
+     "n": 9,
+     "rejected": 35,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 52
+    },
+    {
+     "d": "2026-09-24",
+     "p": 1080,
+     "n": 9,
+     "rejected": 35,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 52
+    },
+    {
+     "d": "2026-09-25",
+     "p": 1080,
+     "n": 3,
+     "rejected": 5,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 11
     }
    ]
   },
@@ -6568,12 +6705,6 @@
    "source": "supermart",
    "tier": "A",
    "receipts": [
-    {
-     "name": "Dry Love Sanitary Pad Flexi Wing x10 - 12 Pieces",
-     "price": 4560,
-     "unit": 456,
-     "url": "https://www.supermart.ng/products/dry-love-sanitary-pad-flexi-wing-x10-12-pieces"
-    },
     {
      "name": "Always Ultra Day Sanitary Towels Size 1 Normal With Wings 13 Pack",
      "price": 12670,
@@ -6878,6 +7009,33 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 39
+    },
+    {
+     "d": "2026-09-23",
+     "p": 974.62,
+     "n": 3,
+     "rejected": 34,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 39
+    },
+    {
+     "d": "2026-09-24",
+     "p": 974.62,
+     "n": 3,
+     "rejected": 34,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 39
+    },
+    {
+     "d": "2026-09-25",
+     "p": 1209.35,
+     "n": 4,
+     "rejected": 33,
+     "method": "all",
+     "chg": 0,
+     "matched": 37
     }
    ]
   },
@@ -6894,34 +7052,10 @@
    "tier": "A",
    "receipts": [
     {
-     "name": "Dangote Semolina 10 kg",
-     "price": 4385,
-     "unit": 438.5,
-     "url": "https://www.supermart.ng/products/dangote-semolina-10-kg"
-    },
-    {
-     "name": "Dangote Semolina 5 kg",
-     "price": 2315,
-     "unit": 463,
-     "url": "https://www.supermart.ng/products/dangote-semolina-5-kg"
-    },
-    {
-     "name": "Dangote Semolina 1 kg",
-     "price": 505,
-     "unit": 505,
-     "url": "https://www.supermart.ng/products/dangote-semolina-1-kg"
-    },
-    {
      "name": "Auntie B Semolina 1 kg",
      "price": 1780,
      "unit": 1780,
      "url": "https://www.supermart.ng/products/auntie-b-semolina-1-kg"
-    },
-    {
-     "name": "Endy's Semolina 2 kg",
-     "price": 5100,
-     "unit": 2550,
-     "url": "https://www.supermart.ng/products/endys-semolina-2-kg"
     }
    ],
    "points": [
@@ -7203,12 +7337,39 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 6
+    },
+    {
+     "d": "2026-09-23",
+     "p": 463,
+     "n": 3,
+     "rejected": 1,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 6
+    },
+    {
+     "d": "2026-09-24",
+     "p": 463,
+     "n": 3,
+     "rejected": 1,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 6
+    },
+    {
+     "d": "2026-09-25",
+     "p": 1780,
+     "n": 1,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
     }
    ]
   },
   {
    "key": "soft_drink",
-   "unit": "kg",
+   "unit": "l",
    "state": "LA",
    "geo_scope": "city_online",
    "bounds": [
@@ -7217,44 +7378,7 @@
    ],
    "source": "supermart",
    "tier": "A",
-   "receipts": [
-    {
-     "name": "Coca Cola Coke 1 L x12",
-     "price": 2890,
-     "unit": 240.83,
-     "url": "https://www.supermart.ng/products/coca-cola-coke-1-l-x12"
-    },
-    {
-     "name": "Fanta Orange Zero 50 cl",
-     "price": 150,
-     "unit": 300,
-     "url": "https://www.supermart.ng/products/fanta-orange-zero-50-cl"
-    },
-    {
-     "name": "Coca Cola Coke Zero Pet Bottle 1 L",
-     "price": 365,
-     "unit": 365,
-     "url": "https://www.supermart.ng/products/coca-cola-coke-zero-pet-bottle-1-l"
-    },
-    {
-     "name": "Fanta Orange Pet Bottle 1 L",
-     "price": 365,
-     "unit": 365,
-     "url": "https://www.supermart.ng/products/fanta-orange-pet-bottle-1-l"
-    },
-    {
-     "name": "Fanta Apple Can 33 cl x6",
-     "price": 810,
-     "unit": 409.09,
-     "url": "https://www.supermart.ng/products/fanta-apple-can-33-cl-x6"
-    },
-    {
-     "name": "FanMilk Fantastic Yoghurt Strawberry 50 cl",
-     "price": 225,
-     "unit": 450,
-     "url": "https://www.supermart.ng/products/fanmilk-fantastic-yoghurt-strawberry-50-cl"
-    }
-   ],
+   "receipts": [],
    "points": [
     {
      "d": "2026-08-13",
@@ -7534,6 +7658,24 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 72
+    },
+    {
+     "d": "2026-09-23",
+     "p": 727.27,
+     "n": 19,
+     "rejected": 35,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 72
+    },
+    {
+     "d": "2026-09-24",
+     "p": 727.27,
+     "n": 19,
+     "rejected": 35,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 72
     }
    ]
   },
@@ -7550,40 +7692,40 @@
    "tier": "A",
    "receipts": [
     {
-     "name": "Dangote Spaghetti Slim Selfie Pack 200 g",
-     "price": 80,
-     "unit": 400,
-     "url": "https://www.supermart.ng/products/dangote-spaghetti-slim-selfie-pack-200-g"
+     "name": "Ankara Pasta Boncuk-Ditalini 500 g",
+     "price": 365,
+     "unit": 730,
+     "url": "https://www.supermart.ng/products/ankara-pasta-boncuk-ditalini-500-g"
     },
     {
-     "name": "Dangote Pasta Twist Cavatto 500 g",
-     "price": 220,
-     "unit": 440,
-     "url": "https://www.supermart.ng/products/dangote-pasta-twist-cavatto-500-g"
+     "name": "Ankara Pasta Burgu Fusilli 500 g",
+     "price": 365,
+     "unit": 730,
+     "url": "https://www.supermart.ng/products/ankara-pasta-burgu-fusilli-500-g"
     },
     {
-     "name": "Dangote Pasta Spaghetti Slim 500 g",
-     "price": 225,
-     "unit": 450,
-     "url": "https://www.supermart.ng/products/dangote-pasta-spaghetti-slim-500-g"
+     "name": "Ankara Pasta Dirsek-Elbow 500 g",
+     "price": 365,
+     "unit": 730,
+     "url": "https://www.supermart.ng/products/ankara-pasta-dirsek-elbow-500-g"
     },
     {
-     "name": "Dangote Spaghetti 500 g",
-     "price": 225,
-     "unit": 450,
-     "url": "https://www.supermart.ng/products/dangote-spaghetti-500-g"
+     "name": "Ankara Pasta Kelebek-Farfalle 500 g",
+     "price": 365,
+     "unit": 730,
+     "url": "https://www.supermart.ng/products/ankara-pasta-kelebek-farfalle-500-g"
     },
     {
-     "name": "Colman's Spaghetti Bolognese Mix 44 g",
-     "price": 880,
-     "unit": 454.55,
-     "url": "https://www.supermart.ng/products/colmans-spaghetti-bolognese-mix-44-g"
+     "name": "Ankara Pasta Mini Kelebek Farfalle 500 g",
+     "price": 365,
+     "unit": 730,
+     "url": "https://www.supermart.ng/products/ankara-pasta-mini-kelebek-farfalle-500-g"
     },
     {
-     "name": "Crown Spaghetti 500 g",
-     "price": 285,
-     "unit": 570,
-     "url": "https://www.supermart.ng/products/crown-spaghetti-500-g"
+     "name": "Ankara Pasta Rigatoni 500 g",
+     "price": 365,
+     "unit": 730,
+     "url": "https://www.supermart.ng/products/ankara-pasta-rigatoni-500-g"
     }
    ],
    "points": [
@@ -7865,12 +8007,39 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 68
+    },
+    {
+     "d": "2026-09-23",
+     "p": 730,
+     "n": 26,
+     "rejected": 19,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 68
+    },
+    {
+     "d": "2026-09-24",
+     "p": 730,
+     "n": 26,
+     "rejected": 19,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 68
+    },
+    {
+     "d": "2026-09-25",
+     "p": 1980,
+     "n": 13,
+     "rejected": 3,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 21
     }
    ]
   },
   {
    "key": "sugar",
-   "unit": "l",
+   "unit": "kg",
    "state": "LA",
    "geo_scope": "city_online",
    "bounds": [
@@ -7887,18 +8056,6 @@
      "url": "https://www.supermart.ng/products/bakerdream-instant-dry-yeast-low-sugar-500-g"
     },
     {
-     "name": "Dogan's Granulated White Sugar Sachet 225 g",
-     "price": 165,
-     "unit": 733.33,
-     "url": "https://www.supermart.ng/products/dogans-granulated-white-sugar-sachet-225-g"
-    },
-    {
-     "name": "Dangote Refined Granulated Sugar 250 g",
-     "price": 190,
-     "unit": 760,
-     "url": "https://www.supermart.ng/products/dangote-refined-granulated-sugar-250-g"
-    },
-    {
      "name": "Afro Granulated White Sugar 750 g",
      "price": 650,
      "unit": 866.67,
@@ -7911,10 +8068,22 @@
      "url": "https://www.supermart.ng/products/alpro-yoghurt-no-added-sugar-mango-400-g"
     },
     {
-     "name": "Dogan's Granulated White Sugar Sachet 900 g",
-     "price": 920,
-     "unit": 1022.22,
-     "url": "https://www.supermart.ng/products/dogans-granulated-white-sugar-sachet-900-g"
+     "name": "Bakers Choice Soft Brown Sugar 500 g",
+     "price": 525,
+     "unit": 1050,
+     "url": "https://www.supermart.ng/products/bakers-choice-soft-brown-sugar-500-g"
+    },
+    {
+     "name": "BakerDream Instant Dry Yeast Sugar Tolerant 500 g",
+     "price": 930,
+     "unit": 1860,
+     "url": "https://www.supermart.ng/products/bakerdream-instant-dry-yeast-sugar-tolerant-500-g"
+    },
+    {
+     "name": "Alpen Muesli No Added Sugar 560 g",
+     "price": 2690,
+     "unit": 4803.57,
+     "url": "https://www.supermart.ng/products/alpen-muesli-no-added-sugar-560-g"
     }
    ],
    "points": [
@@ -8196,6 +8365,33 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 64
+    },
+    {
+     "d": "2026-09-23",
+     "p": 2245,
+     "n": 12,
+     "rejected": 45,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 65
+    },
+    {
+     "d": "2026-09-24",
+     "p": 2245,
+     "n": 12,
+     "rejected": 45,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 65
+    },
+    {
+     "d": "2026-09-25",
+     "p": 1455,
+     "n": 6,
+     "rejected": 8,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 15
     }
    ]
   },
@@ -8211,24 +8407,6 @@
    "source": "supermart",
    "tier": "A",
    "receipts": [
-    {
-     "name": "Familia Toilet Tissue Classic Natural Whiteness 2 Ply 1 Roll",
-     "price": 105,
-     "unit": 105,
-     "url": "https://www.supermart.ng/products/familia-toilet-tissue-classic-natural-whiteness-2-ply-1-roll"
-    },
-    {
-     "name": "Familia Toilet Tissue Ultra Non-Scented 3 Ply 2 Rolls x12",
-     "price": 1530,
-     "unit": 127.5,
-     "url": "https://www.supermart.ng/products/familia-toilet-tissue-ultra-non-scented-3-ply-2-rolls-x12"
-    },
-    {
-     "name": "Familia Toilet Tissue Ultra Magic Flower Scented 3 Ply 2 Rolls x12",
-     "price": 1650,
-     "unit": 137.5,
-     "url": "https://www.supermart.ng/products/familia-toilet-tissue-ultra-magic-flower-scented-3-ply-2-rolls-x12"
-    },
     {
      "name": "Banrut Rolls Soft & Tender Toilet Tissue 2 Ply 1 Roll",
      "price": 140,
@@ -8246,6 +8424,24 @@
      "price": 1140,
      "unit": 190,
      "url": "https://www.supermart.ng/products/banrut-rolls-luxury-toilet-tissue-2-ply-2-rolls-x6"
+    },
+    {
+     "name": "Banrut Rolls Prince Luxury Toilet Tissue 2 Ply 2 Rolls x6",
+     "price": 1140,
+     "unit": 190,
+     "url": "https://www.supermart.ng/products/banrut-rolls-prince-luxury-toilet-tissue-2-ply-2-rolls-x6"
+    },
+    {
+     "name": "Banrut Rolls Prince Luxury Toilet Tissue 2 Ply 1 Roll",
+     "price": 260,
+     "unit": 260,
+     "url": "https://www.supermart.ng/products/banrut-rolls-prince-luxury-toilet-tissue-2-ply-1-roll"
+    },
+    {
+     "name": "Banrut Rolls Jumbo Luxury Toilet Tissue 2 Ply 1 Roll",
+     "price": 280,
+     "unit": 280,
+     "url": "https://www.supermart.ng/products/banrut-rolls-jumbo-luxury-toilet-tissue-2-ply-1-roll"
     }
    ],
    "points": [
@@ -8527,6 +8723,33 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 54
+    },
+    {
+     "d": "2026-09-23",
+     "p": 455,
+     "n": 33,
+     "rejected": 21,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 54
+    },
+    {
+     "d": "2026-09-24",
+     "p": 455,
+     "n": 33,
+     "rejected": 21,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 54
+    },
+    {
+     "d": "2026-09-25",
+     "p": 375,
+     "n": 13,
+     "rejected": 5,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 18
     }
    ]
   },
@@ -8541,32 +8764,7 @@
    ],
    "source": "supermart",
    "tier": "A",
-   "receipts": [
-    {
-     "name": "Dia Crushed Tomatoes 800 g",
-     "price": 635,
-     "unit": 793.75,
-     "url": "https://www.supermart.ng/products/dia-crushed-tomatoes-800-g"
-    },
-    {
-     "name": "Best-In Plum Tomatoes In Tomato Juice 400 g",
-     "price": 350,
-     "unit": 875,
-     "url": "https://www.supermart.ng/products/best-in-plum-tomatoes-in-tomato-juice-400-g"
-    },
-    {
-     "name": "Cirio Chopped Tomatoes 400 g",
-     "price": 365,
-     "unit": 912.5,
-     "url": "https://www.supermart.ng/products/cirio-chopped-tomatoes-400-g"
-    },
-    {
-     "name": "Best-One Peeled Plum Tomatoes In Tomato Juice 400 g",
-     "price": 370,
-     "unit": 925,
-     "url": "https://www.supermart.ng/products/best-one-peeled-plum-tomatoes-in-tomato-juice-400-g"
-    }
-   ],
+   "receipts": [],
    "points": [
     {
      "d": "2026-08-13",
@@ -8846,6 +9044,24 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 7
+    },
+    {
+     "d": "2026-09-23",
+     "p": 893.75,
+     "n": 4,
+     "rejected": 3,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 7
+    },
+    {
+     "d": "2026-09-24",
+     "p": 893.75,
+     "n": 4,
+     "rejected": 3,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 7
     }
    ]
   },
@@ -8860,44 +9076,7 @@
    ],
    "source": "supermart",
    "tier": "A",
-   "receipts": [
-    {
-     "name": "Dockers Tomato Paste 70 g",
-     "price": 45,
-     "unit": 642.86,
-     "url": "https://www.supermart.ng/products/dockers-tomato-paste-70-g"
-    },
-    {
-     "name": "Dockers Tomato Paste 400 g",
-     "price": 320,
-     "unit": 800,
-     "url": "https://www.supermart.ng/products/dockers-tomato-paste-400-g"
-    },
-    {
-     "name": "De Rica Tomato Paste Sachet 70 g x5",
-     "price": 300,
-     "unit": 857.14,
-     "url": "https://www.supermart.ng/products/de-rica-tomato-paste-sachet-70-g-x5"
-    },
-    {
-     "name": "Dockers Tomato Paste 210 g",
-     "price": 180,
-     "unit": 857.14,
-     "url": "https://www.supermart.ng/products/dockers-tomato-paste-210-g"
-    },
-    {
-     "name": "Everyday Tomato Paste 70 g",
-     "price": 60,
-     "unit": 857.14,
-     "url": "https://www.supermart.ng/products/everydaytoma-tomato-paste-70-g"
-    },
-    {
-     "name": "Eva Tomato Paste 210 g",
-     "price": 200,
-     "unit": 952.38,
-     "url": "https://www.supermart.ng/products/eva-tomato-paste-210-g"
-    }
-   ],
+   "receipts": [],
    "points": [
     {
      "d": "2026-08-13",
@@ -9177,6 +9356,24 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 21
+    },
+    {
+     "d": "2026-09-23",
+     "p": 2125,
+     "n": 11,
+     "rejected": 4,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 21
+    },
+    {
+     "d": "2026-09-24",
+     "p": 2125,
+     "n": 11,
+     "rejected": 4,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 21
     }
    ]
   },
@@ -9193,40 +9390,40 @@
    "tier": "A",
    "receipts": [
     {
-     "name": "Casa De Campo Refined Sunflower Oil 4 L",
-     "price": 5850,
-     "unit": 1462.5,
-     "url": "https://www.supermart.ng/products/casa-de-campo-refined-sunflower-oil-4-l"
-    },
-    {
-     "name": "Crystal Sunflower Oil 1.75 L",
-     "price": 3165,
-     "unit": 1808.57,
-     "url": "https://www.supermart.ng/products/crystal-sunflower-oil-175-l"
-    },
-    {
-     "name": "Casa De Campo Refined Sunflower Oil 3 L",
-     "price": 6750,
-     "unit": 2250,
-     "url": "https://www.supermart.ng/products/casa-de-campo-refined-sunflower-oil-3-l"
-    },
-    {
      "name": "Afia Sunflower Oil 1.8 L",
      "price": 4100,
      "unit": 2277.78,
      "url": "https://www.supermart.ng/products/afia-sunflower-oil-18-l"
     },
     {
-     "name": "Casa De Campo Refined Sunflower Oil 5 L",
-     "price": 11500,
-     "unit": 2300,
-     "url": "https://www.supermart.ng/products/casa-de-campo-refined-sunflower-oil-5-l"
-    },
-    {
      "name": "Activa Pure Vegetable Oil 3 L",
      "price": 7830,
      "unit": 2610,
      "url": "https://www.supermart.ng/products/activa-pure-vegetable-oil-3-l"
+    },
+    {
+     "name": "Active Gold Vegetable Oil 5 L",
+     "price": 21000,
+     "unit": 4200,
+     "url": "https://www.supermart.ng/products/active-gold-vegetable-oil-5-l"
+    },
+    {
+     "name": "Activa Pure Vegetable Oil 5 L",
+     "price": 21455,
+     "unit": 4291,
+     "url": "https://www.supermart.ng/products/activa-pure-vegetable-oil-5-l"
+    },
+    {
+     "name": "Activa Pure Vegetable Oil 750 ml",
+     "price": 3600,
+     "unit": 4800,
+     "url": "https://www.supermart.ng/products/activa-pure-vegetable-oil-750-ml"
+    },
+    {
+     "name": "Activa Pure Vegetable Oil 900 ml",
+     "price": 4435,
+     "unit": 4927.78,
+     "url": "https://www.supermart.ng/products/activa-pure-vegetable-oil-900-ml"
     }
    ],
    "points": [
@@ -9508,6 +9705,33 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 18
+    },
+    {
+     "d": "2026-09-23",
+     "p": 4200,
+     "n": 9,
+     "rejected": 4,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 18
+    },
+    {
+     "d": "2026-09-24",
+     "p": 4200,
+     "n": 9,
+     "rejected": 4,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 18
+    },
+    {
+     "d": "2026-09-25",
+     "p": 4200,
+     "n": 3,
+     "rejected": 3,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 9
     }
    ]
   },
@@ -9522,44 +9746,7 @@
    ],
    "source": "supermart",
    "tier": "A",
-   "receipts": [
-    {
-     "name": "Eva Table Water 150 cl",
-     "price": 130,
-     "unit": 86.67,
-     "url": "https://www.supermart.ng/products/eva-table-water-150-cl"
-    },
-    {
-     "name": "Eva Table Water 75 cl",
-     "price": 75,
-     "unit": 100,
-     "url": "https://www.supermart.ng/products/eva-table-water-75-cl"
-    },
-    {
-     "name": "Eva Table Water 50 cl",
-     "price": 65,
-     "unit": 130,
-     "url": "https://www.supermart.ng/products/eva-table-water-50-cl"
-    },
-    {
-     "name": "Eva Table Water 50 cl x12",
-     "price": 780,
-     "unit": 130,
-     "url": "https://www.supermart.ng/products/eva-table-water-50-cl-x12"
-    },
-    {
-     "name": "CWAY Table Water 150 cl x6",
-     "price": 2100,
-     "unit": 233.33,
-     "url": "https://www.supermart.ng/products/cway-table-water-150-cl-x6"
-    },
-    {
-     "name": "CWAY Table Water 75 cl",
-     "price": 190,
-     "unit": 253.33,
-     "url": "https://www.supermart.ng/products/cway-table-water-75-cl"
-    }
-   ],
+   "receipts": [],
    "points": [
     {
      "d": "2026-08-13",
@@ -9839,6 +10026,24 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 9
+    },
+    {
+     "d": "2026-09-23",
+     "p": 261.11,
+     "n": 5,
+     "rejected": 0,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 9
+    },
+    {
+     "d": "2026-09-24",
+     "p": 261.11,
+     "n": 5,
+     "rejected": 0,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 9
     }
    ]
   }
@@ -10029,6 +10234,24 @@
    "v": 100,
    "items": 30,
    "matched": 26
+  },
+  {
+   "d": "2026-09-23",
+   "v": 100,
+   "items": 30,
+   "matched": 26
+  },
+  {
+   "d": "2026-09-24",
+   "v": 100,
+   "items": 30,
+   "matched": 26
+  },
+  {
+   "d": "2026-09-25",
+   "v": 100,
+   "items": 30,
+   "matched": 14
   }
  ],
  "fx": [
@@ -10217,6 +10440,24 @@
    "official": 1330.69,
    "usdt": 1372.1,
    "spread_pct": 3.11
+  },
+  {
+   "d": "2026-09-23",
+   "official": 1328.37,
+   "usdt": 1373.69,
+   "spread_pct": 3.41
+  },
+  {
+   "d": "2026-09-24",
+   "official": 1326.87,
+   "usdt": 1373.21,
+   "spread_pct": 3.49
+  },
+  {
+   "d": "2026-09-25",
+   "official": 1327.93,
+   "usdt": 1373.27,
+   "spread_pct": 3.41
   }
  ],
  "official": [
@@ -10225,7 +10466,7 @@
    "label": "AGO (diesel) national average retail price",
    "unit": "litre",
    "tier": "B",
-   "as_of": "2026-09-22",
+   "as_of": "2026-09-25",
    "points": [
     {
      "d": "2026-08-13",
@@ -10345,6 +10586,18 @@
     },
     {
      "d": "2026-09-22",
+     "v": 3277.47
+    },
+    {
+     "d": "2026-09-23",
+     "v": 3277.47
+    },
+    {
+     "d": "2026-09-24",
+     "v": 3277.47
+    },
+    {
+     "d": "2026-09-25",
      "v": 3277.47
     }
    ]
@@ -10354,7 +10607,7 @@
    "label": "Cooking gas (LPG) 5kg refill national average",
    "unit": "5kg",
    "tier": "B",
-   "as_of": "2026-09-22",
+   "as_of": "2026-09-25",
    "points": [
     {
      "d": "2026-08-13",
@@ -10474,6 +10727,18 @@
     },
     {
      "d": "2026-09-22",
+     "v": 8706.93
+    },
+    {
+     "d": "2026-09-23",
+     "v": 8706.93
+    },
+    {
+     "d": "2026-09-24",
+     "v": 8706.93
+    },
+    {
+     "d": "2026-09-25",
      "v": 8706.93
     }
    ]
@@ -10483,7 +10748,7 @@
    "label": "Household kerosene national average retail price",
    "unit": "litre",
    "tier": "B",
-   "as_of": "2026-09-22",
+   "as_of": "2026-09-25",
    "points": [
     {
      "d": "2026-08-13",
@@ -10603,6 +10868,18 @@
     },
     {
      "d": "2026-09-22",
+     "v": 2971.94
+    },
+    {
+     "d": "2026-09-23",
+     "v": 2971.94
+    },
+    {
+     "d": "2026-09-24",
+     "v": 2971.94
+    },
+    {
+     "d": "2026-09-25",
      "v": 2971.94
     }
    ]
@@ -10612,7 +10889,7 @@
    "label": "PMS (petrol) national average retail price",
    "unit": "litre",
    "tier": "B",
-   "as_of": "2026-09-22",
+   "as_of": "2026-09-25",
    "points": [
     {
      "d": "2026-08-13",
@@ -10732,6 +11009,18 @@
     },
     {
      "d": "2026-09-22",
+     "v": 1596.25
+    },
+    {
+     "d": "2026-09-23",
+     "v": 1596.25
+    },
+    {
+     "d": "2026-09-24",
+     "v": 1596.25
+    },
+    {
+     "d": "2026-09-25",
      "v": 1596.25
     }
    ]
@@ -10741,7 +11030,7 @@
    "label": "Core inflation, year-on-year — reference period Aug-2026",
    "unit": "%",
    "tier": "B",
-   "as_of": "2026-09-22",
+   "as_of": "2026-09-25",
    "points": [
     {
      "d": "2026-08-13",
@@ -10861,6 +11150,18 @@
     },
     {
      "d": "2026-09-22",
+     "v": 13.29
+    },
+    {
+     "d": "2026-09-23",
+     "v": 13.29
+    },
+    {
+     "d": "2026-09-24",
+     "v": 13.29
+    },
+    {
+     "d": "2026-09-25",
      "v": 13.29
     }
    ]
@@ -10870,7 +11171,7 @@
    "label": "Food inflation, year-on-year — reference period Aug-2026",
    "unit": "%",
    "tier": "B",
-   "as_of": "2026-09-22",
+   "as_of": "2026-09-25",
    "points": [
     {
      "d": "2026-08-13",
@@ -10990,6 +11291,18 @@
     },
     {
      "d": "2026-09-22",
+     "v": 20.31
+    },
+    {
+     "d": "2026-09-23",
+     "v": 20.31
+    },
+    {
+     "d": "2026-09-24",
+     "v": 20.31
+    },
+    {
+     "d": "2026-09-25",
      "v": 20.31
     }
    ]
@@ -10999,7 +11312,7 @@
    "label": "All-items inflation, year-on-year — reference period Aug-2026",
    "unit": "%",
    "tier": "B",
-   "as_of": "2026-09-22",
+   "as_of": "2026-09-25",
    "points": [
     {
      "d": "2026-08-13",
@@ -11120,41 +11433,53 @@
     {
      "d": "2026-09-22",
      "v": 15.39
+    },
+    {
+     "d": "2026-09-23",
+     "v": 15.39
+    },
+    {
+     "d": "2026-09-24",
+     "v": 15.39
+    },
+    {
+     "d": "2026-09-25",
+     "v": 15.39
     }
    ]
   }
  ],
  "power": {
-  "as_of": "2026-09-22",
+  "as_of": "2026-09-25",
   "channel": "online_retail",
   "geo": "NG · online listings — not an offline national market",
-  "models": 81,
+  "models": 82,
   "cohorts": 18,
   "classes": [
    {
     "key": "generator",
     "n": 11,
-    "median": 82138.89
+    "median": 114285.71
    },
    {
     "key": "inverter",
-    "n": 130,
-    "median": 37250
+    "n": 131,
+    "median": 39500
    },
    {
     "key": "battery",
     "n": 14,
-    "median": 176103.96
-   },
-   {
-    "key": "solar_panel",
-    "n": 1,
-    "median": 833.33
+    "median": 169993.06
    },
    {
     "key": "charge_ctrl",
     "n": 1,
     "median": 3416.67
+   },
+   {
+    "key": "solar_panel",
+    "n": 1,
+    "median": 833.33
    }
   ],
   "file": "power.json"
@@ -11526,6 +11851,42 @@
      "noodles",
      "palm_oil",
      "seasoning"
+    ]
+   },
+   {
+    "d": "2026-09-23",
+    "cost": null,
+    "priced": 18,
+    "of": 21,
+    "missing": [
+     "noodles",
+     "palm_oil",
+     "seasoning"
+    ]
+   },
+   {
+    "d": "2026-09-24",
+    "cost": null,
+    "priced": 18,
+    "of": 21,
+    "missing": [
+     "noodles",
+     "palm_oil",
+     "seasoning"
+    ]
+   },
+   {
+    "d": "2026-09-25",
+    "cost": null,
+    "priced": 11,
+    "of": 21,
+    "missing": [
+     "garri",
+     "noodles",
+     "eggs",
+     "palm_oil",
+     "tomato_paste",
+     "tomato_fresh"
     ]
    }
   ]
