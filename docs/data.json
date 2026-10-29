@@ -2,7 +2,7 @@
  "meta": {
   "project": "Gaskiya",
   "version": "v1.3.1",
-  "generated": "2026-10-28T06:32:57+01:00",
+  "generated": "2026-10-29T06:31:14+01:00",
   "country": "NG",
   "sources": [
    {
@@ -105,7 +105,8 @@
   "2026-10-25",
   "2026-10-26",
   "2026-10-27",
-  "2026-10-28"
+  "2026-10-28",
+  "2026-10-29"
  ],
  "items": [
   {
@@ -709,6 +710,15 @@
     },
     {
      "d": "2026-10-28",
+     "p": 17787.5,
+     "n": 7,
+     "rejected": 14,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 24
+    },
+    {
+     "d": "2026-10-29",
      "p": 17787.5,
      "n": 7,
      "rejected": 14,
@@ -1352,6 +1362,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 61
+    },
+    {
+     "d": "2026-10-29",
+     "p": 3735,
+     "n": 22,
+     "rejected": 17,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 61
     }
    ]
   },
@@ -1956,6 +1975,15 @@
     },
     {
      "d": "2026-10-28",
+     "p": 11258.34,
+     "n": 6,
+     "rejected": 1,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 10
+    },
+    {
+     "d": "2026-10-29",
      "p": 11258.34,
      "n": 6,
      "rejected": 1,
@@ -2599,6 +2627,15 @@
      "method": "all",
      "chg": 0,
      "matched": 19
+    },
+    {
+     "d": "2026-10-29",
+     "p": 767.5,
+     "n": 16,
+     "rejected": 3,
+     "method": "all",
+     "chg": 0,
+     "matched": 19
     }
    ]
   },
@@ -3185,6 +3222,15 @@
     },
     {
      "d": "2026-10-28",
+     "p": 1171.43,
+     "n": 3,
+     "rejected": 0,
+     "method": "all",
+     "chg": 0,
+     "matched": 3
+    },
+    {
+     "d": "2026-10-29",
      "p": 1171.43,
      "n": 3,
      "rejected": 0,
@@ -3819,6 +3865,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 202
+    },
+    {
+     "d": "2026-10-29",
+     "p": 4696.72,
+     "n": 47,
+     "rejected": 110,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 202
     }
    ]
   },
@@ -4438,6 +4493,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 75
+    },
+    {
+     "d": "2026-10-29",
+     "p": 2325,
+     "n": 36,
+     "rejected": 12,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 75
     }
    ]
   },
@@ -5009,6 +5073,15 @@
     },
     {
      "d": "2026-10-28",
+     "p": 1481.25,
+     "n": 2,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
+    },
+    {
+     "d": "2026-10-29",
      "p": 1481.25,
      "n": 2,
      "rejected": 0,
@@ -5601,6 +5674,15 @@
     },
     {
      "d": "2026-10-28",
+     "p": 195.34,
+     "n": 4,
+     "rejected": 10,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 17
+    },
+    {
+     "d": "2026-10-29",
      "p": 195.34,
      "n": 4,
      "rejected": 10,
@@ -6244,6 +6326,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 26
+    },
+    {
+     "d": "2026-10-29",
+     "p": 7040,
+     "n": 10,
+     "rejected": 11,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 26
     }
    ]
   },
@@ -6848,6 +6939,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 5
+    },
+    {
+     "d": "2026-10-29",
+     "p": 395,
+     "n": 5,
+     "rejected": 0,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 5
     }
    ]
   },
@@ -7422,6 +7522,15 @@
     },
     {
      "d": "2026-10-28",
+     "p": 1475,
+     "n": 1,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
+    },
+    {
+     "d": "2026-10-29",
      "p": 1475,
      "n": 1,
      "rejected": 0,
@@ -8065,6 +8174,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 50
+    },
+    {
+     "d": "2026-10-29",
+     "p": 10228.75,
+     "n": 18,
+     "rejected": 17,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 50
     }
    ]
   },
@@ -8675,6 +8793,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 22
+    },
+    {
+     "d": "2026-10-29",
+     "p": 3875,
+     "n": 9,
+     "rejected": 5,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 22
     }
    ]
   },
@@ -9231,6 +9358,15 @@
     },
     {
      "d": "2026-10-28",
+     "p": 11300,
+     "n": 1,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
+    },
+    {
+     "d": "2026-10-29",
      "p": 11300,
      "n": 1,
      "rejected": 0,
@@ -9856,6 +9992,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 28
+    },
+    {
+     "d": "2026-10-29",
+     "p": 3104.29,
+     "n": 4,
+     "rejected": 20,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 28
     }
    ]
   },
@@ -10430,6 +10575,15 @@
     },
     {
      "d": "2026-10-28",
+     "p": 2147.06,
+     "n": 1,
+     "rejected": 0,
+     "method": "all",
+     "chg": null,
+     "matched": 0
+    },
+    {
+     "d": "2026-10-29",
      "p": 2147.06,
      "n": 1,
      "rejected": 0,
@@ -11073,6 +11227,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 14
+    },
+    {
+     "d": "2026-10-29",
+     "p": 4162.5,
+     "n": 9,
+     "rejected": 1,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 14
     }
    ]
   },
@@ -11704,6 +11867,15 @@
     },
     {
      "d": "2026-10-28",
+     "p": 1714.45,
+     "n": 44,
+     "rejected": 74,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 145
+    },
+    {
+     "d": "2026-10-29",
      "p": 1714.45,
      "n": 44,
      "rejected": 74,
@@ -12347,6 +12519,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 52
+    },
+    {
+     "d": "2026-10-29",
+     "p": 1080,
+     "n": 9,
+     "rejected": 35,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 52
     }
    ]
   },
@@ -12954,6 +13135,15 @@
     },
     {
      "d": "2026-10-28",
+     "p": 974.62,
+     "n": 3,
+     "rejected": 34,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 39
+    },
+    {
+     "d": "2026-10-29",
      "p": 974.62,
      "n": 3,
      "rejected": 34,
@@ -13573,6 +13763,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 6
+    },
+    {
+     "d": "2026-10-29",
+     "p": 463,
+     "n": 3,
+     "rejected": 1,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 6
     }
    ]
   },
@@ -14177,6 +14376,15 @@
     },
     {
      "d": "2026-10-28",
+     "p": 775,
+     "n": 19,
+     "rejected": 35,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 72
+    },
+    {
+     "d": "2026-10-29",
      "p": 775,
      "n": 19,
      "rejected": 35,
@@ -14820,6 +15028,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 68
+    },
+    {
+     "d": "2026-10-29",
+     "p": 730,
+     "n": 26,
+     "rejected": 19,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 68
     }
    ]
   },
@@ -15457,6 +15674,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 65
+    },
+    {
+     "d": "2026-10-29",
+     "p": 2245,
+     "n": 12,
+     "rejected": 45,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 65
     }
    ]
   },
@@ -16076,6 +16302,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 54
+    },
+    {
+     "d": "2026-10-29",
+     "p": 455,
+     "n": 33,
+     "rejected": 21,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 54
     }
    ]
   },
@@ -16668,6 +16903,15 @@
     },
     {
      "d": "2026-10-28",
+     "p": 893.75,
+     "n": 4,
+     "rejected": 3,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 7
+    },
+    {
+     "d": "2026-10-29",
      "p": 893.75,
      "n": 4,
      "rejected": 3,
@@ -17269,6 +17513,15 @@
     },
     {
      "d": "2026-10-28",
+     "p": 2125,
+     "n": 11,
+     "rejected": 4,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 21
+    },
+    {
+     "d": "2026-10-29",
      "p": 2125,
      "n": 11,
      "rejected": 4,
@@ -17912,6 +18165,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 18
+    },
+    {
+     "d": "2026-10-29",
+     "p": 4200,
+     "n": 9,
+     "rejected": 4,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 18
     }
    ]
   },
@@ -18513,6 +18775,15 @@
      "method": "staple_pack",
      "chg": 0,
      "matched": 9
+    },
+    {
+     "d": "2026-10-29",
+     "p": 261.11,
+     "n": 5,
+     "rejected": 0,
+     "method": "staple_pack",
+     "chg": 0,
+     "matched": 9
     }
    ]
   }
@@ -18904,6 +19175,12 @@
   },
   {
    "d": "2026-10-28",
+   "v": 100,
+   "items": 30,
+   "matched": 26
+  },
+  {
+   "d": "2026-10-29",
    "v": 100,
    "items": 30,
    "matched": 26
@@ -19311,6 +19588,12 @@
    "official": 1353.43,
    "usdt": 1381.14,
    "spread_pct": 2.05
+  },
+  {
+   "d": "2026-10-29",
+   "official": 1346.24,
+   "usdt": 1382.39,
+   "spread_pct": 2.69
   }
  ],
  "official": [
@@ -19319,7 +19602,7 @@
    "label": "AGO (diesel) national average retail price",
    "unit": "litre",
    "tier": "B",
-   "as_of": "2026-10-28",
+   "as_of": "2026-10-29",
    "points": [
     {
      "d": "2026-08-13",
@@ -19583,6 +19866,10 @@
     },
     {
      "d": "2026-10-28",
+     "v": 3277.47
+    },
+    {
+     "d": "2026-10-29",
      "v": 3277.47
     }
    ]
@@ -19592,7 +19879,7 @@
    "label": "Cooking gas (LPG) 5kg refill national average",
    "unit": "5kg",
    "tier": "B",
-   "as_of": "2026-10-28",
+   "as_of": "2026-10-29",
    "points": [
     {
      "d": "2026-08-13",
@@ -19856,6 +20143,10 @@
     },
     {
      "d": "2026-10-28",
+     "v": 8706.93
+    },
+    {
+     "d": "2026-10-29",
      "v": 8706.93
     }
    ]
@@ -19865,7 +20156,7 @@
    "label": "Household kerosene national average retail price",
    "unit": "litre",
    "tier": "B",
-   "as_of": "2026-10-28",
+   "as_of": "2026-10-29",
    "points": [
     {
      "d": "2026-08-13",
@@ -20129,6 +20420,10 @@
     },
     {
      "d": "2026-10-28",
+     "v": 2971.94
+    },
+    {
+     "d": "2026-10-29",
      "v": 2971.94
     }
    ]
@@ -20138,7 +20433,7 @@
    "label": "PMS (petrol) national average retail price",
    "unit": "litre",
    "tier": "B",
-   "as_of": "2026-10-28",
+   "as_of": "2026-10-29",
    "points": [
     {
      "d": "2026-08-13",
@@ -20402,6 +20697,10 @@
     },
     {
      "d": "2026-10-28",
+     "v": 1596.25
+    },
+    {
+     "d": "2026-10-29",
      "v": 1596.25
     }
    ]
@@ -20411,7 +20710,7 @@
    "label": "Core inflation, year-on-year — reference period Sept-2026",
    "unit": "%",
    "tier": "B",
-   "as_of": "2026-10-28",
+   "as_of": "2026-10-29",
    "points": [
     {
      "d": "2026-08-13",
@@ -20675,6 +20974,10 @@
     },
     {
      "d": "2026-10-28",
+     "v": 12.95
+    },
+    {
+     "d": "2026-10-29",
      "v": 12.95
     }
    ]
@@ -20684,7 +20987,7 @@
    "label": "Food inflation, year-on-year — reference period Sept-2026",
    "unit": "%",
    "tier": "B",
-   "as_of": "2026-10-28",
+   "as_of": "2026-10-29",
    "points": [
     {
      "d": "2026-08-13",
@@ -20948,6 +21251,10 @@
     },
     {
      "d": "2026-10-28",
+     "v": 20.31
+    },
+    {
+     "d": "2026-10-29",
      "v": 20.31
     }
    ]
@@ -20957,7 +21264,7 @@
    "label": "All-items inflation, year-on-year — reference period Sept-2026",
    "unit": "%",
    "tier": "B",
-   "as_of": "2026-10-28",
+   "as_of": "2026-10-29",
    "points": [
     {
      "d": "2026-08-13",
@@ -21222,12 +21529,16 @@
     {
      "d": "2026-10-28",
      "v": 14.63
+    },
+    {
+     "d": "2026-10-29",
+     "v": 14.63
     }
    ]
   }
  ],
  "power": {
-  "as_of": "2026-10-28",
+  "as_of": "2026-10-29",
   "channel": "online_retail",
   "geo": "NG · online listings — not an offline national market",
   "models": 52,
@@ -21240,8 +21551,8 @@
    },
    {
     "key": "inverter",
-    "n": 78,
-    "median": 33950
+    "n": 80,
+    "median": 33900
    },
    {
     "key": "battery",
@@ -22008,6 +22319,17 @@
    },
    {
     "d": "2026-10-28",
+    "cost": null,
+    "priced": 18,
+    "of": 21,
+    "missing": [
+     "noodles",
+     "palm_oil",
+     "seasoning"
+    ]
+   },
+   {
+    "d": "2026-10-29",
     "cost": null,
     "priced": 18,
     "of": 21,
