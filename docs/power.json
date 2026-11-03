@@ -1,11 +1,11 @@
 {
- "as_of": "2026-11-02",
+ "as_of": "2026-11-03",
  "diagnostics": {
-  "total": 125,
-  "withBrand": 75,
-  "withModel": 13,
-  "withVoltage": 48,
-  "withTopology": 31
+  "total": 89,
+  "withBrand": 40,
+  "withModel": 5,
+  "withVoltage": 47,
+  "withTopology": 29
  },
  "channel": "online_retail",
  "geo": "NG · online listings — not an offline national market",
@@ -199,91 +199,6 @@
    ]
   },
   {
-   "key": "inverter|generic|nomodel|3kva|12v|notopo",
-   "cls": "inverter",
-   "spec": {
-    "brand": "generic",
-    "model_line": null,
-    "rating": 3,
-    "unit": "kVA",
-    "voltage": 12,
-    "topology": null
-   },
-   "price": {
-    "n": 6,
-    "median": 55899.5,
-    "p25": null,
-    "p75": null,
-    "confidence": "median"
-   },
-   "normalized": {
-    "n": 6,
-    "median": 18633.17,
-    "p25": null,
-    "p75": null,
-    "confidence": "median"
-   },
-   "brands": [
-    "generic"
-   ],
-   "receipts": [
-    {
-     "name": "3000 Watts Power Inverter 12V",
-     "price": 53500,
-     "unit": 17833.33,
-     "url": "https://www.jumia.com.ng/generic-3000-watts-power-inverter-12v-418493673.html",
-     "sku": "GE779GP78K4S9NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "3000watts Digital Solar Power Inverter 12V",
-     "price": 54600,
-     "unit": 18200,
-     "url": "https://www.jumia.com.ng/generic-3000watts-digital-solar-power-inverter-12v-415678921.html",
-     "sku": "GE779GP6TVRB7NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "3000W Solar Power Inverter 12V  3KVA inverter",
-     "price": 54800,
-     "unit": 18266.67,
-     "url": "https://www.jumia.com.ng/generic-3000w-solar-power-inverter-12v-3kva-inverter-419749399.html",
-     "sku": "GE779GP89BRHJNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "solar power inverter 3000watts digital display solar power inverter 12v",
-     "price": 56999,
-     "unit": 18999.67,
-     "url": "https://www.jumia.com.ng/generic-solar-power-inverter-3000watts-digital-display-solar-power-inverter-12v-419985411.html",
-     "sku": "GE779GP6SYZSFNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "3000watts solar power inverter digital display solar power inverter 12v",
-     "price": 58600,
-     "unit": 19533.33,
-     "url": "https://www.jumia.com.ng/generic-3000watts-solar-power-inverter-digital-display-solar-power-inverter-12v-419760161.html",
-     "sku": "GE779GP6VQM1ZNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "3000w 12v ac/dc inverter with charger ",
-     "price": 100000,
-     "unit": 33333.33,
-     "url": "https://www.jumia.com.ng/generic-3000w-12v-acdc-inverter-with-charger-420036462.html",
-     "sku": "GE779GP71WKYINAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
    "key": "inverter|generic|nomodel|3kva|nov|notopo",
    "cls": "inverter",
    "spec": {
@@ -369,6 +284,82 @@
    ]
   },
   {
+   "key": "inverter|generic|nomodel|3kva|12v|notopo",
+   "cls": "inverter",
+   "spec": {
+    "brand": "generic",
+    "model_line": null,
+    "rating": 3,
+    "unit": "kVA",
+    "voltage": 12,
+    "topology": null
+   },
+   "price": {
+    "n": 5,
+    "median": 54800,
+    "p25": null,
+    "p75": null,
+    "confidence": "median"
+   },
+   "normalized": {
+    "n": 5,
+    "median": 18266.67,
+    "p25": null,
+    "p75": null,
+    "confidence": "median"
+   },
+   "brands": [
+    "generic"
+   ],
+   "receipts": [
+    {
+     "name": "3000 Watts Power Inverter 12V",
+     "price": 53500,
+     "unit": 17833.33,
+     "url": "https://www.jumia.com.ng/generic-3000-watts-power-inverter-12v-418493673.html",
+     "sku": "GE779GP78K4S9NAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "3000watts Digital Solar Power Inverter 12V",
+     "price": 54600,
+     "unit": 18200,
+     "url": "https://www.jumia.com.ng/generic-3000watts-digital-solar-power-inverter-12v-415678921.html",
+     "sku": "GE779GP6TVRB7NAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "3000W Solar Power Inverter 12V  3KVA inverter",
+     "price": 54800,
+     "unit": 18266.67,
+     "url": "https://www.jumia.com.ng/generic-3000w-solar-power-inverter-12v-3kva-inverter-419749399.html",
+     "sku": "GE779GP89BRHJNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "3000watts solar power inverter digital display solar power inverter 12v",
+     "price": 58600,
+     "unit": 19533.33,
+     "url": "https://www.jumia.com.ng/generic-3000watts-solar-power-inverter-digital-display-solar-power-inverter-12v-419760161.html",
+     "sku": "GE779GP6VQM1ZNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "3000w 12v ac/dc inverter with charger ",
+     "price": 100000,
+     "unit": 33333.33,
+     "url": "https://www.jumia.com.ng/generic-3000w-12v-acdc-inverter-with-charger-420036462.html",
+     "sku": "GE779GP71WKYINAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
    "key": "inverter|generic|nomodel|2kva|12v|notopo",
    "cls": "inverter",
    "spec": {
@@ -439,82 +430,6 @@
      "unit": 34450,
      "url": "https://www.jumia.com.ng/2000w-inverter-with-digital-dispaly-with-20a-inbuilt-charger-12v-generic-mpg12010417.html",
      "sku": "GE779GP7TLNBFNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|senwei|nomodel|4.5kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "senwei",
-    "model_line": null,
-    "rating": 4.5,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 5,
-    "median": 229909,
-    "p25": null,
-    "p75": null,
-    "confidence": "median"
-   },
-   "normalized": {
-    "n": 5,
-    "median": 51090.89,
-    "p25": null,
-    "p75": null,
-    "confidence": "median"
-   },
-   "brands": [
-    "senwei"
-   ],
-   "receipts": [
-    {
-     "name": "4.5KVA Manul Start Generator - Low Noise Level(R)",
-     "price": 187500,
-     "unit": 41666.67,
-     "url": "https://www.jumia.com.ng/4.5kva-manul-start-generator-low-noise-levelr-senwei-mpg12091128.html",
-     "sku": "SE859GP7FRAYYNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "4.5KVA Manual Start Generator -sv5200",
-     "price": 224990,
-     "unit": 49997.78,
-     "url": "https://www.jumia.com.ng/senwei-4.5kva-manual-start-generator-sv5200-267738077.html",
-     "sku": "SE859VP4KYV7KNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "Senwei 4.5KVA Manul Start Generator. -Low Noise Level",
-     "price": 229909,
-     "unit": 51090.89,
-     "url": "https://www.jumia.com.ng/senwei-senwei-4.5kva-manul-start-generator.-low-noise-level-223719735.html",
-     "sku": "SE859GP473MYCNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "4.5 KVA Key Starter Low Noise Generator-Full Coil-SV6200E2",
-     "price": 247879,
-     "unit": 55084.22,
-     "url": "https://www.jumia.com.ng/senwei-4.5-kva-key-starter-low-noise-generator-full-coil-sv6200e2-253280120.html",
-     "sku": "SE859GP3CBVPNNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "4.5 KVA Key Starter Low Noise Generator-Full Coil-SV6200E2",
-     "price": 350000,
-     "unit": 77777.78,
-     "url": "https://www.jumia.com.ng/4.5-kva-key-starter-low-noise-generator-full-coil-sv6200e2-senwei-mpg11495877.html",
-     "sku": "SE859GP7Z7TMLNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -655,140 +570,6 @@
    ]
   },
   {
-   "key": "generator|senwei|sv2200|1.8kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "senwei",
-    "model_line": "SV2200",
-    "rating": 1.8,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 4,
-    "median": 131945,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 4,
-    "median": 73302.77,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "senwei"
-   ],
-   "receipts": [
-    {
-     "name": "1.8Kva Portable Generator- SV2200 (New Quality)",
-     "price": 127900,
-     "unit": 71055.56,
-     "url": "https://www.jumia.com.ng/1.8kva-portable-generator-sv2200-new-quality-senwei-mpg12097918.html",
-     "sku": "SE859GP82BXLMNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "Manual Start Strong 1.8KVA Generator + Gift(SV2200)",
-     "price": 128900,
-     "unit": 71611.11,
-     "url": "https://www.jumia.com.ng/manual-start-strong-1.8kva-generator-giftsv2200-senwei-mpg12022232.html",
-     "sku": "SE859GP7TO0T7NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "1.8Kva Portable Generator- SV2200 (New Quality)",
-     "price": 134990,
-     "unit": 74994.44,
-     "url": "https://www.jumia.com.ng/senwei-1.8kva-portable-generator-sv2200-new-quality-369839248.html",
-     "sku": "SE859GP6CSR2GNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "Manual Generator - 1.8kva - SV2200",
-     "price": 175000,
-     "unit": 97222.22,
-     "url": "https://www.jumia.com.ng/senwei-manual-generator-1.8kva-sv2200-420293085.html",
-     "sku": "SE859GP7KPDB6NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|elepaq|nomodel|4.5kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "elepaq",
-    "model_line": null,
-    "rating": 4.5,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 4,
-    "median": 317500,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 4,
-    "median": 70555.55,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "elepaq"
-   ],
-   "receipts": [
-    {
-     "name": "4.5kva key start Generator 100% copper sv8500E2",
-     "price": 310000,
-     "unit": 68888.89,
-     "url": "https://www.jumia.com.ng/elepaq-4.5kva-key-start-generator-100-copper-sv8500e2-419781745.html",
-     "sku": "EL479GP7IQ79JNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "Super power 4.5KVA Key Start Generator - SV8500E2",
-     "price": 315000,
-     "unit": 70000,
-     "url": "https://www.jumia.com.ng/elepaq-super-power-4.5kva-key-start-generator-sv8500e2-419759640.html",
-     "sku": "EL479GP6OY19RNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "4.5kva Original Key Starter Generator ",
-     "price": 320000,
-     "unit": 71111.11,
-     "url": "https://www.jumia.com.ng/4.5kva-original-generator-elepaq-mpg11992250.html",
-     "sku": "EL479GP7ZRRRNNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "GENERATOR SV7800E2 4.5KVA 100% Copper Wire",
-     "price": 345000,
-     "unit": 76666.67,
-     "url": "https://www.jumia.com.ng/elepaq-generator-sv7800e2-4.5kva-100-copper-wire-419078750.html",
-     "sku": "EL479GP6PLFBNNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
    "key": "inverter|generic|nomodel|1kva|12v|notopo",
    "cls": "inverter",
    "spec": {
@@ -899,6 +680,64 @@
      "unit": 165277.78,
      "url": "https://www.jumia.com.ng/cworth-energy-12v-300ah-lifepo4-lithium-battery-420287499.html",
      "sku": "CW780GP89DJUINAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "generator|senwei|nomodel|4.5kva|nov|notopo",
+   "cls": "generator",
+   "spec": {
+    "brand": "senwei",
+    "model_line": null,
+    "rating": 4.5,
+    "unit": "kVA",
+    "voltage": null,
+    "topology": null
+   },
+   "price": {
+    "n": 3,
+    "median": 229909,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 3,
+    "median": 51090.89,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "senwei"
+   ],
+   "receipts": [
+    {
+     "name": "4.5KVA Manual Start Generator -sv5200",
+     "price": 224990,
+     "unit": 49997.78,
+     "url": "https://www.jumia.com.ng/senwei-4.5kva-manual-start-generator-sv5200-267738077.html",
+     "sku": "SE859VP4KYV7KNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "Senwei 4.5KVA Manul Start Generator. -Low Noise Level",
+     "price": 229909,
+     "unit": 51090.89,
+     "url": "https://www.jumia.com.ng/senwei-senwei-4.5kva-manul-start-generator.-low-noise-level-223719735.html",
+     "sku": "SE859GP473MYCNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    },
+    {
+     "name": "4.5 KVA Key Starter Low Noise Generator-Full Coil-SV6200E2",
+     "price": 247879,
+     "unit": 55084.22,
+     "url": "https://www.jumia.com.ng/senwei-4.5-kva-key-starter-low-noise-generator-full-coil-sv6200e2-253280120.html",
+     "sku": "SE859GP3CBVPNNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -1095,104 +934,6 @@
      "unit": 128571.43,
      "url": "https://www.jumia.com.ng/mopower-3.5kva-24v-pure-sine-wave-inverter-419842943.html",
      "sku": "MO892GP76XY6ZNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|elepaq|nomodel|12kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "elepaq",
-    "model_line": null,
-    "rating": 12,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 2,
-    "median": 620000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 2,
-    "median": 51666.67,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "elepaq"
-   ],
-   "receipts": [
-    {
-     "name": "12kva Key Start Generator 100% Copper SV22000E2",
-     "price": 600000,
-     "unit": 50000,
-     "url": "https://www.jumia.com.ng/elepaq-12kva-key-start-generator-100-copper-sv22000e2-419919014.html",
-     "sku": "EL479GP7AM4RBNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": "12kva key start original generator 100% copper",
-     "price": 640000,
-     "unit": 53333.33,
-     "url": "https://www.jumia.com.ng/elepaq-12kva-key-start-original-generator-100-copper-419851912.html",
-     "sku": "EL479GP6Z74DVNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|sumecfirman|nomodel|5.5kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "sumec firman",
-    "model_line": null,
-    "rating": 5.5,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 2,
-    "median": 482500,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 2,
-    "median": 87727.27,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "sumec firman"
-   ],
-   "receipts": [
-    {
-     "name": "SUMECFIRMAN 5.5kva Sumec Key Start Generator 100% Copper",
-     "price": 445000,
-     "unit": 80909.09,
-     "url": "https://www.jumia.com.ng/sumec-firman-sumecfirman-5.5kva-sumec-key-start-generator-100-copper-419945607.html",
-     "sku": "BR747GP7S7RPRNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    },
-    {
-     "name": " FPG4800E2 5.5KVA Key Starter Generator, COPPER COIL",
-     "price": 520000,
-     "unit": 94545.45,
-     "url": "https://www.jumia.com.ng/sumec-firman-fpg4800e2-5.5kva-key-starter-generator-copper-coil-418552097.html",
-     "sku": "BR747GP7X76I5NAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -1479,46 +1220,6 @@
    ]
   },
   {
-   "key": "battery|solarpower|nomodel|220ah|12v|notopo",
-   "cls": "battery",
-   "spec": {
-    "brand": "solar power",
-    "model_line": null,
-    "rating": 220,
-    "unit": "Ah",
-    "voltage": 12,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 255000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 96590.91,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "solar power"
-   ],
-   "receipts": [
-    {
-     "name": "SMS Battery 220Ah (12V)",
-     "price": 255000,
-     "unit": 96590.91,
-     "url": "https://www.jumia.com.ng/solar-power-sms-battery-220ah-12v-420305858.html",
-     "sku": "SO686GP819GHQNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
    "key": "inverter|generic|nomodel|3kva|24v|notopo",
    "cls": "inverter",
    "spec": {
@@ -1599,6 +1300,46 @@
    ]
   },
   {
+   "key": "battery|solarpower|nomodel|220ah|12v|notopo",
+   "cls": "battery",
+   "spec": {
+    "brand": "solar power",
+    "model_line": null,
+    "rating": 220,
+    "unit": "Ah",
+    "voltage": 12,
+    "topology": null
+   },
+   "price": {
+    "n": 1,
+    "median": 255000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 96590.91,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "solar power"
+   ],
+   "receipts": [
+    {
+     "name": "SMS Battery 220Ah (12V)",
+     "price": 255000,
+     "unit": 96590.91,
+     "url": "https://www.jumia.com.ng/solar-power-sms-battery-220ah-12v-420305858.html",
+     "sku": "SO686GP819GHQNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
    "key": "inverter|luminous|nomodel|5kva|48v|pure_sine",
    "cls": "inverter",
    "spec": {
@@ -1633,6 +1374,46 @@
      "unit": 253980,
      "url": "https://www.jumia.com.ng/luminous-5kva-48v-dc-powerful-cruze-pure-sine-wave-inverter-98346793.html",
      "sku": "LU374GP0NOAEDNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "inverter|hiconic|nomodel|5kva|nov|hybrid",
+   "cls": "inverter",
+   "spec": {
+    "brand": "hiconic",
+    "model_line": null,
+    "rating": 5,
+    "unit": "kVA",
+    "voltage": null,
+    "topology": "hybrid"
+   },
+   "price": {
+    "n": 1,
+    "median": 400000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 80000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "hiconic"
+   ],
+   "receipts": [
+    {
+     "name": "5KVA Hybrid Solar Inverter with MPPT ",
+     "price": 400000,
+     "unit": 80000,
+     "url": "https://www.jumia.com.ng/hiconic-5kva-hybrid-solar-inverter-with-mppt-420276029.html",
+     "sku": "HI738GP84YPHENAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -1679,6 +1460,46 @@
    ]
   },
   {
+   "key": "inverter|sun|mppt500v|4.2kva|24v|hybrid",
+   "cls": "inverter",
+   "spec": {
+    "brand": "sun",
+    "model_line": "MPPT500V",
+    "rating": 4.2,
+    "unit": "kVA",
+    "voltage": 24,
+    "topology": "hybrid"
+   },
+   "price": {
+    "n": 1,
+    "median": 4500,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 1071.43,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "sun"
+   ],
+   "receipts": [
+    {
+     "name": " 4.2KVA 24V Hybrid Solar Inverter with Built-in MPPT 500V, Pure Sine Wave",
+     "price": 4500,
+     "unit": 1071.43,
+     "url": "https://www.jumia.com.ng/4.2kva-24v-hybrid-solar-inverter-with-built-in-mppt-500v-pure-sine-wave-sun-mpg12077313.html",
+     "sku": "SU633GP6N9IHYNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
    "key": "inverter|suoer|nomodel|3kva|nov|notopo",
    "cls": "inverter",
    "spec": {
@@ -1713,6 +1534,46 @@
      "unit": 17633.33,
      "url": "https://www.jumia.com.ng/suoer-3000w-solar-inverter-with-anti-reverse-protection-420167304.html",
      "sku": "SU366GP7A6SDINAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "inverter|bluegate|nomodel|3kva|24v|pure_sine",
+   "cls": "inverter",
+   "spec": {
+    "brand": "blue gate",
+    "model_line": null,
+    "rating": 3,
+    "unit": "kVA",
+    "voltage": 24,
+    "topology": "pure_sine"
+   },
+   "price": {
+    "n": 1,
+    "median": 600000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 200000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "blue gate"
+   ],
+   "receipts": [
+    {
+     "name": " 3kVA/24V Pure Sine Wave Solar Inverter BG3000SHF",
+     "price": 600000,
+     "unit": 200000,
+     "url": "https://www.jumia.com.ng/blue-gate-3kva24v-pure-sine-wave-solar-inverter-bg3000shf-418582436.html",
+     "sku": "BL670GP7NWVS5NAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -1879,46 +1740,6 @@
    ]
   },
   {
-   "key": "inverter|sako|nomodel|6.2kva|48v|hybrid",
-   "cls": "inverter",
-   "spec": {
-    "brand": "sako",
-    "model_line": null,
-    "rating": 6.2,
-    "unit": "kVA",
-    "voltage": 48,
-    "topology": "hybrid"
-   },
-   "price": {
-    "n": 1,
-    "median": 535000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 86290.32,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "sako"
-   ],
-   "receipts": [
-    {
-     "name": "6.2KVA 48V off-grid hybrid solar inverter",
-     "price": 535000,
-     "unit": 86290.32,
-     "url": "https://www.jumia.com.ng/sako-6.2kva-48v-off-grid-hybrid-solar-inverter-420309496.html",
-     "sku": "SA442GP7RIT1ANAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
    "key": "inverter|afriipower|nomodel|3.5kva|48v|pure_sine",
    "cls": "inverter",
    "spec": {
@@ -1953,6 +1774,46 @@
      "unit": 180000,
      "url": "https://www.jumia.com.ng/afriipower-3.5kva-48v-pure-sine-wave-inverter-407707061.html",
      "sku": "AF479GP6VPU9ENAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "inverter|sako|nomodel|6.2kva|48v|hybrid",
+   "cls": "inverter",
+   "spec": {
+    "brand": "sako",
+    "model_line": null,
+    "rating": 6.2,
+    "unit": "kVA",
+    "voltage": 48,
+    "topology": "hybrid"
+   },
+   "price": {
+    "n": 1,
+    "median": 535000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 86290.32,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "sako"
+   ],
+   "receipts": [
+    {
+     "name": "6.2KVA 48V off-grid hybrid solar inverter",
+     "price": 535000,
+     "unit": 86290.32,
+     "url": "https://www.jumia.com.ng/sako-6.2kva-48v-off-grid-hybrid-solar-inverter-420309496.html",
+     "sku": "SA442GP7RIT1ANAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -2039,40 +1900,40 @@
    ]
   },
   {
-   "key": "inverter|hiconic|nomodel|5kva|nov|hybrid",
+   "key": "inverter|felicitysolar|nomodel|12kva|nov|hybrid",
    "cls": "inverter",
    "spec": {
-    "brand": "hiconic",
+    "brand": "felicity solar",
     "model_line": null,
-    "rating": 5,
+    "rating": 12,
     "unit": "kVA",
     "voltage": null,
     "topology": "hybrid"
    },
    "price": {
     "n": 1,
-    "median": 400000,
+    "median": 1250000,
     "p25": null,
     "p75": null,
     "confidence": "listings"
    },
    "normalized": {
     "n": 1,
-    "median": 80000,
+    "median": 104166.67,
     "p25": null,
     "p75": null,
     "confidence": "listings"
    },
    "brands": [
-    "hiconic"
+    "felicity solar"
    ],
    "receipts": [
     {
-     "name": "5KVA Hybrid Solar Inverter with MPPT ",
-     "price": 400000,
-     "unit": 80000,
-     "url": "https://www.jumia.com.ng/hiconic-5kva-hybrid-solar-inverter-with-mppt-420276029.html",
-     "sku": "HI738GP84YPHENAFAMZ",
+     "name": "12kVA&8VA HIGH VOLTAGE AND HYBRID INVERTER",
+     "price": 1250000,
+     "unit": 104166.67,
+     "url": "https://www.jumia.com.ng/12kva8va-high-voltage-and-hybrid-inverter-felicity-solar-mpg12080274.html",
+     "sku": "FE797GP6NSMRQNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -2113,46 +1974,6 @@
      "unit": 32666.67,
      "url": "https://www.jumia.com.ng/solar-power-1500w-inverter-12v-420145409.html",
      "sku": "SO686GP8404T2NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "inverter|sun|mppt500v|4.2kva|24v|hybrid",
-   "cls": "inverter",
-   "spec": {
-    "brand": "sun",
-    "model_line": "MPPT500V",
-    "rating": 4.2,
-    "unit": "kVA",
-    "voltage": 24,
-    "topology": "hybrid"
-   },
-   "price": {
-    "n": 1,
-    "median": 450000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 107142.86,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "sun"
-   ],
-   "receipts": [
-    {
-     "name": " 4.2KVA 24V Hybrid Solar Inverter with Built-in MPPT 500V, Pure Sine Wave",
-     "price": 450000,
-     "unit": 107142.86,
-     "url": "https://www.jumia.com.ng/4.2kva-24v-hybrid-solar-inverter-with-built-in-mppt-500v-pure-sine-wave-sun-mpg12077313.html",
-     "sku": "SU633GP6N9IHYNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -2239,120 +2060,40 @@
    ]
   },
   {
-   "key": "inverter|bluegate|nomodel|3kva|24v|pure_sine",
+   "key": "inverter|solarpower|nomodel|1kva|nov|notopo",
    "cls": "inverter",
    "spec": {
-    "brand": "blue gate",
+    "brand": "solar power",
     "model_line": null,
-    "rating": 3,
-    "unit": "kVA",
-    "voltage": 24,
-    "topology": "pure_sine"
-   },
-   "price": {
-    "n": 1,
-    "median": 600000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 200000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "blue gate"
-   ],
-   "receipts": [
-    {
-     "name": " 3kVA/24V Pure Sine Wave Solar Inverter BG3000SHF",
-     "price": 600000,
-     "unit": 200000,
-     "url": "https://www.jumia.com.ng/blue-gate-3kva24v-pure-sine-wave-solar-inverter-bg3000shf-418582436.html",
-     "sku": "BL670GP7NWVS5NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "inverter|felicitysolar|nomodel|12kva|nov|hybrid",
-   "cls": "inverter",
-   "spec": {
-    "brand": "felicity solar",
-    "model_line": null,
-    "rating": 12,
+    "rating": 1,
     "unit": "kVA",
     "voltage": null,
-    "topology": "hybrid"
-   },
-   "price": {
-    "n": 1,
-    "median": 1250000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 104166.67,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "felicity solar"
-   ],
-   "receipts": [
-    {
-     "name": "12kVA&8VA HIGH VOLTAGE AND HYBRID INVERTER",
-     "price": 1250000,
-     "unit": 104166.67,
-     "url": "https://www.jumia.com.ng/12kva8va-high-voltage-and-hybrid-inverter-felicity-solar-mpg12080274.html",
-     "sku": "FE797GP6NSMRQNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "battery|gbm|nomodel|200ah|12v|notopo",
-   "cls": "battery",
-   "spec": {
-    "brand": "gbm",
-    "model_line": null,
-    "rating": 200,
-    "unit": "Ah",
-    "voltage": 12,
     "topology": null
    },
    "price": {
     "n": 1,
-    "median": 419300,
+    "median": 65000,
     "p25": null,
     "p75": null,
     "confidence": "listings"
    },
    "normalized": {
     "n": 1,
-    "median": 174708.33,
+    "median": 65000,
     "p25": null,
     "p75": null,
     "confidence": "listings"
    },
    "brands": [
-    "gbm"
+    "solar power"
    ],
    "receipts": [
     {
-     "name": "200Ah 12V Battery -GBM",
-     "price": 419300,
-     "unit": 174708.33,
-     "url": "https://www.jumia.com.ng/gbm-200ah-12v-battery-gbm-40910037.html",
-     "sku": "GB546HL17GOMONAFAMZ",
+     "name": "1000W Inverter With Inbuilt 10A Battery Charger",
+     "price": 65000,
+     "unit": 65000,
+     "url": "https://www.jumia.com.ng/solar-power-1000w-inverter-with-inbuilt-10a-battery-charger-420146633.html",
+     "sku": "SO686GP766XD2NAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -2393,6 +2134,46 @@
      "unit": 833.33,
      "url": "https://www.jumia.com.ng/300w-portable-power-station-60w-solar-panel-sec-energy-storage-mpg12077144.html",
      "sku": "SE730GP737GOUNAFAMZ",
+     "channel": "online_retail",
+     "basis": "asking_price"
+    }
+   ]
+  },
+  {
+   "key": "battery|gbm|nomodel|200ah|12v|notopo",
+   "cls": "battery",
+   "spec": {
+    "brand": "gbm",
+    "model_line": null,
+    "rating": 200,
+    "unit": "Ah",
+    "voltage": 12,
+    "topology": null
+   },
+   "price": {
+    "n": 1,
+    "median": 419300,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 1,
+    "median": 174708.33,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "gbm"
+   ],
+   "receipts": [
+    {
+     "name": "200Ah 12V Battery -GBM",
+     "price": 419300,
+     "unit": 174708.33,
+     "url": "https://www.jumia.com.ng/gbm-200ah-12v-battery-gbm-40910037.html",
+     "sku": "GB546HL17GOMONAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -2479,186 +2260,26 @@
    ]
   },
   {
-   "key": "generator|elepaq|sv6800|4kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "elepaq",
-    "model_line": "SV6800",
-    "rating": 4,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 270558,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 67639.5,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "elepaq"
-   ],
-   "receipts": [
-    {
-     "name": "Elepaq 4.0kva Generator - SV6800",
-     "price": 270558,
-     "unit": 67639.5,
-     "url": "https://www.jumia.com.ng/elepaq-elepaq-4.0kva-generator-sv6800-420148618.html",
-     "sku": "EL479GP7YS5TYNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|elepaq|nomodel|1kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "elepaq",
-    "model_line": null,
-    "rating": 1,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 198690,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 198690,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "elepaq"
-   ],
-   "receipts": [
-    {
-     "name": "Elepaq 1KVA COPPER COIL GENERATOR",
-     "price": 198690,
-     "unit": 198690,
-     "url": "https://www.jumia.com.ng/elepaq-elepaq-1kva-copper-coil-generator-420252350.html",
-     "sku": "EL479GP6PBIXENAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|sumec|nomodel|5.5kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "sumec",
-    "model_line": null,
-    "rating": 5.5,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 550000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 100000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "sumec"
-   ],
-   "receipts": [
-    {
-     "name": " FIRMAN 5.5kva Rugged Key Start Generator  Copper",
-     "price": 550000,
-     "unit": 100000,
-     "url": "https://www.jumia.com.ng/sumec-firman-5.5kva-rugged-key-start-generator-copper-418290300.html",
-     "sku": "SU477GP6MC0M9NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|elepaq|nomodel|4kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "elepaq",
-    "model_line": null,
-    "rating": 4,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 342425,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 85606.25,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "elepaq"
-   ],
-   "receipts": [
-    {
-     "name": "Elepaq 4.0KVA Key Start Generator",
-     "price": 342425,
-     "unit": 85606.25,
-     "url": "https://www.jumia.com.ng/elepaq-elepaq-4.0kva-key-start-generator-420142520.html",
-     "sku": "EL479GP6NNHL2NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|senwei|sv52|4.5kva|nov|notopo",
+   "key": "generator|senwei|sv2200|1.8kva|nov|notopo",
    "cls": "generator",
    "spec": {
     "brand": "senwei",
-    "model_line": "SV52",
-    "rating": 4.5,
+    "model_line": "SV2200",
+    "rating": 1.8,
     "unit": "kVA",
     "voltage": null,
     "topology": null
    },
    "price": {
     "n": 1,
-    "median": 205000,
+    "median": 134990,
     "p25": null,
     "p75": null,
     "confidence": "listings"
    },
    "normalized": {
     "n": 1,
-    "median": 45555.56,
+    "median": 74994.44,
     "p25": null,
     "p75": null,
     "confidence": "listings"
@@ -2668,731 +2289,11 @@
    ],
    "receipts": [
     {
-     "name": "4.5KVA Manul Start Generator - Low Noise Level/SV52",
-     "price": 205000,
-     "unit": 45555.56,
-     "url": "https://www.jumia.com.ng/senwei-4.5kva-manul-start-generator-low-noise-levelsv52-419203964.html",
-     "sku": "SE859GP7E39MBNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|senwei|nomodel|3.5kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "senwei",
-    "model_line": null,
-    "rating": 3.5,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 348999,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 99714,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "senwei"
-   ],
-   "receipts": [
-    {
-     "name": "3.5KVA Manual Start Generator",
-     "price": 348999,
-     "unit": 99714,
-     "url": "https://www.jumia.com.ng/senwei-3.5kva-manual-start-generator-45121358.html",
-     "sku": "SE859EL1ESJA2NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|elepon|nomodel|4.5kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "elepon",
-    "model_line": null,
-    "rating": 4.5,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 275800,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 61288.89,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "elepon"
-   ],
-   "receipts": [
-    {
-     "name": "Elepaq  4.5KVA Key Start Generator - SV7800E2 100% Quality",
-     "price": 275800,
-     "unit": 61288.89,
-     "url": "https://www.jumia.com.ng/elepon-elepaq-4.5kva-key-start-generator-sv7800e2-100-quality-420051656.html",
-     "sku": "EL294GP7P7QU2NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|elepaq|nomodel|5.5kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "elepaq",
-    "model_line": null,
-    "rating": 5.5,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 420000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 76363.64,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "elepaq"
-   ],
-   "receipts": [
-    {
-     "name": " 5.5KVA SV8800E2 Constant KeyStart Generator-100%Coper",
-     "price": 420000,
-     "unit": 76363.64,
-     "url": "https://www.jumia.com.ng/5.5kva-sv8800e2-constant-keystart-generator-100coper-elepaq-mpg12031397.html",
-     "sku": "EL479GP7414CYNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|sumecfirman|spg3000|5.5kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "sumec firman",
-    "model_line": "SPG3000",
-    "rating": 5.5,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 310000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 56363.64,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "sumec firman"
-   ],
-   "receipts": [
-    {
-     "name": " FIRMAN 5.5kva Manual Generator - SPG3000",
-     "price": 310000,
-     "unit": 56363.64,
-     "url": "https://www.jumia.com.ng/sumec-firman-firman-5.5kva-manual-generator-spg3000-419945661.html",
-     "sku": "BR747GP6W2D1RNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|lutian|nomodel|12kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "lutian",
-    "model_line": null,
-    "rating": 12,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 800000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 66666.67,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "lutian"
-   ],
-   "receipts": [
-    {
-     "name": "12KVA Professional Remote and Key Starter Generator",
-     "price": 800000,
-     "unit": 66666.67,
-     "url": "https://www.jumia.com.ng/lutian-12kva-professional-remote-and-key-starter-generator-418520281.html",
-     "sku": "LU734GP6WZJ6DNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|lutian|nomodel|15kva|nov|diesel",
-   "cls": "generator",
-   "spec": {
-    "brand": "lutian",
-    "model_line": null,
-    "rating": 15,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": "diesel"
-   },
-   "price": {
-    "n": 1,
-    "median": 2950000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 196666.67,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "lutian"
-   ],
-   "receipts": [
-    {
-     "name": "15.0KVA LUTIAN DIESEL_GENERATOR",
-     "price": 2950000,
-     "unit": 196666.67,
-     "url": "https://www.jumia.com.ng/lutian-15.0kva-lutian-dieselgenerator-82722075.html",
-     "sku": "LU734HL0XY70ONAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|firman|nomodel|4.5kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "firman",
-    "model_line": null,
-    "rating": 4.5,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 430000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 95555.56,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "firman"
-   ],
-   "receipts": [
-    {
-     "name": "4.5kva key start generator 100% copper coil",
-     "price": 430000,
-     "unit": 95555.56,
-     "url": "https://www.jumia.com.ng/firman-4.5kva-key-start-generator-100-copper-coil-420004076.html",
-     "sku": "FI183GP7Q2ADENAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|sumecfirman|spg1800|1.2kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "sumec firman",
-    "model_line": "SPG1800",
-    "rating": 1.2,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 210000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 175000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "sumec firman"
-   ],
-   "receipts": [
-    {
-     "name": "1.2KVA MANUAL STARTER GENERATOR (SPG1800)",
-     "price": 210000,
-     "unit": 175000,
-     "url": "https://www.jumia.com.ng/sumec-firman-1.2kva-manual-starter-generator-spg1800-419537258.html",
-     "sku": "BR747GP80X3HZNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|firman|nomodel|10kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "firman",
-    "model_line": null,
-    "rating": 10,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 900000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 90000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "firman"
-   ],
-   "receipts": [
-    {
-     "name": "10KVA FIRMA.N GENERATOR KEY STARTER   - FPG-8800E2",
-     "price": 900000,
-     "unit": 90000,
-     "url": "https://www.jumia.com.ng/firman-10kva-firma.n-generator-key-starter-fpg-8800e2-419907916.html",
-     "sku": "FI183GP7N1N3JNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|sumecfirman|nomodel|1.3kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "sumec firman",
-    "model_line": null,
-    "rating": 1.3,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 232000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 178461.54,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "sumec firman"
-   ],
-   "receipts": [
-    {
-     "name": "1.3KVA MANUAL STARTER GENERATOR (ECO1990ES)",
-     "price": 232000,
-     "unit": 178461.54,
-     "url": "https://www.jumia.com.ng/sumec-firman-1.3kva-manual-starter-generator-eco1990es-419537019.html",
-     "sku": "BR747GP84DET3NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|maxmech|nomodel|4.5kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "maxmech",
-    "model_line": null,
-    "rating": 4.5,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 430000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 95555.56,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "maxmech"
-   ],
-   "receipts": [
-    {
-     "name": "Maxmech4.5kva Key Start 100% Copper Generator",
-     "price": 430000,
-     "unit": 95555.56,
-     "url": "https://www.jumia.com.ng/maxmech-maxmech4.5kva-key-start-100-copper-generator-419781930.html",
-     "sku": "MA535GP6OHDQFNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|sumecfirman|nomodel|12kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "sumec firman",
-    "model_line": null,
-    "rating": 12,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 952000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 79333.33,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "sumec firman"
-   ],
-   "receipts": [
-    {
-     "name": "SUMECFIRMAN 12KVA SUMEC ECO12990ES Key Starter Copper Generator",
-     "price": 952000,
-     "unit": 79333.33,
-     "url": "https://www.jumia.com.ng/sumec-firman-sumecfirman-12kva-sumec-eco12990es-key-starter-copper-generator-419945570.html",
-     "sku": "BR747GP6QNBFZNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|sumecfirman|nomodel|9.4kva|nov|petrol",
-   "cls": "generator",
-   "spec": {
-    "brand": "sumec firman",
-    "model_line": null,
-    "rating": 9.4,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": "petrol"
-   },
-   "price": {
-    "n": 1,
-    "median": 798000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 84893.62,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "sumec firman"
-   ],
-   "receipts": [
-    {
-     "name": "SUMECFIRMAN ECO10990ES 9.4kvaPetrol Generator - Key Starter",
-     "price": 798000,
-     "unit": 84893.62,
-     "url": "https://www.jumia.com.ng/sumec-firman-sumecfirman-eco10990es-9.4kvapetrol-generator-key-starter-420029747.html",
-     "sku": "BR747GP7UOFUQNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|lutian|nomodel|15kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "lutian",
-    "model_line": null,
-    "rating": 15,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 780000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 52000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "lutian"
-   ],
-   "receipts": [
-    {
-     "name": "15KVA Professional Remote and Key Starter Generator",
-     "price": 780000,
-     "unit": 52000,
-     "url": "https://www.jumia.com.ng/lutian-15kva-professional-remote-and-key-starter-generator-419299788.html",
-     "sku": "LU734GP830NY3NAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|senwei|nomodel|5kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "senwei",
-    "model_line": null,
-    "rating": 5,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 284500,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 56900,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "senwei"
-   ],
-   "receipts": [
-    {
-     "name": "Powerful 5KVA Key Starter Low Noise Generator - SV6200E2",
-     "price": 284500,
-     "unit": 56900,
-     "url": "https://www.jumia.com.ng/senwei-powerful-5kva-key-starter-low-noise-generator-sv6200e2-419776699.html",
-     "sku": "SE859GP89HM4VNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|elepaq|nomodel|15kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "elepaq",
-    "model_line": null,
-    "rating": 15,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 700000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 46666.67,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "elepaq"
-   ],
-   "receipts": [
-    {
-     "name": " 15kva Key Start Generator SV28000E2 Copper. Coil",
-     "price": 700000,
-     "unit": 46666.67,
-     "url": "https://www.jumia.com.ng/elepaq-15kva-key-start-generator-sv28000e2-copper.-coil-419076107.html",
-     "sku": "EL479GP7RXB8ZNAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|senwei|sv5200|4.5kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "senwei",
-    "model_line": "SV5200",
-    "rating": 4.5,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 187000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 41555.56,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "senwei"
-   ],
-   "receipts": [
-    {
-     "name": " 4.5KVA Manuel Start Generator SV5200. -Low Noise Level",
-     "price": 187000,
-     "unit": 41555.56,
-     "url": "https://www.jumia.com.ng/4.5kva-manuel-start-generator-sv5200.-low-noise-level-senwei-mpg12098726.html",
-     "sku": "SE859GP71F23ENAFAMZ",
-     "channel": "online_retail",
-     "basis": "asking_price"
-    }
-   ]
-  },
-  {
-   "key": "generator|sumecfirman|nomodel|4.5kva|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "brand": "sumec firman",
-    "model_line": null,
-    "rating": 4.5,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 1,
-    "median": 400000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 1,
-    "median": 88888.89,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "sumec firman"
-   ],
-   "receipts": [
-    {
-     "name": "4.5kva Manual Start Generator 100% Copper",
-     "price": 400000,
-     "unit": 88888.89,
-     "url": "https://www.jumia.com.ng/sumec-firman-4.5kva-manual-start-generator-100-copper-418541624.html",
-     "sku": "BR747GP7BIRLHNAFAMZ",
+     "name": "1.8Kva Portable Generator- SV2200 (New Quality)",
+     "price": 134990,
+     "unit": 74994.44,
+     "url": "https://www.jumia.com.ng/senwei-1.8kva-portable-generator-sv2200-new-quality-369839248.html",
+     "sku": "SE859GP6CSR2GNAFAMZ",
      "channel": "online_retail",
      "basis": "asking_price"
     }
@@ -3437,15 +2338,15 @@
     "topology": null
    },
    "price": {
-    "n": 6,
-    "median": 55899.5,
+    "n": 5,
+    "median": 54800,
     "p25": null,
     "p75": null,
     "confidence": "median"
    },
    "normalized": {
-    "n": 6,
-    "median": 18633.17,
+    "n": 5,
+    "median": 18266.67,
     "p25": null,
     "p75": null,
     "confidence": "median"
@@ -3464,21 +2365,22 @@
     "topology": null
    },
    "price": {
-    "n": 8,
-    "median": 34500,
-    "p25": null,
-    "p75": null,
-    "confidence": "median"
+    "n": 9,
+    "median": 35000,
+    "p25": 34000,
+    "p75": 39500,
+    "confidence": "band"
    },
    "normalized": {
-    "n": 8,
-    "median": 34500,
-    "p25": null,
-    "p75": null,
-    "confidence": "median"
+    "n": 9,
+    "median": 35000,
+    "p25": 34000,
+    "p75": 39500,
+    "confidence": "band"
    },
    "brands": [
-    "generic"
+    "generic",
+    "solar power"
    ]
   },
   {
@@ -3537,6 +2439,33 @@
    ]
   },
   {
+   "key": "inverter|4kVA|nov|notopo",
+   "cls": "inverter",
+   "spec": {
+    "rating": 4,
+    "unit": "kVA",
+    "voltage": null,
+    "topology": null
+   },
+   "price": {
+    "n": 4,
+    "median": 78500,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 4,
+    "median": 19625,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "generic"
+   ]
+  },
+  {
    "key": "inverter|1kVA|12V|notopo",
    "cls": "inverter",
    "spec": {
@@ -3591,33 +2520,6 @@
    ]
   },
   {
-   "key": "inverter|4kVA|nov|notopo",
-   "cls": "inverter",
-   "spec": {
-    "rating": 4,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 4,
-    "median": 78500,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 4,
-    "median": 19625,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "generic"
-   ]
-  },
-  {
    "key": "inverter|1.5kVA|12V|notopo",
    "cls": "inverter",
    "spec": {
@@ -3643,6 +2545,34 @@
    "brands": [
     "generic",
     "solar power"
+   ]
+  },
+  {
+   "key": "inverter|4.2kVA|24V|hybrid",
+   "cls": "inverter",
+   "spec": {
+    "rating": 4.2,
+    "unit": "kVA",
+    "voltage": 24,
+    "topology": "hybrid"
+   },
+   "price": {
+    "n": 3,
+    "median": 460000,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "normalized": {
+    "n": 3,
+    "median": 109523.81,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
+   },
+   "brands": [
+    "sako",
+    "sun"
    ]
   },
   {
@@ -3675,34 +2605,6 @@
    ]
   },
   {
-   "key": "inverter|4.2kVA|24V|hybrid",
-   "cls": "inverter",
-   "spec": {
-    "rating": 4.2,
-    "unit": "kVA",
-    "voltage": 24,
-    "topology": "hybrid"
-   },
-   "price": {
-    "n": 3,
-    "median": 460000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 3,
-    "median": 109523.81,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "sako",
-    "sun"
-   ]
-  },
-  {
    "key": "generator|4.5kVA|nov|notopo",
    "cls": "generator",
    "spec": {
@@ -3712,26 +2614,21 @@
     "topology": null
    },
    "price": {
-    "n": 15,
-    "median": 310000,
-    "p25": 229909,
-    "p75": 350000,
-    "confidence": "band"
+    "n": 3,
+    "median": 229909,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
    },
    "normalized": {
-    "n": 15,
-    "median": 68888.89,
-    "p25": 51090.89,
-    "p75": 77777.78,
-    "confidence": "band"
+    "n": 3,
+    "median": 51090.89,
+    "p25": null,
+    "p75": null,
+    "confidence": "listings"
    },
    "brands": [
-    "elepaq",
-    "elepon",
-    "firman",
-    "maxmech",
-    "senwei",
-    "sumec firman"
+    "senwei"
    ]
   },
   {
@@ -3744,15 +2641,15 @@
     "topology": null
    },
    "price": {
-    "n": 8,
-    "median": 137990,
+    "n": 5,
+    "median": 138990,
     "p25": null,
     "p75": null,
     "confidence": "median"
    },
    "normalized": {
-    "n": 8,
-    "median": 76661.11,
+    "n": 5,
+    "median": 77216.67,
     "p25": null,
     "p75": null,
     "confidence": "median"
@@ -3760,93 +2657,28 @@
    "brands": [
     "senwei"
    ]
-  },
-  {
-   "key": "generator|12kVA|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "rating": 12,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 4,
-    "median": 720000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "normalized": {
-    "n": 4,
-    "median": 60000,
-    "p25": null,
-    "p75": null,
-    "confidence": "listings"
-   },
-   "brands": [
-    "elepaq",
-    "lutian",
-    "sumec firman"
-   ]
-  },
-  {
-   "key": "generator|5.5kVA|nov|notopo",
-   "cls": "generator",
-   "spec": {
-    "rating": 5.5,
-    "unit": "kVA",
-    "voltage": null,
-    "topology": null
-   },
-   "price": {
-    "n": 5,
-    "median": 445000,
-    "p25": null,
-    "p75": null,
-    "confidence": "median"
-   },
-   "normalized": {
-    "n": 5,
-    "median": 80909.09,
-    "p25": null,
-    "p75": null,
-    "confidence": "median"
-   },
-   "brands": [
-    "elepaq",
-    "sumec",
-    "sumec firman"
-   ]
   }
  ],
  "classes": [
   {
    "key": "generator",
    "price": {
-    "n": 45,
-    "median": 310000,
-    "p25": 198690,
-    "p75": 445000,
+    "n": 9,
+    "median": 147850,
+    "p25": 138990,
+    "p75": 224990,
     "confidence": "band"
    },
    "normalized": {
-    "n": 45,
-    "median": 76363.64,
-    "p25": 56900,
-    "p75": 90000,
+    "n": 9,
+    "median": 76105.56,
+    "p25": 55084.22,
+    "p75": 81583.33,
     "confidence": "band"
    },
    "brands": [
-    "elepaq",
-    "elepon",
-    "firman",
-    "lutian",
-    "maxmech",
     "miratec",
-    "senwei",
-    "sumec",
-    "sumec firman"
+    "senwei"
    ]
   },
   {
@@ -3854,15 +2686,15 @@
    "price": {
     "n": 69,
     "median": 58999,
-    "p25": 45000,
-    "p75": 420000,
+    "p25": 43000,
+    "p75": 400000,
     "confidence": "band"
    },
    "normalized": {
     "n": 69,
     "median": 33900,
     "p25": 19666.33,
-    "p75": 107142.86,
+    "p75": 105000,
     "confidence": "band"
    },
    "brands": [
